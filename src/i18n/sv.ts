@@ -53,6 +53,8 @@ export const sv = {
     mute: 'Stäng av ljudet (M)',
     unmute: 'Slå på ljudet (M)',
     volume: 'Volym',
+    musicOn: 'Slå på bakgrundsmusiken (B)',
+    musicOff: 'Stäng av bakgrundsmusiken (B)',
     help: 'Så spelar du',
   },
   help: {
@@ -66,8 +68,8 @@ export const sv = {
     rounds: 'Rundorna',
     hostTips: 'För värden',
     hostTipList: [
-      'Kontrollerna högst upp i mitten: helskärm, paus, hoppa över fråga, justera poäng och ljud.',
-      'Kortkommandon: F = helskärm, P = paus, M = ljud av/på.',
+      'Kontrollerna högst upp i mitten: helskärm, paus, hoppa över fråga, justera poäng, ljud och bakgrundsmusik.',
+      'Kortkommandon: F = helskärm, P = paus, M = ljud av/på, B = bakgrundsmusik av/på.',
       'Har någon problem att ansluta? Kontrollera att mobilen har internet – spelet behöver nätet för att hitta varandra.',
     ],
     close: 'Stäng',

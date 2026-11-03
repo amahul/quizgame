@@ -121,6 +121,8 @@ The jingles are:
 
 Trivia reveals are scheduled (`revealAt`), so the drumroll plays both for the automatic reveal and for "Visa svar".
 
+**Background music ("hissmusik")** lives in `src/audio/backgroundMusic.ts`: two original synthesized loops, `lobby` and `question`, played by a lookahead scheduler on their own gain bus (cross-fade on switch, fade-out on stop). `backgroundTrackFor` (`src/host/backgroundTrack.ts`, tested) picks the tune from the room: the lobby, and trivia/closest questions until the drumroll plus pass choosing/answering. Intros, standings, reveals, pauses and music rounds stay silent. The host can switch it off with 🎵 or B (`quizgame.backgroundMusic` in `localStorage`). Never copy a real show's theme tune.
+
 ## Hidden test mode
 
 Five quick clicks (within 2 s) in the top right corner of any host screen toggle a test mode (`TestModeHotspot`, remembered in `sessionStorage` for the tab). A "🧪 Testläge" badge shows while it's on. `start()` then plans the game with `testRunSetup(setup)` and a player count of 1, so every enabled round gets exactly one question, Skicka vidare included. Test games don't mark questions as used. It works in production builds too, for testing the deployed site. Combine it with bots (`#/host?bots=3`) to run through every round in a couple of minutes.

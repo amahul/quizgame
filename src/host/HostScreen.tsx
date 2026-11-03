@@ -1,10 +1,12 @@
 import { useEffect, type ReactNode } from 'react'
 import { motion } from 'framer-motion'
 import { unlockAudio } from '../audio'
+import { setBackgroundMusic } from '../audio/backgroundMusic'
 import { getHashParam } from '../app/router'
 import { strings } from '../i18n'
 import { HostButton } from '../ui/HostButton'
 import { useWakeLock } from '../ui/useWakeLock'
+import { backgroundTrackFor } from './backgroundTrack'
 import { GameBuilder } from './GameBuilder'
 import { GameScreen } from './GameScreen'
 import { TestModeHotspot } from './TestModeHotspot'
@@ -42,6 +44,11 @@ function HostContent() {
 
   // The host computer must not sleep during the party.
   useWakeLock(status === 'open')
+
+  // "Hissmusik": the lobby tune while waiting, the question tune while people answer.
+  const track = useHostStore((s) => (s.status === 'open' ? backgroundTrackFor(s.room, s.building) : null))
+  useEffect(() => setBackgroundMusic(track), [track])
+  useEffect(() => () => setBackgroundMusic(null), [])
 
   // After a reload there was no click to unlock audio, so take the first one.
   useEffect(() => {

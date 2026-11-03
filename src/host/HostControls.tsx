@@ -1,5 +1,6 @@
 import { useEffect, useState, useSyncExternalStore } from 'react'
 import { getVolume, setVolume, subscribeVolume } from '../audio'
+import { getBackgroundMusicEnabled, setBackgroundMusicEnabled, subscribeBackgroundMusic } from '../audio/backgroundMusic'
 import { isPaused } from '../game/game'
 import { strings } from '../i18n'
 import { AvatarBadge } from '../ui/AvatarBadge'
@@ -25,6 +26,7 @@ export function HostControls() {
   const paused = useHostStore((s) => (s.room ? isPaused(s.room) : false))
   const [isFullscreen, toggleFullscreen] = useFullscreen()
   const volume = useSyncExternalStore(subscribeVolume, getVolume)
+  const music = useSyncExternalStore(subscribeBackgroundMusic, getBackgroundMusicEnabled)
   const [confirmSkip, setConfirmSkip] = useState(false)
   const [panel, setPanel] = useState<'scores' | 'help' | null>(null)
 
@@ -36,6 +38,7 @@ export function HostControls() {
       const key = e.key.toLowerCase()
       if (key === 'f') toggleFullscreen()
       else if (key === 'm') setVolume({ muted: !getVolume().muted })
+      else if (key === 'b') setBackgroundMusicEnabled(!getBackgroundMusicEnabled())
       else if (key === 'p' && inGame) act({ type: useHostStore.getState().room && isPaused(useHostStore.getState().room!) ? 'resume' : 'pause' })
     }
     window.addEventListener('keydown', onKey)
@@ -90,6 +93,9 @@ export function HostControls() {
           onChange={(e) => setVolume({ volume: Number(e.target.value), muted: false })}
           className="w-24 accent-yellow-300"
         />
+        <ControlButton label={music ? t.musicOff : t.musicOn} onClick={() => setBackgroundMusicEnabled(!music)} active={!music}>
+          {music ? '🎵' : '🔕'}
+        </ControlButton>
         <ControlButton label={t.help} onClick={() => setPanel('help')}>
           ?
         </ControlButton>
