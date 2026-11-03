@@ -1,10 +1,13 @@
-// "Allmänbildning": multiple choice, no timer. Reveals after a short drumroll once
-// every connected player has answered, or when the host asks for it.
+// "Allmänbildning": multiple choice with a time limit per question. Reveals after a
+// short drumroll once every connected player has answered, the time runs out, or
+// the host asks for it.
 import type { RoundContext, RoundDefinition, RoundUpdate } from '../../game/round'
 
 export const TRIVIA_POINTS = 100
 export const AUTO_REVEAL_DELAY_MS = 1_500
 export const MAX_OPTIONS = 4
+/** Time to answer each question. */
+export const QUESTION_MS = 20_000
 
 export interface TriviaQuestion {
   question: string
@@ -26,8 +29,10 @@ export interface TriviaState {
   answers: Record<string, number>
   /** When the reveal happens (after the drumroll), or null if none is scheduled. */
   revealAt: number | null
-  /** The host asked for the reveal, so a newcomer joining does not cancel it. */
+  /** The host asked for the reveal or time ran out, so a newcomer joining does not cancel it. */
   revealForced: boolean
+  /** When answering closes. */
+  deadline: number
 }
 
 export type TriviaIntent = { type: 'trivia-answer'; questionIndex: number; choice: number }
@@ -35,7 +40,7 @@ export type TriviaIntent = { type: 'trivia-answer'; questionIndex: number; choic
 export type TriviaAction = { type: 'trivia-reveal' } | { type: 'trivia-next' }
 
 export type TriviaView =
-  | { kind: 'trivia-question'; questionIndex: number; optionCount: number; answered: number | null }
+  | { kind: 'trivia-question'; questionIndex: number; optionCount: number; answered: number | null; msLeft: number }
   | { kind: 'trivia-reveal'; questionIndex: number; answered: number | null; correct: boolean; points: number }
 
 export function hasAnswered(state: TriviaState, playerId: string): boolean {
@@ -68,6 +73,10 @@ function settle(state: TriviaState, ctx: RoundContext): RoundUpdate<TriviaState>
   if (state.stage !== 'question') return { state }
   if (state.revealAt !== null && ctx.now >= state.revealAt) return reveal(state)
   if (state.revealForced) return { state }
+  if (ctx.now >= state.deadline) {
+    // Time's up: drumroll, then reveal, whoever is still thinking.
+    return { state: { ...state, revealAt: ctx.now + AUTO_REVEAL_DELAY_MS, revealForced: true } }
+  }
   if (!everyoneAnswered(state, ctx)) {
     // Someone new joined (or reconnected) before the reveal: wait for them too.
     return { state: state.revealAt === null ? state : { ...state, revealAt: null } }
@@ -76,7 +85,7 @@ function settle(state: TriviaState, ctx: RoundContext): RoundUpdate<TriviaState>
   return { state }
 }
 
-function atQuestion(state: TriviaState, index: number): TriviaState {
+function atQuestion(state: TriviaState, index: number, now: number): TriviaState {
   return {
     ...state,
     index,
@@ -84,12 +93,17 @@ function atQuestion(state: TriviaState, index: number): TriviaState {
     answers: {},
     revealAt: null,
     revealForced: false,
+    deadline: now + QUESTION_MS,
   }
 }
 
 export const trivia: RoundDefinition<TriviaSetup, TriviaState, TriviaIntent, TriviaAction, TriviaView> = {
-  start({ questions }) {
-    return atQuestion({ questions, index: 0, stage: 'question', answers: {}, revealAt: null, revealForced: false }, 0)
+  start({ questions }, ctx) {
+    return atQuestion(
+      { questions, index: 0, stage: 'question', answers: {}, revealAt: null, revealForced: false, deadline: 0 },
+      0,
+      ctx.now,
+    )
   },
 
   parseIntent(data) {
@@ -102,6 +116,7 @@ export const trivia: RoundDefinition<TriviaSetup, TriviaState, TriviaIntent, Tri
 
   onIntent(state, playerId, intent, ctx) {
     if (state.stage !== 'question' || intent.questionIndex !== state.index) return { state }
+    if (ctx.now >= state.deadline) return settle(state, ctx)
     if (hasAnswered(state, playerId) || !ctx.players.some((p) => p.id === playerId)) return { state }
     if (intent.choice >= state.questions[state.index].options.length) return { state }
     return settle({ ...state, answers: { ...state.answers, [playerId]: intent.choice } }, ctx)
@@ -120,7 +135,7 @@ export const trivia: RoundDefinition<TriviaSetup, TriviaState, TriviaIntent, Tri
           },
         }
       case 'trivia-next':
-        return state.stage === 'reveal' ? { state: atQuestion(state, state.index + 1) } : { state }
+        return state.stage === 'reveal' ? { state: atQuestion(state, state.index + 1, ctx.now) } : { state }
       default:
         return { state }
     }
@@ -128,19 +143,29 @@ export const trivia: RoundDefinition<TriviaSetup, TriviaState, TriviaIntent, Tri
 
   onTick: settle,
 
-  skip: (state) => ({ state: atQuestion(state, state.index + 1) }),
+  skip: (state, ctx) => ({ state: atQuestion(state, state.index + 1, ctx.now) }),
 
-  shiftTime: (state, ms) => (state.revealAt === null ? state : { ...state, revealAt: state.revealAt + ms }),
+  shiftTime: (state, ms) => ({
+    ...state,
+    deadline: state.deadline + ms,
+    revealAt: state.revealAt === null ? null : state.revealAt + ms,
+  }),
 
   isFinished: (state) => state.stage === 'done',
 
-  playerView(state, playerId) {
+  playerView(state, playerId, ctx) {
     const answered = hasAnswered(state, playerId) ? state.answers[playerId] : null
     const question = state.questions[state.index]
     if (state.stage === 'reveal') {
       const correct = answered === question.correct
       return { kind: 'trivia-reveal', questionIndex: state.index, answered, correct, points: correct ? TRIVIA_POINTS : 0 }
     }
-    return { kind: 'trivia-question', questionIndex: state.index, optionCount: question.options.length, answered }
+    return {
+      kind: 'trivia-question',
+      questionIndex: state.index,
+      optionCount: question.options.length,
+      answered,
+      msLeft: Math.max(0, state.deadline - ctx.now),
+    }
   },
 }

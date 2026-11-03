@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { RoundSetup } from '../rounds'
-import { beginGame, handleHostAction, handleIntent, phoneView, standings, tick } from './game'
+import { backToLobby, beginGame, handleHostAction, handleIntent, phoneView, standings, tick } from './game'
 import { createRoom, joinRoom, type RoomState } from './lobby'
 
 const avatar = { emoji: '🦊', color: 'red' } as const
@@ -79,6 +79,24 @@ describe('game flow', () => {
     room = handleIntent(room, 'anna', { type: 'pass-decide', questionIndex: 0, target: 'self' }, 0)
     room = handleIntent(room, 'anna', { type: 'pass-answer', questionIndex: 0, text: 'Brasilien' }, 0)
     expect(room.players[0].score).toBe(-200)
+  })
+
+  it('goes back to the lobby after the final standings, with fresh scores and only connected players', () => {
+    let room = beginGame(roomWith('anna', 'bo'), [rounds[1]])
+    expect(backToLobby(room)).toBe(room)
+    room = go(room)
+    room = handleIntent(room, 'anna', { type: 'pass-decide', questionIndex: 0, target: 'self' }, 0)
+    room = handleIntent(room, 'anna', { type: 'pass-answer', questionIndex: 0, text: 'argentina' }, 0)
+    room = handleHostAction(room, { type: 'pass-next' }, 0)
+    room = handleHostAction(room, { type: 'pass-next' }, 0)
+    room = { ...room, players: room.players.map((p) => (p.id === 'bo' ? { ...p, connected: false } : p)) }
+    expect(room.phase).toBe('finished')
+
+    const lobby = backToLobby(room)
+    expect(lobby).toMatchObject({ phase: 'lobby', game: null })
+    expect(lobby.players.map((p) => [p.id, p.score])).toEqual([['anna', 0]])
+    expect(phoneView(lobby, 'anna', 0)).toEqual({ kind: 'lobby' })
+    expect(beginGame(lobby, rounds).phase).toBe('playing')
   })
 
   it('shows the lobby view before the game starts', () => {

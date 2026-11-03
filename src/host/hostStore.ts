@@ -49,6 +49,8 @@ interface HostStore {
   start(): void
   /** A host button press during the game ("Visa svar", "Nästa", override…). */
   act(action: GameAction): void
+  /** After the final standings: back to the lobby to start a new game. */
+  backToLobby(): void
   close(): void
 }
 
@@ -363,6 +365,10 @@ export const useHostStore = create<HostStore>((set, get) => {
 
     act(action) {
       update((room, now) => game.handleHostAction(room, action, now))
+    },
+
+    backToLobby() {
+      update(game.backToLobby)
     },
 
     close() {

@@ -1,12 +1,14 @@
 // "Närmast vinner": everyone types a number. Exactly right scores big, the closest
-// and second closest guesses score too, everyone else gets nothing. No timer: like
-// trivia it reveals after a drumroll once everyone has guessed, or when the host asks.
+// and second closest guesses score too, everyone else gets nothing. Like trivia it
+// reveals after a drumroll once everyone has guessed, time runs out or the host asks.
 import type { RoundContext, RoundDefinition, RoundUpdate } from '../../game/round'
 
 export const EXACT_POINTS = 500
 export const CLOSEST_POINTS = 200
 export const RUNNER_UP_POINTS = 100
 export const AUTO_REVEAL_DELAY_MS = 1_500
+/** Time to guess each question. */
+export const QUESTION_MS = 30_000
 /** Guesses beyond this are typos or trolling; numbers in the packs stay far below. */
 export const MAX_GUESS = 1e12
 
@@ -32,8 +34,10 @@ export interface ClosestState {
   guesses: Record<string, number>
   /** When the reveal happens (after the drumroll), or null if none is scheduled. */
   revealAt: number | null
-  /** The host asked for the reveal, so a newcomer joining does not cancel it. */
+  /** The host asked for the reveal or time ran out, so a newcomer joining does not cancel it. */
   revealForced: boolean
+  /** When guessing closes. */
+  deadline: number
 }
 
 export type ClosestPlace = 'exact' | 'closest' | 'runnerUp'
@@ -50,6 +54,7 @@ export type ClosestView =
       unit?: string
       year?: boolean
       guessed: number | null
+      msLeft: number
     }
   | {
       kind: 'closest-result'
@@ -125,6 +130,10 @@ function settle(state: ClosestState, ctx: RoundContext): RoundUpdate<ClosestStat
   if (state.stage !== 'question') return { state }
   if (state.revealAt !== null && ctx.now >= state.revealAt) return reveal(state)
   if (state.revealForced) return { state }
+  if (ctx.now >= state.deadline) {
+    // Time's up: drumroll, then reveal, whoever is still thinking.
+    return { state: { ...state, revealAt: ctx.now + AUTO_REVEAL_DELAY_MS, revealForced: true } }
+  }
   if (!everyoneGuessed(state, ctx)) {
     // Someone new joined (or reconnected) before the reveal: wait for them too.
     return { state: state.revealAt === null ? state : { ...state, revealAt: null } }
@@ -133,7 +142,7 @@ function settle(state: ClosestState, ctx: RoundContext): RoundUpdate<ClosestStat
   return { state }
 }
 
-function atQuestion(state: ClosestState, index: number): ClosestState {
+function atQuestion(state: ClosestState, index: number, now: number): ClosestState {
   return {
     ...state,
     index,
@@ -141,12 +150,17 @@ function atQuestion(state: ClosestState, index: number): ClosestState {
     guesses: {},
     revealAt: null,
     revealForced: false,
+    deadline: now + QUESTION_MS,
   }
 }
 
 export const closest: RoundDefinition<ClosestSetup, ClosestState, ClosestIntent, ClosestAction, ClosestView> = {
-  start({ questions }) {
-    return atQuestion({ questions, index: 0, stage: 'question', guesses: {}, revealAt: null, revealForced: false }, 0)
+  start({ questions }, ctx) {
+    return atQuestion(
+      { questions, index: 0, stage: 'question', guesses: {}, revealAt: null, revealForced: false, deadline: 0 },
+      0,
+      ctx.now,
+    )
   },
 
   parseIntent(data) {
@@ -159,6 +173,7 @@ export const closest: RoundDefinition<ClosestSetup, ClosestState, ClosestIntent,
 
   onIntent(state, playerId, intent, ctx) {
     if (state.stage !== 'question' || intent.questionIndex !== state.index) return { state }
+    if (ctx.now >= state.deadline) return settle(state, ctx)
     if (hasGuessed(state, playerId) || !ctx.players.some((p) => p.id === playerId)) return { state }
     return settle({ ...state, guesses: { ...state.guesses, [playerId]: intent.value } }, ctx)
   },
@@ -176,7 +191,7 @@ export const closest: RoundDefinition<ClosestSetup, ClosestState, ClosestIntent,
           },
         }
       case 'closest-next':
-        return state.stage === 'reveal' ? { state: atQuestion(state, state.index + 1) } : { state }
+        return state.stage === 'reveal' ? { state: atQuestion(state, state.index + 1, ctx.now) } : { state }
       default:
         return { state }
     }
@@ -184,13 +199,17 @@ export const closest: RoundDefinition<ClosestSetup, ClosestState, ClosestIntent,
 
   onTick: settle,
 
-  skip: (state) => ({ state: atQuestion(state, state.index + 1) }),
+  skip: (state, ctx) => ({ state: atQuestion(state, state.index + 1, ctx.now) }),
 
-  shiftTime: (state, ms) => (state.revealAt === null ? state : { ...state, revealAt: state.revealAt + ms }),
+  shiftTime: (state, ms) => ({
+    ...state,
+    deadline: state.deadline + ms,
+    revealAt: state.revealAt === null ? null : state.revealAt + ms,
+  }),
 
   isFinished: (state) => state.stage === 'done',
 
-  playerView(state, playerId) {
+  playerView(state, playerId, ctx) {
     const guessed = hasGuessed(state, playerId) ? state.guesses[playerId] : null
     const { question, answer, unit, year } = state.questions[state.index]
     if (state.stage === 'reveal') {
@@ -206,6 +225,14 @@ export const closest: RoundDefinition<ClosestSetup, ClosestState, ClosestIntent,
         points: place ? PLACE_POINTS[place] : 0,
       }
     }
-    return { kind: 'closest-question', questionIndex: state.index, question, unit, year, guessed }
+    return {
+      kind: 'closest-question',
+      questionIndex: state.index,
+      question,
+      unit,
+      year,
+      guessed,
+      msLeft: Math.max(0, state.deadline - ctx.now),
+    }
   },
 }

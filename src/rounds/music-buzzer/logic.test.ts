@@ -77,7 +77,7 @@ describe('music buzzer round', () => {
     expect(answer(s, 'bo', '  ', '').state).toBe(s)
   })
 
-  it('running out of the 10 s counts as nothing right', () => {
+  it('running out of the answer time counts as nothing right', () => {
     const s = buzz(playing(), 'bo').state
     expect(musicBuzzer.onTick(s, ctx(T0 + ANSWER_MS - 1)).state.stage).toBe('buzzed')
     const timedOut = musicBuzzer.onTick(s, ctx(T0 + ANSWER_MS))
@@ -85,11 +85,19 @@ describe('music buzzer round', () => {
     expect(timedOut.state.attempts[0]).toMatchObject({ playerId: 'bo', artist: null, title: null })
   })
 
-  it('reveals at the end of the clip, or once everyone has buzzed', () => {
+  it('reveals at the end of the clip, or when the host asks', () => {
     expect(musicBuzzer.onTick(playing(), ctx(T0 + CLIP_MS)).state.stage).toBe('reveal')
-    let s = playing()
-    for (const id of ['anna', 'bo', 'cilla']) s = answer(buzz(s, id).state, id, 'fel', 'fel').state
-    expect(s.stage).toBe('reveal')
+    expect(musicBuzzer.onHostAction(playing(), { type: 'music-reveal' }, ctx()).state.stage).toBe('reveal')
+  })
+
+  it('keeps the song playing and the answer hidden after wrong or half-right buzzes', () => {
+    let s = answer(buzz(playing(), 'anna').state, 'anna', 'Europe', 'fel').state
+    expect(s).toMatchObject({ stage: 'playing', solvedBy: { artist: 'anna', title: null } })
+    expect(musicBuzzer.playerView(s, 'bo', ctx())).toMatchObject({ kind: 'buzzer', stage: 'playing', titleSolved: false })
+    // Even once everyone has used their buzz, nothing is given away before the clip ends.
+    for (const id of ['bo', 'cilla']) s = answer(buzz(s, id).state, id, 'fel', 'fel').state
+    expect(s.stage).toBe('playing')
+    expect(JSON.stringify(musicBuzzer.playerView(s, 'bo', ctx()))).not.toContain('Final Countdown')
   })
 
   it('the host can judge a spoken answer part by part', () => {

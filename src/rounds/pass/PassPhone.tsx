@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { strings } from '../../i18n'
 import { usePlayerStore } from '../../player/playerStore'
 import { AvatarBadge } from '../../ui/AvatarBadge'
+import { PhoneCountdown } from '../../ui/Countdown'
 import { formatPoints } from '../../ui/format'
 import { MAX_ANSWER_LENGTH, type PassView } from './logic'
 
@@ -105,6 +106,7 @@ function Answer({ view }: { view: Extract<PassView, { kind: 'pass-answer' }> }) 
       <p className="text-center text-sm tracking-widest text-fuchsia-200 uppercase">{view.category}</p>
       <p className="rounded-3xl bg-white p-5 text-2xl font-bold text-indigo-950">{view.question}</p>
       <p className="text-center text-lg text-indigo-200">{strings.phone.pass.stake(view.stake)}</p>
+      <PhoneCountdown msLeft={view.msLeft} />
       <input
         autoFocus
         value={text}

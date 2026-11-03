@@ -7,7 +7,8 @@ import { strings } from '../../i18n'
 import { AvatarBadge } from '../../ui/AvatarBadge'
 import { formatNumber, formatPoints } from '../../ui/format'
 import { HostButton } from '../../ui/HostButton'
-import { hasGuessed, PLACE_POINTS, rankedGuesses, type ClosestState } from './logic'
+import { HostCountdown } from '../../ui/Countdown'
+import { hasGuessed, PLACE_POINTS, QUESTION_MS, rankedGuesses, type ClosestState } from './logic'
 
 const PLACE_STYLES = {
   exact: 'bg-yellow-400 text-amber-950 ring-4 ring-white',
@@ -121,6 +122,7 @@ export function ClosestHost({ state, players }: { state: ClosestState; players: 
             ))}
           </div>
         )}
+        {state.stage === 'question' && revealAt === null && <HostCountdown deadline={state.deadline} totalMs={QUESTION_MS} />}
         {revealed ? (
           <HostButton onClick={() => act({ type: 'closest-next' })}>
             {isLast ? strings.closest.toStandings : strings.closest.next}

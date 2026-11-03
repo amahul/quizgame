@@ -6,8 +6,9 @@ import { useHostStore } from '../../host/hostStore'
 import { strings } from '../../i18n'
 import { AvatarBadge } from '../../ui/AvatarBadge'
 import { formatPoints, formatScore } from '../../ui/format'
+import { HostCountdown } from '../../ui/Countdown'
 import { HostButton } from '../../ui/HostButton'
-import { isKept, stakeOf, type PassState } from './logic'
+import { ANSWER_MS, isKept, stakeOf, type PassState } from './logic'
 import { PASS_ANIMATION_MS, PassAnimation } from './PassAnimation'
 
 const KEEP_SPLASH_MS = 1_600
@@ -160,6 +161,7 @@ function Answering({ state, active, answerer }: { state: PassState; active: Play
         </motion.div>
         <p className="text-4xl font-bold">{strings.pass.answering(answerer.name, stakeOf(state))}</p>
       </div>
+      {state.answerDeadline !== null && <HostCountdown deadline={state.answerDeadline} totalMs={ANSWER_MS} />}
     </motion.div>
   )
 }
@@ -184,7 +186,7 @@ function Reveal({ state, answerer }: { state: PassState; answerer: Player }) {
         <AvatarBadge avatar={answerer.avatar} size={96} />
         <div className="text-left">
           <p className="text-3xl text-indigo-200">{strings.pass.answered(answerer.name)}</p>
-          <p className="text-6xl font-black">{state.answer !== null ? `”${state.answer}”` : strings.pass.judgedByHost}</p>
+          <p className="text-6xl font-black">{state.answer !== null ? `”${state.answer}”` : state.timedOut ? strings.pass.timedOut : strings.pass.judgedByHost}</p>
         </div>
       </div>
 

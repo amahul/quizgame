@@ -45,7 +45,7 @@ describe('music rounds', () => {
     expect(musicRace.skip(s, ctx(0)).state).toMatchObject({ index: 1, stage: 'loading' })
   })
 
-  it('buzzer: a pause extends the 10 s answer window too', () => {
+  it('buzzer: a pause extends the answer window too', () => {
     let s = musicBuzzer.start({ tracks }, ctx(0))
     s = musicBuzzer.onHostAction(s, { type: 'music-ready', index: 0 }, ctx(0)).state
     s = musicBuzzer.onIntent(s, 'anna', { type: 'music-buzz', questionIndex: 0 }, ctx(2000)).state

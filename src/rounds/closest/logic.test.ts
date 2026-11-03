@@ -7,6 +7,7 @@ import {
   CLOSEST_POINTS,
   EXACT_POINTS,
   parseGuess,
+  QUESTION_MS,
   placings,
   rankedGuesses,
   RUNNER_UP_POINTS,
@@ -121,11 +122,28 @@ describe('closest round', () => {
     expect(closest.isFinished(state)).toBe(true)
   })
 
+  it('reveals when time runs out and ignores guesses after that', () => {
+    let state = closest.start({ questions }, ctx(0))
+    state = guess(state, 'anna', 200, 1000).state
+    state = closest.onTick(state, ctx(QUESTION_MS)).state
+    expect(state).toMatchObject({ revealAt: QUESTION_MS + AUTO_REVEAL_DELAY_MS, revealForced: true })
+    expect(guess(state, 'bo', 206, QUESTION_MS + 100).state.guesses).toEqual({ anna: 200 })
+    const revealed = closest.onTick(state, ctx(QUESTION_MS + AUTO_REVEAL_DELAY_MS))
+    expect(revealed.scoreDeltas).toEqual({ anna: CLOSEST_POINTS })
+    expect(closest.shiftTime(closest.start({ questions }, ctx(0)), 5000).deadline).toBe(QUESTION_MS + 5000)
+  })
+
   it('never shows the answer on phones before the reveal', () => {
     let state = closest.start({ questions }, ctx())
     state = guess(state, 'anna', 200).state
     const view = closest.playerView(state, 'anna', ctx())
-    expect(view).toEqual({ kind: 'closest-question', questionIndex: 0, question: questions[0].question, guessed: 200 })
+    expect(view).toMatchObject({
+      kind: 'closest-question',
+      questionIndex: 0,
+      question: questions[0].question,
+      guessed: 200,
+      msLeft: QUESTION_MS,
+    })
     expect(JSON.stringify(view)).not.toContain('206')
   })
 

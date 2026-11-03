@@ -1,6 +1,7 @@
 // "Skicka vidare": the active player sees only the category, then keeps the
 // question (±200) or sends it to someone else (±100), who becomes the next active
 // player. Answers are free text, judged by the shared matcher with host override.
+// The answerer has ANSWER_MS to reply; running out of time counts as wrong.
 import { matchAnswer } from '../../game/matcher'
 import type { Player } from '../../game/lobby'
 import { activePlayers, type RoundDefinition, type RoundUpdate } from '../../game/round'
@@ -10,6 +11,8 @@ export const KEEP_POINTS = 200
 export const PASS_POINTS = 100
 export const DEFAULT_QUESTIONS_PER_PLAYER = 2
 export const MAX_ANSWER_LENGTH = 80
+/** Time to answer once the question has been kept or sent. */
+export const ANSWER_MS = 30_000
 
 export interface PassQuestion {
   category: string
@@ -36,6 +39,10 @@ export interface PassState {
   answer: string | null
   correct: boolean | null
   overridden: boolean
+  /** When answering closes, or null outside the answering stage. */
+  answerDeadline: number | null
+  /** The answerer ran out of time. */
+  timedOut: boolean
 }
 
 export type PassIntent =
@@ -57,7 +64,7 @@ export interface PassTarget {
 export type PassView =
   | { kind: 'pass-watch' }
   | { kind: 'pass-choose'; questionIndex: number; category: string; targets: PassTarget[] }
-  | { kind: 'pass-answer'; questionIndex: number; category: string; question: string; stake: number }
+  | { kind: 'pass-answer'; questionIndex: number; category: string; question: string; stake: number; msLeft: number }
   | { kind: 'pass-result'; correct: boolean; points: number }
 
 export const isKept = (state: PassState) => state.answererId === state.activeId
@@ -72,8 +79,14 @@ export function lowestScoring(players: readonly Player[], excludeId?: string): P
   return candidates.reduce<Player | undefined>((low, p) => (!low || p.score < low.score ? p : low), undefined)
 }
 
-function judged(state: PassState, answer: string | null, correct: boolean, overridden: boolean): RoundUpdate<PassState> {
-  const next: PassState = { ...state, stage: 'reveal', answer, correct, overridden }
+function judged(
+  state: PassState,
+  answer: string | null,
+  correct: boolean,
+  overridden: boolean,
+  timedOut = false,
+): RoundUpdate<PassState> {
+  const next: PassState = { ...state, stage: 'reveal', answer, correct, overridden, answerDeadline: null, timedOut }
   const stake = stakeOf(next)
   return { state: next, scoreDeltas: { [next.answererId!]: correct ? stake : -stake } }
 }
@@ -91,6 +104,8 @@ export const pass: RoundDefinition<PassSetup, PassState, PassIntent, PassAction,
       answer: null,
       correct: null,
       overridden: false,
+      answerDeadline: null,
+      timedOut: false,
     }
   },
 
@@ -111,13 +126,17 @@ export const pass: RoundDefinition<PassSetup, PassState, PassIntent, PassAction,
 
     if (intent.type === 'pass-decide') {
       if (state.stage !== 'choosing' || playerId !== state.activeId) return { state }
-      if (intent.target === 'self') return { state: { ...state, stage: 'answering', answererId: playerId } }
+      const deadline = ctx.now + ANSWER_MS
+      if (intent.target === 'self') {
+        return { state: { ...state, stage: 'answering', answererId: playerId, answerDeadline: deadline } }
+      }
       const target = ctx.players.find((p) => p.id === intent.target)
       if (!target || target.id === playerId || !target.connected) return { state }
-      return { state: { ...state, stage: 'answering', answererId: target.id } }
+      return { state: { ...state, stage: 'answering', answererId: target.id, answerDeadline: deadline } }
     }
 
     if (state.stage !== 'answering' || playerId !== state.answererId) return { state }
+    if (state.answerDeadline !== null && ctx.now >= state.answerDeadline) return pass.onTick(state, ctx)
     const text = intent.text.trim()
     if (!text) return { state }
     return judged(state, text, matchAnswer(text, state.questions[state.index].answers).correct, false)
@@ -159,6 +178,8 @@ export const pass: RoundDefinition<PassSetup, PassState, PassIntent, PassAction,
             answer: null,
             correct: null,
             overridden: false,
+            answerDeadline: null,
+            timedOut: false,
           },
         }
       }
@@ -167,7 +188,10 @@ export const pass: RoundDefinition<PassSetup, PassState, PassIntent, PassAction,
     }
   },
 
-  onTick: (state) => ({ state }),
+  onTick(state, ctx) {
+    if (state.stage !== 'answering' || state.answerDeadline === null || ctx.now < state.answerDeadline) return { state }
+    return judged(state, null, false, false, true)
+  },
 
   skip(state, ctx) {
     // After a reveal, skipping is the same as "Nästa fråga"; before it, the same player chooses again.
@@ -182,11 +206,14 @@ export const pass: RoundDefinition<PassSetup, PassState, PassIntent, PassAction,
         answer: null,
         correct: null,
         overridden: false,
+        answerDeadline: null,
+        timedOut: false,
       },
     }
   },
 
-  shiftTime: (state) => state,
+  shiftTime: (state, ms) =>
+    state.answerDeadline === null ? state : { ...state, answerDeadline: state.answerDeadline + ms },
 
   isFinished: (state) => state.stage === 'done',
 
@@ -205,6 +232,7 @@ export const pass: RoundDefinition<PassSetup, PassState, PassIntent, PassAction,
         category: question.category,
         question: question.question,
         stake: stakeOf(state),
+        msLeft: Math.max(0, (state.answerDeadline ?? ctx.now) - ctx.now),
       }
     }
     if (state.stage === 'reveal' && playerId === state.answererId && state.correct !== null) {

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { strings } from '../../i18n'
 import { usePlayerStore } from '../../player/playerStore'
+import { PhoneCountdown } from '../../ui/Countdown'
 import { formatNumber, formatPoints } from '../../ui/format'
 import { parseGuess, type ClosestView } from './logic'
 
@@ -85,6 +86,7 @@ function GuessForm({ view }: { view: Extract<ClosestView, { kind: 'closest-quest
           {t.notANumber}
         </p>
       )}
+      <PhoneCountdown msLeft={view.msLeft} />
       <p className="rounded-3xl bg-white p-5 text-2xl font-bold text-indigo-950">{view.question}</p>
       <div className="flex items-center gap-3">
         <input

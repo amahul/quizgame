@@ -6,7 +6,8 @@ import { useHostStore } from '../../host/hostStore'
 import { strings } from '../../i18n'
 import { AvatarBadge } from '../../ui/AvatarBadge'
 import { HostButton } from '../../ui/HostButton'
-import { answerCounts, hasAnswered, type TriviaState } from './logic'
+import { HostCountdown } from '../../ui/Countdown'
+import { answerCounts, hasAnswered, QUESTION_MS, type TriviaState } from './logic'
 import { OPTION_STYLES, OptionShape } from './options'
 
 export function TriviaHost({ state, players }: { state: TriviaState; players: Player[] }) {
@@ -110,6 +111,7 @@ export function TriviaHost({ state, players }: { state: TriviaState; players: Pl
             ))}
           </div>
         )}
+        {state.stage === 'question' && revealAt === null && <HostCountdown deadline={state.deadline} totalMs={QUESTION_MS} />}
         {revealed ? (
           <HostButton onClick={() => act({ type: 'trivia-next' })}>
             {isLast ? strings.trivia.toStandings : strings.trivia.next}

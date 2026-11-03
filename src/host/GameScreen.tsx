@@ -139,6 +139,7 @@ const WINNER_DRUMROLL_S = 1.6
 
 function Standings({ room }: { room: RoomState }) {
   const act = useHostStore((s) => s.act)
+  const backToLobby = useHostStore((s) => s.backToLobby)
   const final = isFinalRound(room.game!)
   const rows = standings(room.players)
   // Ten players have to fit on one screen.
@@ -183,7 +184,13 @@ function Standings({ room }: { room: RoomState }) {
           </motion.li>
         ))}
       </ol>
-      {!final && <HostButton onClick={() => act({ type: 'continue' })}>{strings.game.nextRound}</HostButton>}
+      {final ? (
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: WINNER_DRUMROLL_S + 1 }}>
+          <HostButton onClick={backToLobby}>{strings.game.backToLobby}</HostButton>
+        </motion.div>
+      ) : (
+        <HostButton onClick={() => act({ type: 'continue' })}>{strings.game.nextRound}</HostButton>
+      )}
     </main>
   )
 }

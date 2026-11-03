@@ -49,6 +49,16 @@ export function beginGame(room: RoomState, rounds: RoundSetup[]): RoomState {
   return { ...room, phase: 'playing', game: { rounds, roundIndex: 0, stage: 'intro', round: null, pausedAt: null } }
 }
 
+/**
+ * After the final standings: back to the lobby for a new game. Connected players
+ * stay with their scores reset; disconnected ones are dropped (they can join again).
+ */
+export function backToLobby(room: RoomState): RoomState {
+  if (room.phase !== 'finished') return room
+  const players = room.players.filter((p) => p.connected).map((p) => ({ ...p, score: 0 }))
+  return { ...room, phase: 'lobby', game: null, players }
+}
+
 export function isFinalRound(game: GameState): boolean {
   return game.roundIndex === game.rounds.length - 1
 }

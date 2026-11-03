@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Player } from '../../game/lobby'
 import type { RoundContext } from '../../game/round'
-import { KEEP_POINTS, lowestScoring, pass, PASS_POINTS, type PassQuestion, type PassState } from './logic'
+import { ANSWER_MS, KEEP_POINTS, lowestScoring, pass, PASS_POINTS, type PassQuestion, type PassState } from './logic'
 
 const q = (n: number): PassQuestion => ({ category: `Kat ${n}`, question: `Fråga ${n}`, answers: ['Canberra'] })
 const questions = Array.from({ length: 10 }, (_, i) => q(i))
@@ -121,6 +121,17 @@ describe('pass round', () => {
     expect(pass.isFinished(s)).toBe(true)
   })
 
+  it('running out of answer time counts as wrong', () => {
+    const s = decide(start(), 'bo', 'self').state
+    expect(s.answerDeadline).not.toBeNull()
+    const deadline = s.answerDeadline!
+    expect(pass.onTick(s, { ...ctx(), now: deadline - 1 }).state).toBe(s)
+    const timedOut = pass.onTick(s, { ...ctx(), now: deadline })
+    expect(timedOut.state).toMatchObject({ stage: 'reveal', correct: false, timedOut: true, answer: null })
+    expect(timedOut.scoreDeltas).toEqual({ bo: -KEEP_POINTS })
+    expect(pass.shiftTime(s, 5000).answerDeadline).toBe(deadline + 5000)
+  })
+
   it('phones only see what concerns them, and never the answer', () => {
     let s = start()
     expect(pass.playerView(s, 'bo', ctx())).toEqual({
@@ -141,6 +152,7 @@ describe('pass round', () => {
       category: 'Kat 0',
       question: 'Fråga 0',
       stake: PASS_POINTS,
+      msLeft: ANSWER_MS,
     })
     expect(JSON.stringify(pass.playerView(s, 'anna', ctx()))).not.toContain('Canberra')
     expect(pass.playerView(s, 'bo', ctx())).toEqual({ kind: 'pass-watch' })

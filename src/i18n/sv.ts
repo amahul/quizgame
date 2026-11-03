@@ -133,17 +133,17 @@ export const sv = {
   rounds: {
     trivia: {
       title: 'Allmänbildning',
-      rules: 'Svara på mobilen. Rätt svar ger 100 poäng – fel svar kostar ingenting.',
+      rules: 'Svara på mobilen inom 20 sekunder. Rätt svar ger 100 poäng – fel svar kostar ingenting.',
     },
     closest: {
       title: 'Närmast vinner',
       rules:
-        'Skriv in din gissning på mobilen. Exakt rätt ger 500 poäng, närmast ger 200 och näst närmast 100. Alla andra får noll – så våga gissa!',
+        'Skriv in din gissning på mobilen – du har 30 sekunder. Exakt rätt ger 500 poäng, närmast ger 200 och näst närmast 100. Alla andra får noll – så våga gissa!',
     },
     pass: {
       title: 'Skicka vidare',
       rules:
-        'Du ser bara kategorin. Ta frågan själv (±200 poäng) eller skicka den till någon annan (±100 poäng). Den som får frågan väljer härnäst.',
+        'Du ser bara kategorin. Ta frågan själv (±200 poäng) eller skicka den till någon annan (±100 poäng). Den som svarar har 30 sekunder på sig. Den som får frågan väljer härnäst.',
     },
     proverbs: {
       title: 'Gissa ordspråket',
@@ -163,7 +163,7 @@ export const sv = {
     musicBuzzer: {
       title: 'Musik – buzzer',
       rules:
-        'Tryck BUZZ när du känner igen låten! Musiken pausas och du har 10 sekunder på dig att skriva artist och låt. Varje rätt del ger 250 poäng. Det som ingen har klarat än kan nästa person buzza in på. Alla buzzar en gång per låt – helt fel kostar 250 poäng.',
+        'Tryck BUZZ när du känner igen låten! Musiken pausas och du har 15 sekunder på dig att skriva artist och låt. Varje rätt del ger 250 poäng. Det som ingen har klarat än kan nästa person buzza in på. Alla buzzar en gång per låt – helt fel kostar 250 poäng.',
     },
   },
   music: {
@@ -210,7 +210,10 @@ export const sv = {
     finalStandings: 'Slutresultat',
     winner: (name: string) => `${name} vinner!`,
     nextRound: 'Nästa runda',
+    backToLobby: 'Nytt spel – tillbaka till lobbyn',
     fact: 'Visste du att…',
+    timeLeft: (seconds: number) => `${seconds} s`,
+    timeUp: 'Tiden är slut!',
   },
   letters: {
     pointsNow: (points: number) => `${points} poäng just nu`,
@@ -250,6 +253,7 @@ export const sv = {
     judgeWrong: 'Underkänn',
     answered: (name: string) => `${name} svarade`,
     judgedByHost: 'Bedömt av värden',
+    timedOut: 'Hann inte svara',
     overridden: 'Ändrat av värden',
     correct: 'Rätt!',
     wrong: 'Fel!',

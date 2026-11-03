@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Player } from '../../game/lobby'
 import type { RoundContext } from '../../game/round'
-import { answerCounts, AUTO_REVEAL_DELAY_MS, trivia, TRIVIA_POINTS, type TriviaQuestion, type TriviaState } from './logic'
+import { answerCounts, AUTO_REVEAL_DELAY_MS, QUESTION_MS, trivia, TRIVIA_POINTS, type TriviaQuestion, type TriviaState } from './logic'
 
 const questions: TriviaQuestion[] = [
   { question: 'Q1', options: ['a', 'b', 'c', 'd'], correct: 1 },
@@ -112,6 +112,23 @@ describe('trivia round', () => {
     expect(trivia.isFinished(state)).toBe(true)
   })
 
+  it('reveals when time runs out and ignores answers after that', () => {
+    let state = trivia.start({ questions }, ctx(0))
+    state = answer(state, 'anna', 1, 1000).state
+    state = trivia.onTick(state, ctx(QUESTION_MS)).state
+    expect(state).toMatchObject({ stage: 'question', revealAt: QUESTION_MS + AUTO_REVEAL_DELAY_MS, revealForced: true })
+    expect(answer(state, 'bo', 1, QUESTION_MS + 100).state.answers).toEqual({ anna: 1 })
+    const revealed = trivia.onTick(state, ctx(QUESTION_MS + AUTO_REVEAL_DELAY_MS))
+    expect(revealed.state.stage).toBe('reveal')
+    expect(revealed.scoreDeltas).toEqual({ anna: TRIVIA_POINTS })
+  })
+
+  it('a pause moves the deadline, and each new question gets the full time', () => {
+    const state = trivia.start({ questions }, ctx(0))
+    expect(trivia.shiftTime(state, 5000).deadline).toBe(QUESTION_MS + 5000)
+    expect(trivia.skip(state, ctx(50_000)).state.deadline).toBe(50_000 + QUESTION_MS)
+  })
+
   it('shows phones only buttons, then their own result', () => {
     let state = trivia.start({ questions }, ctx())
     expect(trivia.playerView(state, 'anna', ctx())).toEqual({
@@ -119,6 +136,7 @@ describe('trivia round', () => {
       questionIndex: 0,
       optionCount: 4,
       answered: null,
+      msLeft: QUESTION_MS,
     })
     state = answer(state, 'anna', 1).state
     state = trivia.onTick(trivia.onHostAction(state, { type: 'trivia-reveal' }, ctx()).state, ctx(AUTO_REVEAL_DELAY_MS)).state

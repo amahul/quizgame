@@ -1,8 +1,9 @@
 // "Musik – buzzer": the first buzz (in host arrival order) pauses the music. That
-// player has 10 s to type the artist and the song title. Each part they get right
-// scores and is solved for good; whatever is still unsolved is up for grabs by the
-// next player to buzz. Everyone buzzes at most once per song, and a buzz with
-// nothing right costs points.
+// player has 15 s to type the artist and the song title. Each part they get right
+// scores and is solved for good; whatever is still unsolved stays hidden and the
+// song plays on, up for grabs by the next player to buzz. Everyone buzzes at most
+// once per song, and a buzz with nothing right costs points. The answer is only
+// shown once both parts are solved, the clip runs out or the host reveals it.
 import type { RoundContext, RoundDefinition, RoundUpdate } from '../../game/round'
 import {
   CLIP_MS,
@@ -23,7 +24,7 @@ import {
 export const BUZZ_PART_POINTS = 250
 /** A buzz where nothing new was right. */
 export const BUZZ_WRONG_POINTS = -250
-export const ANSWER_MS = 10_000
+export const ANSWER_MS = 15_000
 export const MAX_ANSWER_LENGTH = 80
 
 export interface MusicBuzzerSetup {
@@ -123,9 +124,8 @@ function judge(
     title: attempt.titleCorrect ? playerId : state.solvedBy.title,
   }
   const lockedIds = [...state.lockedIds, playerId]
-  const connected = ctx.players.filter((p) => p.connected)
-  const nobodyLeft = connected.every((p) => lockedIds.includes(p.id))
-  const done = (solvedBy.artist !== null && solvedBy.title !== null) || nobodyLeft
+  // Even when everyone has buzzed the song plays on: the answer isn't given away early.
+  const done = solvedBy.artist !== null && solvedBy.title !== null
   const next: MusicBuzzerState = {
     ...state,
     solvedBy,
