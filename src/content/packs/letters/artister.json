@@ -1,0 +1,171 @@
+{
+  "id": "tema-artister",
+  "name": "Svenska artister",
+  "roundType": "letters",
+  "variant": "themes",
+  "theme": "Svenska artister",
+  "language": "sv",
+  "region": "sverige",
+  "difficulty": "medium",
+  "items": [
+    {
+      "id": "loreen",
+      "prompt": "Vann Eurovision 2012 med ”Euphoria”",
+      "answer": "Loreen"
+    },
+    {
+      "id": "robyn",
+      "prompt": "Sjöng ”Dancing On My Own”",
+      "answer": "Robyn"
+    },
+    {
+      "id": "avicii",
+      "prompt": "DJ:n bakom ”Wake Me Up”",
+      "answer": "Avicii"
+    },
+    {
+      "id": "zara-larsson",
+      "prompt": "Popstjärna med hitten ”Lush Life”",
+      "answer": "Zara Larsson",
+      "aliases": [
+        "Zara"
+      ]
+    },
+    {
+      "id": "mans-zelmerlow",
+      "prompt": "Vann Eurovision 2015 med ”Heroes”",
+      "answer": "Måns Zelmerlöw",
+      "aliases": [
+        "Måns",
+        "Zelmerlöw"
+      ]
+    },
+    {
+      "id": "carola",
+      "prompt": "Sjöng ”Fångad av en stormvind”",
+      "answer": "Carola"
+    },
+    {
+      "id": "roxette",
+      "prompt": "Duon bakom ”The Look”",
+      "answer": "Roxette"
+    },
+    {
+      "id": "europe",
+      "prompt": "Bandet bakom ”The Final Countdown”",
+      "answer": "Europe"
+    },
+    {
+      "id": "abba",
+      "prompt": "Gruppen med Agnetha, Björn, Benny och Anni-Frid",
+      "answer": "ABBA"
+    },
+    {
+      "id": "hakan-hellstrom",
+      "prompt": "Sjöng ”Känn ingen sorg för mig Göteborg”",
+      "answer": "Håkan Hellström",
+      "aliases": [
+        "Håkan"
+      ]
+    },
+    {
+      "id": "evert-taube",
+      "prompt": "Visdiktaren bakom ”Calle Schewens vals”",
+      "answer": "Evert Taube",
+      "aliases": [
+        "Taube"
+      ]
+    },
+    {
+      "id": "tomas-ledin",
+      "prompt": "Sjöng ”Sommaren är kort”",
+      "answer": "Tomas Ledin",
+      "aliases": [
+        "Ledin"
+      ]
+    },
+    {
+      "id": "ace-of-base",
+      "prompt": "Gruppen bakom ”All That She Wants”",
+      "answer": "Ace of Base"
+    },
+    {
+      "id": "bjorn-afzelius",
+      "prompt": "Sjöng ”Tusen bitar”",
+      "answer": "Björn Afzelius",
+      "aliases": [
+        "Afzelius"
+      ]
+    },
+    {
+      "id": "the-cardigans",
+      "prompt": "Bandet bakom ”Lovefool”",
+      "answer": "The Cardigans",
+      "aliases": [
+        "Cardigans"
+      ]
+    },
+    {
+      "id": "eva-dahlgren",
+      "prompt": "Sjöng ”Vem tänder stjärnorna”",
+      "answer": "Eva Dahlgren"
+    },
+    {
+      "id": "lena-philipsson",
+      "prompt": "Vann Melodifestivalen 2004 med ”Det gör ont”",
+      "answer": "Lena Philipsson"
+    },
+    {
+      "id": "gyllene-tider",
+      "prompt": "Bandet bakom ”Sommartider”",
+      "answer": "Gyllene Tider"
+    },
+    {
+      "id": "ulf-lundell",
+      "prompt": "Sjöng ”Öppna landskap”",
+      "answer": "Ulf Lundell",
+      "aliases": [
+        "Lundell"
+      ]
+    },
+    {
+      "id": "ted-gardestad",
+      "prompt": "Sjöng ”Jag vill ha en egen måne”",
+      "answer": "Ted Gärdestad",
+      "aliases": [
+        "Gärdestad"
+      ]
+    },
+    {
+      "id": "laleh",
+      "prompt": "Sångerskan bakom ”Some Die Young”",
+      "answer": "Laleh"
+    },
+    {
+      "id": "icona-pop",
+      "prompt": "Duon bakom ”I Love It”",
+      "answer": "Icona Pop"
+    },
+    {
+      "id": "monica-zetterlund",
+      "prompt": "Sjöng ”Sakta vi gå genom stan”",
+      "answer": "Monica Zetterlund",
+      "aliases": [
+        "Zetterlund"
+      ]
+    },
+    {
+      "id": "tove-lo",
+      "prompt": "Sångerskan bakom ”Habits (Stay High)”",
+      "answer": "Tove Lo"
+    },
+    {
+      "id": "veronica-maggio",
+      "prompt": "Sjöng ”Jag kommer”",
+      "answer": "Veronica Maggio",
+      "aliases": [
+        "Maggio"
+      ]
+    }
+  ]
+}

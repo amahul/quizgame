@@ -1,0 +1,417 @@
+{
+  "id": "musik-klassiker",
+  "name": "Musik – kända låtar",
+  "roundType": "music",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "40 kända låtar från 1950-talet till i dag, hälften svenska. Ljudet är Deezers 30-sekundersklipp.",
+  "items": [
+    {
+      "id": "abba-dancing-queen",
+      "artist": "ABBA",
+      "title": "Dancing Queen",
+      "year": 1976,
+      "region": "sverige",
+      "deezerId": 884025,
+      "search": "ABBA Dancing Queen"
+    },
+    {
+      "id": "queen-bohemian-rhapsody",
+      "artist": "Queen",
+      "title": "Bohemian Rhapsody",
+      "year": 1975,
+      "region": "internationellt",
+      "deezerId": 4091937401,
+      "search": "Queen Bohemian Rhapsody"
+    },
+    {
+      "id": "europe-the-final-countdown",
+      "artist": "Europe",
+      "title": "The Final Countdown",
+      "year": 1986,
+      "region": "sverige",
+      "deezerId": 858371,
+      "search": "Europe The Final Countdown"
+    },
+    {
+      "id": "michael-jackson-billie-jean",
+      "artist": "Michael Jackson",
+      "title": "Billie Jean",
+      "year": 1982,
+      "region": "internationellt",
+      "deezerId": 4603408,
+      "search": "Michael Jackson Billie Jean",
+      "artistAliases": [
+        "MJ"
+      ]
+    },
+    {
+      "id": "roxette-the-look",
+      "artist": "Roxette",
+      "title": "The Look",
+      "year": 1989,
+      "region": "sverige",
+      "deezerId": 3092167,
+      "search": "Roxette The Look"
+    },
+    {
+      "id": "toto-africa",
+      "artist": "Toto",
+      "title": "Africa",
+      "year": 1982,
+      "region": "internationellt",
+      "deezerId": 1079668,
+      "search": "Toto Africa",
+      "titleAliases": [
+        "Afrika"
+      ]
+    },
+    {
+      "id": "avicii-wake-me-up",
+      "artist": "Avicii",
+      "title": "Wake Me Up",
+      "year": 2013,
+      "region": "sverige",
+      "deezerId": 70266756,
+      "search": "Avicii Wake Me Up"
+    },
+    {
+      "id": "adele-rolling-in-the-deep",
+      "artist": "Adele",
+      "title": "Rolling in the Deep",
+      "year": 2010,
+      "region": "internationellt",
+      "deezerId": 8086126,
+      "search": "Adele Rolling in the Deep"
+    },
+    {
+      "id": "hakan-hellstrom-kann-ingen-sorg-for-mig-goteborg",
+      "artist": "Håkan Hellström",
+      "title": "Känn ingen sorg för mig Göteborg",
+      "year": 2000,
+      "region": "sverige",
+      "deezerId": 3480546,
+      "search": "Håkan Hellström Känn ingen sorg för mig Göteborg",
+      "artistAliases": [
+        "Håkan"
+      ],
+      "titleAliases": [
+        "Känn ingen sorg"
+      ]
+    },
+    {
+      "id": "a-ha-take-on-me",
+      "artist": "a-ha",
+      "title": "Take On Me",
+      "year": 1985,
+      "region": "internationellt",
+      "deezerId": 664107,
+      "search": "a-ha Take On Me"
+    },
+    {
+      "id": "ace-of-base-all-that-she-wants",
+      "artist": "Ace of Base",
+      "title": "All That She Wants",
+      "year": 1992,
+      "region": "sverige",
+      "deezerId": 94676692,
+      "search": "Ace of Base All That She Wants"
+    },
+    {
+      "id": "the-beatles-hey-jude",
+      "artist": "The Beatles",
+      "title": "Hey Jude",
+      "year": 1968,
+      "region": "internationellt",
+      "deezerId": 126848613,
+      "search": "The Beatles Hey Jude"
+    },
+    {
+      "id": "the-cardigans-lovefool",
+      "artist": "The Cardigans",
+      "title": "Lovefool",
+      "year": 1996,
+      "region": "sverige",
+      "deezerId": 910474,
+      "search": "The Cardigans Lovefool"
+    },
+    {
+      "id": "elvis-presley-jailhouse-rock",
+      "artist": "Elvis Presley",
+      "title": "Jailhouse Rock",
+      "year": 1957,
+      "region": "internationellt",
+      "deezerId": 6596867,
+      "search": "Elvis Presley Jailhouse Rock",
+      "artistAliases": [
+        "Elvis"
+      ]
+    },
+    {
+      "id": "robyn-dancing-on-my-own",
+      "artist": "Robyn",
+      "title": "Dancing On My Own",
+      "year": 2010,
+      "region": "sverige",
+      "deezerId": 942969782,
+      "search": "Robyn Dancing On My Own"
+    },
+    {
+      "id": "madonna-like-a-prayer",
+      "artist": "Madonna",
+      "title": "Like a Prayer",
+      "year": 1989,
+      "region": "internationellt",
+      "deezerId": 664507,
+      "search": "Madonna Like a Prayer"
+    },
+    {
+      "id": "swedish-house-mafia-don-t-you-worry-child",
+      "artist": "Swedish House Mafia",
+      "title": "Don't You Worry Child",
+      "year": 2012,
+      "region": "sverige",
+      "deezerId": 60842360,
+      "search": "Swedish House Mafia Don't You Worry Child",
+      "artistAliases": [
+        "SHM"
+      ]
+    },
+    {
+      "id": "nirvana-smells-like-teen-spirit",
+      "artist": "Nirvana",
+      "title": "Smells Like Teen Spirit",
+      "year": 1991,
+      "region": "internationellt",
+      "deezerId": 13791930,
+      "search": "Nirvana Smells Like Teen Spirit",
+      "titleAliases": [
+        "Teen Spirit"
+      ]
+    },
+    {
+      "id": "loreen-euphoria",
+      "artist": "Loreen",
+      "title": "Euphoria",
+      "year": 2012,
+      "region": "sverige",
+      "deezerId": 67466760,
+      "search": "Loreen Euphoria"
+    },
+    {
+      "id": "spice-girls-wannabe",
+      "artist": "Spice Girls",
+      "title": "Wannabe",
+      "year": 1996,
+      "region": "internationellt",
+      "deezerId": 3133738,
+      "search": "Spice Girls Wannabe"
+    },
+    {
+      "id": "gyllene-tider-sommartider",
+      "artist": "Gyllene Tider",
+      "title": "Sommartider",
+      "year": 1982,
+      "region": "sverige",
+      "deezerId": 3480470,
+      "search": "Gyllene Tider Sommartider"
+    },
+    {
+      "id": "britney-spears-baby-one-more-time",
+      "artist": "Britney Spears",
+      "title": "...Baby One More Time",
+      "year": 1998,
+      "region": "internationellt",
+      "deezerId": 540175,
+      "search": "Britney Spears ...Baby One More Time"
+    },
+    {
+      "id": "ted-gardestad-jag-vill-ha-en-egen-mane",
+      "artist": "Ted Gärdestad",
+      "title": "Jag vill ha en egen måne",
+      "year": 1972,
+      "region": "sverige",
+      "deezerId": 909686862,
+      "search": "Ted Gärdestad Jag vill ha en egen måne",
+      "artistAliases": [
+        "Gärdestad"
+      ],
+      "titleAliases": [
+        "En egen måne"
+      ]
+    },
+    {
+      "id": "beyonce-crazy-in-love",
+      "artist": "Beyoncé",
+      "title": "Crazy in Love",
+      "year": 2003,
+      "region": "internationellt",
+      "deezerId": 609244,
+      "search": "Beyoncé Crazy in Love",
+      "artistAliases": [
+        "Beyonce"
+      ]
+    },
+    {
+      "id": "tomas-ledin-sommaren-ar-kort",
+      "artist": "Tomas Ledin",
+      "title": "Sommaren är kort",
+      "year": 1981,
+      "region": "sverige",
+      "deezerId": 93842676,
+      "search": "Tomas Ledin Sommaren är kort"
+    },
+    {
+      "id": "daft-punk-get-lucky",
+      "artist": "Daft Punk",
+      "title": "Get Lucky",
+      "year": 2013,
+      "region": "internationellt",
+      "deezerId": 67238735,
+      "search": "Daft Punk Get Lucky",
+      "artistAliases": [
+        "Pharrell",
+        "Pharrell Williams"
+      ]
+    },
+    {
+      "id": "lisa-ekdahl-vem-vet",
+      "artist": "Lisa Ekdahl",
+      "title": "Vem vet",
+      "year": 1994,
+      "region": "sverige",
+      "deezerId": 3534714,
+      "search": "Lisa Ekdahl Vem vet"
+    },
+    {
+      "id": "mark-ronson-uptown-funk",
+      "artist": "Mark Ronson",
+      "title": "Uptown Funk",
+      "year": 2014,
+      "region": "internationellt",
+      "deezerId": 92734438,
+      "search": "Mark Ronson Uptown Funk",
+      "artistAliases": [
+        "Bruno Mars"
+      ]
+    },
+    {
+      "id": "kent-musik-non-stop",
+      "artist": "Kent",
+      "title": "Musik non stop",
+      "year": 1999,
+      "region": "sverige",
+      "deezerId": 1023918,
+      "search": "Kent Musik non stop"
+    },
+    {
+      "id": "ed-sheeran-shape-of-you",
+      "artist": "Ed Sheeran",
+      "title": "Shape of You",
+      "year": 2017,
+      "region": "internationellt",
+      "deezerId": 139470659,
+      "search": "Ed Sheeran Shape of You"
+    },
+    {
+      "id": "veronica-maggio-jag-kommer",
+      "artist": "Veronica Maggio",
+      "title": "Jag kommer",
+      "year": 2011,
+      "region": "sverige",
+      "deezerId": 44112901,
+      "search": "Veronica Maggio Jag kommer"
+    },
+    {
+      "id": "dua-lipa-levitating",
+      "artist": "Dua Lipa",
+      "title": "Levitating",
+      "year": 2020,
+      "region": "internationellt",
+      "deezerId": 1124841682,
+      "search": "Dua Lipa Levitating"
+    },
+    {
+      "id": "laleh-some-die-young",
+      "artist": "Laleh",
+      "title": "Some Die Young",
+      "year": 2012,
+      "region": "sverige",
+      "deezerId": 16032013,
+      "search": "Laleh Some Die Young"
+    },
+    {
+      "id": "the-weeknd-blinding-lights",
+      "artist": "The Weeknd",
+      "title": "Blinding Lights",
+      "year": 2019,
+      "region": "internationellt",
+      "deezerId": 908604612,
+      "search": "The Weeknd Blinding Lights"
+    },
+    {
+      "id": "zara-larsson-lush-life",
+      "artist": "Zara Larsson",
+      "title": "Lush Life",
+      "year": 2015,
+      "region": "sverige",
+      "deezerId": 144389048,
+      "search": "Zara Larsson Lush Life",
+      "artistAliases": [
+        "Zara"
+      ]
+    },
+    {
+      "id": "whitney-houston-i-wanna-dance-with-somebody",
+      "artist": "Whitney Houston",
+      "title": "I Wanna Dance with Somebody",
+      "year": 1987,
+      "region": "internationellt",
+      "deezerId": 75981528,
+      "search": "Whitney Houston I Wanna Dance with Somebody",
+      "titleAliases": [
+        "I Wanna Dance with Somebody (Who Loves Me)"
+      ]
+    },
+    {
+      "id": "icona-pop-i-love-it",
+      "artist": "Icona Pop",
+      "title": "I Love It",
+      "year": 2012,
+      "region": "sverige",
+      "deezerId": 2845377112,
+      "search": "Icona Pop I Love It"
+    },
+    {
+      "id": "bee-gees-stayin-alive",
+      "artist": "Bee Gees",
+      "title": "Stayin' Alive",
+      "year": 1977,
+      "region": "internationellt",
+      "deezerId": 427219162,
+      "search": "Bee Gees Stayin' Alive"
+    },
+    {
+      "id": "mans-zelmerlow-heroes",
+      "artist": "Måns Zelmerlöw",
+      "title": "Heroes",
+      "year": 2015,
+      "region": "sverige",
+      "deezerId": 95585876,
+      "search": "Måns Zelmerlöw Heroes",
+      "artistAliases": [
+        "Måns"
+      ]
+    },
+    {
+      "id": "bon-jovi-livin-on-a-prayer",
+      "artist": "Bon Jovi",
+      "title": "Livin' on a Prayer",
+      "year": 1986,
+      "region": "internationellt",
+      "deezerId": 538660022,
+      "search": "Bon Jovi Livin' on a Prayer"
+    }
+  ]
+}

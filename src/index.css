@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  /* Matches the bottom of the body gradient, so overscroll never shows white. */
+  background: #0f0a2e;
+  /* No double-tap zoom on buttons; pinch-zoom still works. */
+  touch-action: manipulation;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* iOS zooms into inputs with text under 16px; never let that happen. In the base
+   layer so Tailwind's text-* utilities (all larger) still win. */
+@layer base {
+  input,
+  select,
+  textarea {
+    font-size: max(16px, 1em);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  color: white;
+  background: radial-gradient(ellipse at top, #4c1d95, #1e1b4b 60%, #0f0a2e);
+  background-attachment: fixed;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}

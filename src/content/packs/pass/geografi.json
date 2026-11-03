@@ -1,0 +1,173 @@
+{
+  "id": "skicka-vidare-geografi",
+  "name": "Skicka vidare – geografi",
+  "roundType": "pass",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Geografifrågor med korta fritextsvar.",
+  "items": [
+    {
+      "id": "suezkanalen",
+      "category": "Geografi",
+      "question": "I vilket land ligger Suezkanalen?",
+      "answers": ["Egypten"],
+      "region": "internationellt"
+    },
+    {
+      "id": "usa-delstater",
+      "category": "Geografi",
+      "question": "Hur många delstater har USA?",
+      "answers": ["50", "femtio"],
+      "region": "internationellt"
+    },
+    {
+      "id": "storbritannien-lander",
+      "category": "Geografi",
+      "question": "Hur många länder består Storbritannien av?",
+      "answers": ["4", "fyra"],
+      "region": "internationellt",
+      "fact": "England, Skottland, Wales och Nordirland."
+    },
+    {
+      "id": "panama-grannar",
+      "category": "Geografi",
+      "question": "Vilket sydamerikanskt land gränsar till Panama?",
+      "answers": ["Colombia"],
+      "region": "internationellt"
+    },
+    {
+      "id": "themsen",
+      "category": "Geografi",
+      "question": "Vilken huvudstad flyter Themsen genom?",
+      "answers": ["London"],
+      "region": "internationellt"
+    },
+    {
+      "id": "venedig",
+      "category": "Geografi",
+      "question": "Vilken italiensk stad kallas ”den flytande staden”?",
+      "answers": ["Venedig", "Venezia"],
+      "region": "internationellt"
+    },
+    {
+      "id": "nordligaste-sydamerika",
+      "category": "Geografi",
+      "question": "I vilket land ligger Sydamerikas nordligaste punkt?",
+      "answers": ["Colombia"],
+      "region": "internationellt"
+    },
+    {
+      "id": "gibraltarsundet",
+      "category": "Geografi",
+      "question": "Vad heter sundet mellan Spanien och Marocko?",
+      "answers": ["Gibraltarsundet", "Gibraltar"],
+      "region": "internationellt"
+    },
+    {
+      "id": "wellington",
+      "category": "Geografi",
+      "question": "Vad heter Nya Zeelands huvudstad?",
+      "answers": ["Wellington"],
+      "region": "internationellt"
+    },
+    {
+      "id": "smygehuk",
+      "category": "Geografi",
+      "question": "Vad heter Sveriges sydligaste udde?",
+      "answers": ["Smygehuk", "Smygehamn"],
+      "region": "sverige"
+    },
+    {
+      "id": "seine-paris",
+      "category": "Geografi",
+      "question": "Vad heter floden som rinner genom Paris?",
+      "answers": ["Seine", "Seinen"],
+      "region": "internationellt"
+    },
+    {
+      "id": "ishotellet",
+      "category": "Geografi",
+      "question": "I vilken by i Lappland bygger man Icehotel av is varje vinter?",
+      "answers": ["Jukkasjärvi"],
+      "region": "sverige"
+    },
+    {
+      "id": "marianergraven",
+      "category": "Geografi",
+      "question": "Vad heter havets djupaste ställe, cirka 11 km ner i Stilla havet?",
+      "answers": ["Marianergraven", "Marianerna", "Challenger Deep"],
+      "region": "internationellt"
+    },
+    {
+      "id": "mecka",
+      "category": "Geografi",
+      "question": "I vilket land ligger Mecka?",
+      "answers": ["Saudiarabien"],
+      "region": "internationellt"
+    },
+    {
+      "id": "lombard-street",
+      "category": "Geografi",
+      "question": "I vilken amerikansk stad ligger den slingriga gatan Lombard Street?",
+      "answers": ["San Francisco"],
+      "region": "internationellt"
+    },
+    {
+      "id": "dalarnas-museum",
+      "category": "Geografi",
+      "question": "I vilken stad ligger Dalarnas museum?",
+      "answers": ["Falun"],
+      "region": "sverige"
+    },
+    {
+      "id": "hamburg",
+      "category": "Geografi",
+      "question": "Vilken är Tysklands största hamnstad?",
+      "answers": ["Hamburg"],
+      "region": "internationellt"
+    },
+    {
+      "id": "tourmalet",
+      "category": "Geografi",
+      "question": "I vilken bergskedja ligger cykelklassikern Col du Tourmalet?",
+      "answers": ["Pyrenéerna", "Pyreneerna"],
+      "region": "internationellt"
+    },
+    {
+      "id": "balaton",
+      "category": "Geografi",
+      "question": "I vilket land ligger sjön Balaton?",
+      "answers": ["Ungern"],
+      "region": "internationellt"
+    },
+    {
+      "id": "andorra",
+      "category": "Geografi",
+      "question": "Andorra ligger mellan Frankrike och vilket land?",
+      "answers": ["Spanien"],
+      "region": "internationellt"
+    },
+    {
+      "id": "oaxaca",
+      "category": "Geografi",
+      "question": "I vilket land ligger Oaxaca och Puerto Escondido?",
+      "answers": ["Mexiko", "Mexico"],
+      "region": "internationellt"
+    },
+    {
+      "id": "treriksroset",
+      "category": "Geografi",
+      "question": "Vad heter platsen längst i norr där Sverige, Norge och Finland möts?",
+      "answers": ["Treriksröset", "Treriksrøysa"],
+      "region": "sverige"
+    },
+    {
+      "id": "golden-gate",
+      "category": "Geografi",
+      "question": "I vilken stad ligger Golden Gate-bron?",
+      "answers": ["San Francisco"],
+      "region": "internationellt"
+    }
+  ]
+}

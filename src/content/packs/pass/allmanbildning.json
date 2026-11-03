@@ -1,0 +1,208 @@
+{
+  "id": "skicka-vidare-allmanbildning",
+  "name": "Skicka vidare – allmänbildning",
+  "roundType": "pass",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Allmänbildning med korta fritextsvar.",
+  "items": [
+    {
+      "id": "storsta-kontinenten",
+      "category": "Geografi",
+      "question": "Vilken är världens största kontinent till ytan?",
+      "answers": ["Asien"],
+      "region": "internationellt"
+    },
+    {
+      "id": "irans-huvudstad",
+      "category": "Geografi",
+      "question": "Vad heter Irans huvudstad?",
+      "answers": ["Teheran", "Tehran"],
+      "region": "internationellt"
+    },
+    {
+      "id": "akropolis",
+      "category": "Geografi",
+      "question": "I vilket land ligger Akropolis?",
+      "answers": ["Grekland"],
+      "region": "internationellt"
+    },
+    {
+      "id": "storsta-delstaten",
+      "category": "Geografi",
+      "question": "Vilken är USA:s största delstat till ytan?",
+      "answers": ["Alaska"],
+      "region": "internationellt"
+    },
+    {
+      "id": "storsjoyran",
+      "category": "Geografi",
+      "question": "I vilken stad hålls musikfestivalen Storsjöyran?",
+      "answers": ["Östersund"],
+      "region": "sverige"
+    },
+    {
+      "id": "hogertrafik",
+      "category": "Svensk historia",
+      "question": "Vilket år gick Sverige över till högertrafik?",
+      "answers": ["1967"],
+      "region": "sverige",
+      "fact": "Omläggningen skedde på ”Dagen H”, den 3 september 1967."
+    },
+    {
+      "id": "forsta-kvinnliga-statsministern",
+      "category": "Svensk historia",
+      "question": "Vem blev Sveriges första kvinnliga statsminister?",
+      "answers": ["Magdalena Andersson", "Andersson"],
+      "region": "sverige"
+    },
+    {
+      "id": "napoleon-1815",
+      "category": "Historia",
+      "question": "Vid vilken ort besegrades Napoleon slutgiltigt 1815?",
+      "answers": ["Waterloo"],
+      "region": "internationellt"
+    },
+    {
+      "id": "jfk-mordet",
+      "category": "Historia",
+      "question": "I vilken stad mördades John F. Kennedy 1963?",
+      "answers": ["Dallas"],
+      "region": "internationellt"
+    },
+    {
+      "id": "napoleons-fodelseo",
+      "category": "Historia",
+      "question": "På vilken ö föddes Napoleon Bonaparte?",
+      "answers": ["Korsika"],
+      "region": "internationellt"
+    },
+    {
+      "id": "antal-planeter",
+      "category": "Naturvetenskap",
+      "question": "Hur många planeter finns det i vårt solsystem?",
+      "answers": ["8", "åtta"],
+      "region": "internationellt"
+    },
+    {
+      "id": "kvave",
+      "category": "Naturvetenskap",
+      "question": "Vilken gas utgör ungefär 78 procent av jordens atmosfär?",
+      "answers": ["Kväve", "Kvävgas"],
+      "region": "internationellt"
+    },
+    {
+      "id": "silver-ag",
+      "category": "Naturvetenskap",
+      "question": "Vilken kemisk beteckning har silver?",
+      "answers": ["Ag"],
+      "region": "internationellt"
+    },
+    {
+      "id": "vanligaste-grundamnet",
+      "category": "Naturvetenskap",
+      "question": "Vilket grundämne är det vanligaste i universum?",
+      "answers": ["Väte", "Vätgas"],
+      "region": "internationellt"
+    },
+    {
+      "id": "laika",
+      "category": "Djur & natur",
+      "question": "Vad hette hunden som 1957 blev det första djuret i omloppsbana runt jorden?",
+      "answers": ["Laika"],
+      "region": "internationellt"
+    },
+    {
+      "id": "djungelns-konung",
+      "category": "Djur & natur",
+      "question": "Vilket djur kallas ”djungelns konung”?",
+      "answers": ["Lejonet", "Lejon"],
+      "region": "internationellt"
+    },
+    {
+      "id": "fuji-jazz-kanzi",
+      "category": "Mat & dryck",
+      "question": "Fuji, Jazz och Kanzi är sorter av vilken frukt?",
+      "answers": ["Äpple", "Äpplen"],
+      "region": "internationellt"
+    },
+    {
+      "id": "tequila-vaxt",
+      "category": "Mat & dryck",
+      "question": "Av vilken växt tillverkas tequila?",
+      "answers": ["Agave", "Blå agave"],
+      "region": "internationellt"
+    },
+    {
+      "id": "pulp-fiction",
+      "category": "Film & TV",
+      "question": "Vem regisserade ”Pulp Fiction”?",
+      "answers": ["Quentin Tarantino", "Tarantino"],
+      "region": "internationellt"
+    },
+    {
+      "id": "det-sjunde-inseglet",
+      "category": "Film & TV",
+      "question": "Vilken svensk regissör gjorde ”Det sjunde inseglet” och ”Fanny och Alexander”?",
+      "answers": ["Ingmar Bergman", "Bergman"],
+      "region": "sverige"
+    },
+    {
+      "id": "backstreet-boys",
+      "category": "Musik",
+      "question": "Hur många medlemmar hade pojkbandet Backstreet Boys?",
+      "answers": ["5", "fem"],
+      "region": "internationellt"
+    },
+    {
+      "id": "ukulele",
+      "category": "Musik",
+      "question": "Hur många strängar har en vanlig ukulele?",
+      "answers": ["4", "fyra"],
+      "region": "internationellt"
+    },
+    {
+      "id": "perfekt-bowling",
+      "category": "Sport",
+      "question": "Vad är den högsta möjliga poängen i en serie bowling?",
+      "answers": ["300", "300 poäng"],
+      "region": "internationellt"
+    },
+    {
+      "id": "olympisk-bassang",
+      "category": "Sport",
+      "question": "Hur många meter lång är en olympisk simbassäng?",
+      "answers": ["50", "50 meter", "50 m"],
+      "region": "internationellt"
+    },
+    {
+      "id": "orwell-1984",
+      "category": "Litteratur",
+      "question": "Vem skrev romanen ”1984”?",
+      "answers": ["George Orwell", "Orwell"],
+      "region": "internationellt"
+    },
+    {
+      "id": "karlsson-pa-taket",
+      "category": "Litteratur",
+      "question": "Vem skrev böckerna om Karlsson på taket?",
+      "answers": ["Astrid Lindgren", "Lindgren"],
+      "region": "sverige"
+    },
+    {
+      "id": "utvandrarna",
+      "category": "Litteratur",
+      "question": "Vem skrev romanserien ”Utvandrarna”?",
+      "answers": ["Vilhelm Moberg", "Moberg"],
+      "region": "sverige"
+    },
+    {
+      "id": "forsta-kvinnliga-nobel-litteratur",
+      "category": "Litteratur",
+      "question": "Vem blev 1909 den första kvinnan att få Nobelpriset i litteratur?",
+      "answers": ["Selma Lagerlöf", "Lagerlöf"],
+      "region": "sverige"
+    }
+  ]
+}

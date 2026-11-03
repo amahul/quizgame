@@ -1,0 +1,258 @@
+{
+  "id": "allmanbildning-varlden",
+  "name": "Allmänbildning – Världen",
+  "roundType": "trivia",
+  "language": "sv",
+  "region": "internationellt",
+  "difficulty": "medium",
+  "description": "Geografi, historia, vetenskap, natur, kultur, sport och film.",
+  "items": [
+    {
+      "id": "storsta-havet",
+      "category": "Geografi",
+      "question": "Vilket är världens största hav?",
+      "options": ["Atlanten", "Indiska oceanen", "Stilla havet", "Norra ishavet"],
+      "correct": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "flest-invanare",
+      "category": "Geografi",
+      "question": "Vilket land har flest invånare i världen?",
+      "options": ["Kina", "Indien", "USA", "Indonesien"],
+      "correct": 1,
+      "difficulty": "medium",
+      "fact": "Indien gick om Kina 2023."
+    },
+    {
+      "id": "kanadas-huvudstad",
+      "category": "Geografi",
+      "question": "Vad heter Kanadas huvudstad?",
+      "options": ["Toronto", "Ottawa", "Vancouver", "Montréal"],
+      "correct": 1,
+      "difficulty": "medium"
+    },
+    {
+      "id": "minsta-landet",
+      "category": "Geografi",
+      "question": "Vilket är världens minsta självständiga land till ytan?",
+      "options": ["Monaco", "San Marino", "Vatikanstaten", "Liechtenstein"],
+      "correct": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "kilimanjaro",
+      "category": "Geografi",
+      "question": "I vilket land ligger berget Kilimanjaro?",
+      "options": ["Kenya", "Tanzania", "Uganda", "Etiopien"],
+      "correct": 1,
+      "difficulty": "medium"
+    },
+    {
+      "id": "sahara",
+      "category": "Geografi",
+      "question": "Vilken är världens största varma öken?",
+      "options": ["Gobi", "Kalahari", "Sahara", "Arabiska öknen"],
+      "correct": 2,
+      "difficulty": "easy",
+      "fact": "Räknar man även kalla öknar är Antarktis störst."
+    },
+    {
+      "id": "manlandningen",
+      "category": "Historia",
+      "question": "Vilket år landade Apollo 11 på månen?",
+      "options": ["1965", "1969", "1972", "1975"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "usa-forsta-president",
+      "category": "Historia",
+      "question": "Vem var USA:s första president?",
+      "options": ["Thomas Jefferson", "Abraham Lincoln", "George Washington", "John Adams"],
+      "correct": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "berlinmuren",
+      "category": "Historia",
+      "question": "Vilket år föll Berlinmuren?",
+      "options": ["1985", "1987", "1989", "1991"],
+      "correct": 2,
+      "difficulty": "easy",
+      "fact": "Gränsövergångarna öppnades kvällen den 9 november 1989."
+    },
+    {
+      "id": "machu-picchu",
+      "category": "Historia",
+      "question": "I vilket land ligger inkastaden Machu Picchu?",
+      "options": ["Bolivia", "Chile", "Peru", "Ecuador"],
+      "correct": 2,
+      "difficulty": "medium"
+    },
+    {
+      "id": "forsta-varldskriget",
+      "category": "Historia",
+      "question": "Vilket år började första världskriget?",
+      "options": ["1905", "1914", "1918", "1939"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "storsta-planeten",
+      "category": "Vetenskap",
+      "question": "Vilken är den största planeten i vårt solsystem?",
+      "options": ["Saturnus", "Jupiter", "Neptunus", "Uranus"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "guld-beteckning",
+      "category": "Vetenskap",
+      "question": "Vilken kemisk beteckning har guld?",
+      "options": ["Ag", "Au", "Gd", "Go"],
+      "correct": 1,
+      "difficulty": "medium",
+      "fact": "Au kommer från latinets aurum."
+    },
+    {
+      "id": "relativitetsteorin",
+      "category": "Vetenskap",
+      "question": "Vem formulerade relativitetsteorin?",
+      "options": ["Isaac Newton", "Niels Bohr", "Albert Einstein", "Max Planck"],
+      "correct": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "antal-ben-skelett",
+      "category": "Vetenskap",
+      "question": "Hur många ben har en vuxen människas skelett?",
+      "options": ["186", "206", "226", "256"],
+      "correct": 1,
+      "difficulty": "hard",
+      "fact": "En nyfödd har fler – runt 300 – men många växer ihop."
+    },
+    {
+      "id": "roda-planeten",
+      "category": "Vetenskap",
+      "question": "Vilken planet kallas ”den röda planeten”?",
+      "options": ["Venus", "Mars", "Merkurius", "Jupiter"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "vatten-kokpunkt",
+      "category": "Vetenskap",
+      "question": "Vid hur många grader Celsius kokar vatten vid havsnivå?",
+      "options": ["90", "100", "110", "120"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "storsta-daggdjuret",
+      "category": "Natur",
+      "question": "Vilket är världens största djur?",
+      "options": ["Afrikansk elefant", "Blåval", "Kaskelot", "Valhaj"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "spindelns-ben",
+      "category": "Natur",
+      "question": "Hur många ben har en spindel?",
+      "options": ["6", "8", "10", "12"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "snabbaste-landdjuret",
+      "category": "Natur",
+      "question": "Vilket är världens snabbaste landdjur?",
+      "options": ["Lejon", "Gepard", "Gaffelantilop", "Struts"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "mona-lisa",
+      "category": "Kultur",
+      "question": "Vem målade Mona Lisa?",
+      "options": ["Michelangelo", "Rafael", "Leonardo da Vinci", "Botticelli"],
+      "correct": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "romeo-och-julia",
+      "category": "Kultur",
+      "question": "Vem skrev ”Romeo och Julia”?",
+      "options": ["Charles Dickens", "William Shakespeare", "Molière", "Jane Austen"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "louvren",
+      "category": "Kultur",
+      "question": "I vilken stad ligger konstmuseet Louvren?",
+      "options": ["Rom", "Paris", "Madrid", "London"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "pizzans-ursprung",
+      "category": "Kultur",
+      "question": "I vilken italiensk stad föddes pizza Margherita enligt traditionen?",
+      "options": ["Rom", "Milano", "Neapel", "Florens"],
+      "correct": 2,
+      "difficulty": "medium"
+    },
+    {
+      "id": "os-intervall",
+      "category": "Sport",
+      "question": "Hur ofta hålls de olympiska sommarspelen normalt?",
+      "options": ["Vartannat år", "Vart tredje år", "Vart fjärde år", "Vart femte år"],
+      "correct": 2,
+      "difficulty": "easy",
+      "fact": "Spelen i Tokyo sköts upp ett år, till 2021, på grund av pandemin."
+    },
+    {
+      "id": "flest-vm-guld",
+      "category": "Sport",
+      "question": "Vilket land har vunnit flest fotbolls-VM för herrar?",
+      "options": ["Tyskland", "Italien", "Argentina", "Brasilien"],
+      "correct": 3,
+      "difficulty": "medium",
+      "fact": "Brasilien har vunnit fem gånger."
+    },
+    {
+      "id": "fotbollslag-spelare",
+      "category": "Sport",
+      "question": "Hur många spelare har ett fotbollslag på planen samtidigt?",
+      "options": ["9", "10", "11", "12"],
+      "correct": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "os-2024",
+      "category": "Sport",
+      "question": "I vilken stad hölls de olympiska sommarspelen 2024?",
+      "options": ["Tokyo", "Los Angeles", "Paris", "London"],
+      "correct": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "beatles",
+      "category": "Musik",
+      "question": "Vilket band bestod av John, Paul, George och Ringo?",
+      "options": ["The Rolling Stones", "The Beatles", "The Who", "The Kinks"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "jurassic-park",
+      "category": "Film",
+      "question": "Vem regisserade filmen ”Jurassic Park” från 1993?",
+      "options": ["James Cameron", "George Lucas", "Steven Spielberg", "Ridley Scott"],
+      "correct": 2,
+      "difficulty": "medium"
+    }
+  ]
+}

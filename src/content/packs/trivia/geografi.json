@@ -1,0 +1,454 @@
+{
+  "id": "geografi-blandat",
+  "name": "Geografi",
+  "roundType": "trivia",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Floder, berg, huvudstäder och gränser, i Sverige och i världen.",
+  "items": [
+    {
+      "id": "pyreneerna",
+      "category": "Geografi",
+      "question": "Vilken bergskedja bildar gräns mellan Spanien och Frankrike?",
+      "options": ["Alperna", "Pyrenéerna", "Apenninerna", "Karpaterna"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "seine-inte-tyskland",
+      "category": "Geografi",
+      "question": "Vilken av de här floderna rinner INTE genom Tyskland?",
+      "options": ["Elbe", "Seine", "Rhen", "Donau"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "yangtze",
+      "category": "Geografi",
+      "question": "Vilken är Kinas längsta flod?",
+      "options": ["Gula floden", "Mekong", "Yangtze", "Pärlfloden"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "flest-lander-kontinent",
+      "category": "Geografi",
+      "question": "Vilken kontinent har flest länder?",
+      "options": ["Asien", "Europa", "Afrika", "Sydamerika"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium",
+      "fact": "Afrika har 54 självständiga stater."
+    },
+    {
+      "id": "arabiska-havet",
+      "category": "Geografi",
+      "question": "Vilket av de här haven gränsar INTE till Europa?",
+      "options": ["Svarta havet", "Tyrrenska havet", "Arabiska havet", "Adriatiska havet"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "harare",
+      "category": "Geografi",
+      "question": "Vad heter Zimbabwes huvudstad?",
+      "options": ["Lusaka", "Harare", "Gaborone", "Maputo"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "njupeskar",
+      "category": "Geografi",
+      "question": "I vilket landskap ligger Sveriges högsta vattenfall, Njupeskär?",
+      "options": ["Jämtland", "Härjedalen", "Dalarna", "Lappland"],
+      "correct": 2,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bermudatriangeln",
+      "category": "Geografi",
+      "question": "Bermudatriangeln brukar dras mellan Miami, Bermuda och vilken ö?",
+      "options": ["Kuba", "Jamaica", "Puerto Rico", "Bahamas"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "via-dolorosa",
+      "category": "Geografi",
+      "question": "I vilken stad ligger gatan Via Dolorosa?",
+      "options": ["Rom", "Jerusalem", "Betlehem", "Damaskus"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "yucatan",
+      "category": "Geografi",
+      "question": "I vilken mexikansk delstat ligger städerna Mérida och Valladolid?",
+      "options": ["Yucatán", "Oaxaca", "Jalisco", "Chiapas"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "tenochtitlan",
+      "category": "Geografi",
+      "question": "Vilken huvudstad byggdes på ruinerna av aztekernas Tenochtitlan?",
+      "options": ["Lima", "Bogotá", "Mexico City", "Havanna"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "paskon",
+      "category": "Geografi",
+      "question": "Vilket land hör Påskön till?",
+      "options": ["Peru", "Chile", "Nya Zeeland", "Frankrike"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bath",
+      "category": "Geografi",
+      "question": "Vilken engelsk stad är känd för sina romerska bad och varma källor?",
+      "options": ["Bath", "York", "Brighton", "Oxford"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "klaralven-gota-alv",
+      "category": "Geografi",
+      "question": "Klarälven och vilken älv bildar tillsammans Sveriges längsta vattendrag?",
+      "options": ["Dalälven", "Göta älv", "Ljusnan", "Ätran"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ganges",
+      "category": "Geografi",
+      "question": "Vilken flod räknas som helig i Indien?",
+      "options": ["Indus", "Brahmaputra", "Ganges", "Mekong"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "victoriasjon",
+      "category": "Geografi",
+      "question": "Vilken är Afrikas största sjö?",
+      "options": ["Tanganyikasjön", "Malawisjön", "Victoriasjön", "Tchadsjön"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "italien-grannar",
+      "category": "Geografi",
+      "question": "Vilket av de här länderna gränsar INTE till Italien?",
+      "options": ["Frankrike", "Schweiz", "Slovenien", "Tyskland"],
+      "correct": 3,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hanoi",
+      "category": "Geografi",
+      "question": "Vad heter Vietnams huvudstad?",
+      "options": ["Ho Chi Minh-staden", "Hanoi", "Da Nang", "Phnom Penh"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "stora-barriarrevet",
+      "category": "Geografi",
+      "question": "Utanför vilket land ligger Stora barriärrevet?",
+      "options": ["Indonesien", "Australien", "Filippinerna", "Fiji"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "geirangerfjorden",
+      "category": "Geografi",
+      "question": "I vilket land ligger Geirangerfjorden?",
+      "options": ["Island", "Norge", "Danmark", "Skottland"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "apenninerna",
+      "category": "Geografi",
+      "question": "I vilket land ligger bergskedjan Apenninerna?",
+      "options": ["Spanien", "Grekland", "Italien", "Frankrike"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "tjeckien-grannar",
+      "category": "Geografi",
+      "question": "Vilket land gränsar till Tyskland, Polen, Österrike och Slovakien?",
+      "options": ["Ungern", "Tjeckien", "Slovenien", "Schweiz"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "storsta-sydamerika",
+      "category": "Geografi",
+      "question": "Vilket är Sydamerikas största land?",
+      "options": ["Argentina", "Peru", "Brasilien", "Colombia"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "bagdad-tigris",
+      "category": "Geografi",
+      "question": "Vilken flod rinner genom Bagdad?",
+      "options": ["Eufrat", "Tigris", "Jordan", "Nilen"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "kaukasus",
+      "category": "Geografi",
+      "question": "Vilken bergskedja ligger mellan Svarta havet och Kaspiska havet, på gränsen mellan Europa och Asien?",
+      "options": ["Kaukasus", "Uralbergen", "Karpaterna", "Altaj"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "kebnekaise-lan",
+      "category": "Geografi",
+      "question": "I vilket län ligger Kebnekaise?",
+      "options": ["Jämtlands län", "Västerbottens län", "Norrbottens län", "Västernorrlands län"],
+      "correct": 2,
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "montjuic",
+      "category": "Geografi",
+      "question": "I vilken spansk stad ligger berget Montjuïc?",
+      "options": ["Madrid", "Valencia", "Barcelona", "Sevilla"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "afrikas-parla",
+      "category": "Geografi",
+      "question": "Vilket land kallade Winston Churchill för ”Afrikas pärla”?",
+      "options": ["Kenya", "Uganda", "Tanzania", "Rwanda"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "kreta",
+      "category": "Geografi",
+      "question": "Vilken är Greklands största ö?",
+      "options": ["Rhodos", "Korfu", "Kreta", "Lesbos"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ural",
+      "category": "Geografi",
+      "question": "Vilken cirka 2 500 km lång bergskedja brukar räknas som gränsen mellan Europa och Asien?",
+      "options": ["Kaukasus", "Uralbergen", "Himalaya", "Alperna"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "fjallbacka",
+      "category": "Geografi",
+      "question": "I vilket bohuslänskt fiskeläge finns ett torg uppkallat efter Ingrid Bergman?",
+      "options": ["Smögen", "Fjällbacka", "Grebbestad", "Lysekil"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "langsta-gransen",
+      "category": "Geografi",
+      "question": "Vilka två länder delar världens längsta landgräns?",
+      "options": ["Ryssland och Kina", "USA och Kanada", "Chile och Argentina", "Ryssland och Kazakstan"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "costa-rica",
+      "category": "Geografi",
+      "question": "Vilket land i Centralamerika gränsar till Nicaragua i norr och Panama i söder?",
+      "options": ["Honduras", "Costa Rica", "El Salvador", "Belize"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "brennerpasset",
+      "category": "Geografi",
+      "question": "Vilka två länder förbinds av Brennerpasset?",
+      "options": ["Schweiz och Italien", "Österrike och Italien", "Tyskland och Österrike", "Frankrike och Italien"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "padjelanta",
+      "category": "Geografi",
+      "question": "Vilken är Sveriges största nationalpark?",
+      "options": ["Sarek", "Abisko", "Padjelanta", "Fulufjället"],
+      "correct": 2,
+      "region": "sverige",
+      "difficulty": "hard"
+    },
+    {
+      "id": "new-delhi",
+      "category": "Geografi",
+      "question": "Vad heter Indiens huvudstad?",
+      "options": ["Mumbai", "New Delhi", "Kolkata", "Bangalore"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "indonesien-oar",
+      "category": "Geografi",
+      "question": "Vilket land består av mer än 17 000 öar?",
+      "options": ["Filippinerna", "Japan", "Indonesien", "Grekland"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "frankrike-tyskland-yta",
+      "category": "Geografi",
+      "question": "Vilket av de här länderna är störst till ytan?",
+      "options": ["Tyskland", "Frankrike", "Italien", "Storbritannien"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium",
+      "fact": "Frankrike är cirka 550 000 km², Tyskland cirka 357 000 km²."
+    },
+    {
+      "id": "gardasjon",
+      "category": "Geografi",
+      "question": "Vilken är Italiens största sjö?",
+      "options": ["Comosjön", "Lago Maggiore", "Gardasjön", "Trasimenosjön"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "luxemburg-grannar",
+      "category": "Geografi",
+      "question": "Vilket land gränsar INTE till Luxemburg?",
+      "options": ["Belgien", "Tyskland", "Frankrike", "Nederländerna"],
+      "correct": 3,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "volga",
+      "category": "Geografi",
+      "question": "Vilken är Europas längsta flod?",
+      "options": ["Donau", "Volga", "Rhen", "Dnepr"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "angel-falls",
+      "category": "Geografi",
+      "question": "I vilket land ligger världens högsta vattenfall, Angelfallet?",
+      "options": ["Brasilien", "Venezuela", "Colombia", "Peru"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "tajo",
+      "category": "Geografi",
+      "question": "Vilken är Iberiska halvöns längsta flod?",
+      "options": ["Ebro", "Duero", "Tajo", "Guadalquivir"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "kentucky-frankfort",
+      "category": "Geografi",
+      "question": "Vad heter huvudstaden i den amerikanska delstaten Kentucky?",
+      "options": ["Louisville", "Lexington", "Frankfort", "Bowling Green"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "k2",
+      "category": "Geografi",
+      "question": "Vilket är världens näst högsta berg?",
+      "options": ["K2", "Kangchenjunga", "Lhotse", "Mont Blanc"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "honduras-hav",
+      "category": "Geografi",
+      "question": "Vilket hav ligger norr om Honduras?",
+      "options": ["Mexikanska golfen", "Karibiska havet", "Stilla havet", "Sargassohavet"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "minsta-landskap",
+      "category": "Geografi",
+      "question": "Vilket är Sveriges minsta landskap till ytan?",
+      "options": ["Blekinge", "Öland", "Gotland", "Halland"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "vattern",
+      "category": "Geografi",
+      "question": "Vilken är Sveriges näst största sjö?",
+      "options": ["Mälaren", "Vättern", "Hjälmaren", "Storsjön"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hoga-kusten",
+      "category": "Geografi",
+      "question": "I vilket landskap ligger världsarvet Höga kusten?",
+      "options": ["Medelpad", "Ångermanland", "Västerbotten", "Hälsingland"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "medium"
+    }
+  ]
+}

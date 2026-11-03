@@ -1,0 +1,118 @@
+{
+  "id": "tema-filmcitat",
+  "name": "Filmcitat",
+  "roundType": "letters",
+  "variant": "themes",
+  "theme": "Filmcitat",
+  "language": "sv",
+  "region": "internationellt",
+  "difficulty": "medium",
+  "items": [
+    {
+      "id": "may-the-force-star",
+      "prompt": "”May the Force…” (Star Wars)",
+      "answer": "be with you"
+    },
+    {
+      "id": "i-ll-be-terminator",
+      "prompt": "”I'll be…” (Terminator)",
+      "answer": "back"
+    },
+    {
+      "id": "houston-we-have-apollo",
+      "prompt": "”Houston, we have…” (Apollo 13)",
+      "answer": "a problem"
+    },
+    {
+      "id": "here-s-looking-at",
+      "prompt": "”Here's looking at you,…” (Casablanca)",
+      "answer": "kid"
+    },
+    {
+      "id": "you-re-gonna-need",
+      "prompt": "”You're gonna need a bigger…” (Hajen)",
+      "answer": "boat",
+      "aliases": [
+        "båt"
+      ]
+    },
+    {
+      "id": "e-t-phone-e",
+      "prompt": "”E.T. phone…” (E.T.)",
+      "answer": "home"
+    },
+    {
+      "id": "i-see-dead-sjatte",
+      "prompt": "”I see dead…” (Sjätte sinnet)",
+      "answer": "people"
+    },
+    {
+      "id": "bond-james-james-bond",
+      "prompt": "”Bond. James…” (James Bond)",
+      "answer": "Bond"
+    },
+    {
+      "id": "life-is-like-a",
+      "prompt": "”Life is like a box of…” (Forrest Gump)",
+      "answer": "chocolates",
+      "aliases": [
+        "chocolate"
+      ]
+    },
+    {
+      "id": "why-so-the-dark",
+      "prompt": "”Why so…” (The Dark Knight)",
+      "answer": "serious"
+    },
+    {
+      "id": "to-infinity-and-toy",
+      "prompt": "”To infinity and…” (Toy Story)",
+      "answer": "beyond"
+    },
+    {
+      "id": "just-keep-hitta-nemo",
+      "prompt": "”Just keep…” (Hitta Nemo)",
+      "answer": "swimming"
+    },
+    {
+      "id": "hasta-la-vista-terminator",
+      "prompt": "”Hasta la vista,…” (Terminator 2)",
+      "answer": "baby"
+    },
+    {
+      "id": "there-s-no-place",
+      "prompt": "”There's no place like…” (Trollkarlen från Oz)",
+      "answer": "home"
+    },
+    {
+      "id": "no-i-am-your",
+      "prompt": "”No, I am your…” (Star Wars)",
+      "answer": "father"
+    },
+    {
+      "id": "you-shall-not-sagan",
+      "prompt": "”You shall not…” (Sagan om ringen)",
+      "answer": "pass"
+    },
+    {
+      "id": "i-m-the-king",
+      "prompt": "”I'm the king of the…” (Titanic)",
+      "answer": "world"
+    },
+    {
+      "id": "show-me-the-jerry",
+      "prompt": "”Show me the…” (Jerry Maguire)",
+      "answer": "money"
+    },
+    {
+      "id": "say-hello-to-my",
+      "prompt": "”Say hello to my little…” (Scarface)",
+      "answer": "friend"
+    },
+    {
+      "id": "hakuna-lejonkungen",
+      "prompt": "”Hakuna…” (Lejonkungen)",
+      "answer": "matata"
+    }
+  ]
+}

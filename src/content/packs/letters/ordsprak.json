@@ -1,0 +1,425 @@
+{
+  "id": "svenska-ordsprak",
+  "name": "Svenska ordspråk och talesätt",
+  "roundType": "letters",
+  "variant": "proverbs",
+  "theme": "Svenska ordspråk",
+  "language": "sv",
+  "region": "sverige",
+  "difficulty": "medium",
+  "description": "Hela ordspråket är dolt – betydelsen är ledtråden.",
+  "items": [
+    {
+      "id": "som-man-baddar",
+      "prompt": "Man får ta konsekvenserna av sina egna val",
+      "answer": "Som man bäddar får man ligga",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ingen-rok-utan",
+      "prompt": "Det finns oftast något sant bakom ett rykte",
+      "answer": "Ingen rök utan eld",
+      "difficulty": "easy"
+    },
+    {
+      "id": "man-ska-inte-mala-fan",
+      "prompt": "Man ska inte oroa sig i onödan eller förvänta sig det värsta",
+      "answer": "Man ska inte måla fan på väggen",
+      "aliases": [
+        "Måla inte fan på väggen"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "faglarna-har-flugit-ur-boet",
+      "prompt": "Barnen har flyttat hemifrån",
+      "answer": "Fåglarna har flugit ur boet",
+      "difficulty": "medium"
+    },
+    {
+      "id": "kasta-yxan-i-sjon",
+      "prompt": "Att ge upp i förtid",
+      "answer": "Kasta yxan i sjön",
+      "difficulty": "easy"
+    },
+    {
+      "id": "myror-i-brallan",
+      "prompt": "Att ha svårt att sitta still",
+      "answer": "Myror i brallan",
+      "aliases": [
+        "Myror i byxorna"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "sopa-nagot-under-mattan",
+      "prompt": "Att gömma undan ett problem",
+      "answer": "Sopa något under mattan",
+      "aliases": [
+        "Sopa under mattan"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "kasta-inte-sten-i-glashus",
+      "prompt": "Kritisera inte andra för något du själv gör",
+      "answer": "Kasta inte sten i glashus",
+      "aliases": [
+        "Den som sitter i glashus ska inte kasta sten"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "ga-som-katten-kring-het",
+      "prompt": "Att undvika att säga något rakt ut",
+      "answer": "Gå som katten kring het gröt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "mycket-snack-och-lite-verkstad",
+      "prompt": "Många ord men få handlingar",
+      "answer": "Mycket snack och lite verkstad",
+      "aliases": [
+        "Mycket snack lite verkstad"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "ha-rent-mjol-i-pasen",
+      "prompt": "Att vara ärlig och inte ha något att dölja",
+      "answer": "Ha rent mjöl i påsen",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ana-ugglor-i-mossen",
+      "prompt": "Att misstänka att något inte står rätt till",
+      "answer": "Ana ugglor i mossen",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gora-en-stor-grej-av",
+      "prompt": "Att överdriva betydelsen av en händelse",
+      "answer": "Göra en stor grej av något",
+      "aliases": [
+        "Göra en stor grej av det"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "bita-i-det-sura-applet",
+      "prompt": "Att tvingas göra något jobbigt men nödvändigt",
+      "answer": "Bita i det sura äpplet",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sitta-pa-hoga-hastar",
+      "prompt": "Att tro att man är bättre än andra",
+      "answer": "Sitta på höga hästar",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ga-rakt-pa-sak",
+      "prompt": "Att vara tydlig och direkt",
+      "answer": "Gå rakt på sak",
+      "difficulty": "easy"
+    },
+    {
+      "id": "tala-ar-silver",
+      "prompt": "Det är ofta bättre att tiga än att tala",
+      "answer": "Tala är silver, tiga är guld",
+      "difficulty": "easy"
+    },
+    {
+      "id": "allt-ar-inte-guld",
+      "prompt": "Allt är inte så bra som det först kan verka vara",
+      "answer": "Allt är inte guld som glimmar",
+      "aliases": [
+        "Allt som glimmar är inte guld"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "morgonstund-har",
+      "prompt": "Den som är tidigt uppe får mycket uträttat",
+      "answer": "Morgonstund har guld i mun",
+      "aliases": [
+        "Morgonstund har guld i mund"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "applet-faller-inte-langt-fran",
+      "prompt": "Barn liknar sina föräldrar",
+      "answer": "Äpplet faller inte långt från trädet",
+      "difficulty": "easy"
+    },
+    {
+      "id": "manga-backar-sma",
+      "prompt": "Av många små bidrag blir till slut något värdefullt",
+      "answer": "Många bäckar små gör en stor å",
+      "difficulty": "medium"
+    },
+    {
+      "id": "skrattar-bast-som-skrattar-sist",
+      "prompt": "Den som vinner till slut har mest anledning att glädjas",
+      "answer": "Skrattar bäst som skrattar sist",
+      "aliases": [
+        "Den som skrattar sist skrattar bäst"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "nara-skjuter-ingen-hare",
+      "prompt": "Att nästan lyckas räcker inte – det är resultatet som räknas",
+      "answer": "Nära skjuter ingen hare",
+      "difficulty": "medium"
+    },
+    {
+      "id": "borta-bra-men",
+      "prompt": "Det är roligt att resa, men skönast att komma hem",
+      "answer": "Borta bra men hemma bäst",
+      "aliases": [
+        "Borta bra, hemma bäst"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "lika-barn",
+      "prompt": "Människor som liknar varandra trivs bäst ihop",
+      "answer": "Lika barn leka bäst",
+      "difficulty": "easy"
+    },
+    {
+      "id": "battre-sent",
+      "prompt": "Hellre att något blir gjort sent än inte alls",
+      "answer": "Bättre sent än aldrig",
+      "difficulty": "easy"
+    },
+    {
+      "id": "man-ska-inte-salja-skinnet",
+      "prompt": "Räkna inte med något innan det verkligen har hänt",
+      "answer": "Man ska inte sälja skinnet förrän björnen är skjuten",
+      "aliases": [
+        "Man ska inte sälja skinnet innan björnen är skjuten",
+        "Sälj inte skinnet förrän björnen är skjuten"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "den-som-vantar-pa-nagot",
+      "prompt": "Något bra är värt att vänta på",
+      "answer": "Den som väntar på något gott väntar aldrig för länge",
+      "difficulty": "medium"
+    },
+    {
+      "id": "battre-fly",
+      "prompt": "Hellre dra sig undan än slåss i en strid man inte kan vinna",
+      "answer": "Bättre fly än illa fäkta",
+      "difficulty": "hard"
+    },
+    {
+      "id": "slutet-gott",
+      "prompt": "Om det slutar bra spelar det ingen roll vad som hände på vägen",
+      "answer": "Slutet gott, allting gott",
+      "aliases": [
+        "Slut gott, allting gott"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "den-som-graver-en-grop",
+      "prompt": "Den som försöker skada andra drabbas ofta själv",
+      "answer": "Den som gräver en grop åt andra faller själv däri",
+      "aliases": [
+        "Den som gräver en grop åt andra faller själv i den"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "ju-fler-kockar",
+      "prompt": "När för många ska bestämma blir resultatet sämre",
+      "answer": "Ju fler kockar, desto sämre soppa",
+      "aliases": [
+        "Ju fler kockar ju sämre soppa"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "det-ar-ingen-ko-pa",
+      "prompt": "Det är ingen fara – än så länge",
+      "answer": "Det är ingen ko på isen så länge rumpan är på land",
+      "aliases": [
+        "Ingen ko på isen så länge rumpan är på land"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "noden-har-ingen",
+      "prompt": "I en nödsituation får man göra sådant man annars inte skulle",
+      "answer": "Nöden har ingen lag",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ont-krut",
+      "prompt": "Envisa och besvärliga personer klarar sig alltid",
+      "answer": "Ont krut förgås inte så lätt",
+      "aliases": [
+        "Ont krut förgås inte"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "gammal-karlek",
+      "prompt": "Känslorna för en gammal kärlek finns kvar",
+      "answer": "Gammal kärlek rostar aldrig",
+      "difficulty": "easy"
+    },
+    {
+      "id": "man-ska-inte-skada-given",
+      "prompt": "Var tacksam för en gåva och leta inte fel på den",
+      "answer": "Man ska inte skåda given häst i munnen",
+      "aliases": [
+        "Skåda inte given häst i munnen"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "kart-barn",
+      "prompt": "Det man tycker om får gärna många smeknamn",
+      "answer": "Kärt barn har många namn",
+      "difficulty": "easy"
+    },
+    {
+      "id": "den-enes-dod",
+      "prompt": "En olycka för en kan bli en fördel för någon annan",
+      "answer": "Den enes död, den andres bröd",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sma-grytor",
+      "prompt": "Barn hör mer än de vuxna tror",
+      "answer": "Små grytor har också öron",
+      "difficulty": "medium"
+    },
+    {
+      "id": "brant-barn",
+      "prompt": "Den som har råkat illa ut är försiktig nästa gång",
+      "answer": "Bränt barn skyr elden",
+      "difficulty": "medium"
+    },
+    {
+      "id": "den-som-spar",
+      "prompt": "Den som sparar har något när det verkligen behövs",
+      "answer": "Den som spar, han har",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ovning-ger",
+      "prompt": "Den som tränar mycket blir skicklig",
+      "answer": "Övning ger färdighet",
+      "difficulty": "easy"
+    },
+    {
+      "id": "rom-byggdes-inte",
+      "prompt": "Stora saker tar tid",
+      "answer": "Rom byggdes inte på en dag",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hellre-en-fagel-i-handen",
+      "prompt": "Hellre något säkert än mycket som är osäkert",
+      "answer": "Hellre en fågel i handen än tio i skogen",
+      "aliases": [
+        "Bättre en fågel i handen än tio i skogen"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "den-som-tiger",
+      "prompt": "Den som inte protesterar anses hålla med",
+      "answer": "Den som tiger samtycker",
+      "difficulty": "medium"
+    },
+    {
+      "id": "liten-tuva",
+      "prompt": "Små saker kan få stora följder",
+      "answer": "Liten tuva välter ofta stort lass",
+      "aliases": [
+        "Liten tuva stjälper ofta stort lass"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "man-ska-smida-medan",
+      "prompt": "Passa på när tillfället finns",
+      "answer": "Man ska smida medan järnet är varmt",
+      "aliases": [
+        "Smid medan järnet är varmt"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "det-man-inte-har-i",
+      "prompt": "Den som glömmer saker får springa extra",
+      "answer": "Det man inte har i huvudet får man ha i benen",
+      "difficulty": "easy"
+    },
+    {
+      "id": "dar-det-finns-vilja",
+      "prompt": "Den som verkligen vill hittar alltid ett sätt",
+      "answer": "Där det finns vilja finns det en väg",
+      "difficulty": "easy"
+    },
+    {
+      "id": "inget-ont",
+      "prompt": "Även något dåligt brukar föra något bra med sig",
+      "answer": "Inget ont som inte har något gott med sig",
+      "aliases": [
+        "Inget ont utan att något gott har med sig"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "ensam-ar",
+      "prompt": "Den som klarar sig själv är oberoende",
+      "answer": "Ensam är stark",
+      "difficulty": "easy"
+    },
+    {
+      "id": "kaka-soker",
+      "prompt": "Lika söker sig till lika",
+      "answer": "Kaka söker maka",
+      "difficulty": "medium"
+    },
+    {
+      "id": "som-man-ropar-i-skogen",
+      "prompt": "Som man behandlar andra blir man själv behandlad",
+      "answer": "Som man ropar i skogen får man svar",
+      "aliases": [
+        "Som man ropar får man svar"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "battre-stamma-i-backen",
+      "prompt": "Stoppa ett problem tidigt, innan det hinner växa",
+      "answer": "Bättre stämma i bäcken än i ån",
+      "difficulty": "hard"
+    },
+    {
+      "id": "skomakare",
+      "prompt": "Håll dig till det du kan",
+      "answer": "Skomakare, bliv vid din läst",
+      "difficulty": "hard"
+    },
+    {
+      "id": "nar-katten-ar-borta",
+      "prompt": "När ingen vaktar passar andra på att göra som de vill",
+      "answer": "När katten är borta dansar råttorna på bordet",
+      "aliases": [
+        "När katten är borta dansar råttorna"
+      ],
+      "difficulty": "easy"
+    }
+  ]
+}

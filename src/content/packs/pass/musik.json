@@ -1,0 +1,221 @@
+{
+  "id": "skicka-vidare-musik",
+  "name": "Skicka vidare – musik",
+  "roundType": "pass",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Musikfrågor med korta fritextsvar.",
+  "items": [
+    {
+      "id": "satchmo",
+      "category": "Musik",
+      "question": "Vilken jazzmusiker kallades ”Satchmo”?",
+      "answers": ["Louis Armstrong", "Armstrong"],
+      "region": "internationellt"
+    },
+    {
+      "id": "black-sabbath",
+      "category": "Musik",
+      "question": "I vilket hårdrocksband slog Ozzy Osbourne igenom?",
+      "answers": ["Black Sabbath"],
+      "region": "internationellt"
+    },
+    {
+      "id": "wake-me-up-september",
+      "category": "Musik",
+      "question": "Vilket band sjunger ”Wake Me Up When September Ends”?",
+      "answers": ["Green Day"],
+      "region": "internationellt"
+    },
+    {
+      "id": "neverland",
+      "category": "Musik",
+      "question": "Vad hette Michael Jacksons ranch i Kalifornien?",
+      "answers": ["Neverland", "Neverland Ranch"],
+      "region": "internationellt"
+    },
+    {
+      "id": "lennon-1980",
+      "category": "Musik",
+      "question": "Vilken musiker mördades i New York den 8 december 1980?",
+      "answers": ["John Lennon", "Lennon"],
+      "region": "internationellt"
+    },
+    {
+      "id": "as-it-was",
+      "category": "Musik",
+      "question": "Vilken före detta One Direction-medlem släppte ”As It Was” 2022?",
+      "answers": ["Harry Styles", "Styles"],
+      "region": "internationellt"
+    },
+    {
+      "id": "adele-21",
+      "category": "Musik",
+      "question": "Vilken artist släppte albumet ”21” med ”Rolling in the Deep”?",
+      "answers": ["Adele"],
+      "region": "internationellt"
+    },
+    {
+      "id": "genie-in-a-bottle",
+      "category": "Musik",
+      "question": "Vem slog igenom med ”Genie in a Bottle” 1999?",
+      "answers": ["Christina Aguilera", "Aguilera"],
+      "region": "internationellt"
+    },
+    {
+      "id": "the-sign",
+      "category": "Musik",
+      "question": "Vilken svensk grupp hade hitsen ”The Sign” och ”All That She Wants”?",
+      "answers": ["Ace of Base"],
+      "region": "sverige"
+    },
+    {
+      "id": "take-that-solo",
+      "category": "Musik",
+      "question": "Vilken Take That-medlem fick en stor solokarriär med låtar som ”Angels”?",
+      "answers": ["Robbie Williams", "Williams"],
+      "region": "internationellt"
+    },
+    {
+      "id": "chris-martin",
+      "category": "Musik",
+      "question": "I vilket band är Chris Martin sångare?",
+      "answers": ["Coldplay"],
+      "region": "internationellt"
+    },
+    {
+      "id": "beyonce-efternamn",
+      "category": "Musik",
+      "question": "Vad heter Beyoncé i efternamn?",
+      "answers": ["Knowles"],
+      "region": "internationellt"
+    },
+    {
+      "id": "lady-day",
+      "category": "Musik",
+      "question": "Vilken jazzsångerska kallades ”Lady Day”?",
+      "answers": ["Billie Holiday", "Holiday"],
+      "region": "internationellt"
+    },
+    {
+      "id": "beatles-stad",
+      "category": "Musik",
+      "question": "Från vilken engelsk stad kommer The Beatles?",
+      "answers": ["Liverpool"],
+      "region": "internationellt"
+    },
+    {
+      "id": "another-brick",
+      "category": "Musik",
+      "question": "Vilket band gjorde ”Another Brick in the Wall”?",
+      "answers": ["Pink Floyd"],
+      "region": "internationellt"
+    },
+    {
+      "id": "night-at-the-opera",
+      "category": "Musik",
+      "question": "Vilket band släppte albumet ”A Night at the Opera” 1975?",
+      "answers": ["Queen"],
+      "region": "internationellt"
+    },
+    {
+      "id": "slim-shady",
+      "category": "Musik",
+      "question": "Vilken rappare kallas också Slim Shady?",
+      "answers": ["Eminem"],
+      "region": "internationellt"
+    },
+    {
+      "id": "lilla-sparven",
+      "category": "Musik",
+      "question": "Vilken fransk sångerska kallades ”den lilla sparven”?",
+      "answers": ["Edith Piaf", "Piaf"],
+      "region": "internationellt"
+    },
+    {
+      "id": "brodera-gibb",
+      "category": "Musik",
+      "question": "Vilket band bildades av bröderna Gibb?",
+      "answers": ["Bee Gees", "The Bee Gees"],
+      "region": "internationellt"
+    },
+    {
+      "id": "libretto",
+      "category": "Musik",
+      "question": "Vad kallas textboken till en opera eller musikal?",
+      "answers": ["Libretto"],
+      "region": "internationellt"
+    },
+    {
+      "id": "africa-toto",
+      "category": "Musik",
+      "question": "Vad heter Totos låt som börjar ”I hear the drums echoing tonight”?",
+      "answers": ["Africa"],
+      "region": "internationellt"
+    },
+    {
+      "id": "burning-man",
+      "category": "Musik",
+      "question": "I vilken amerikansk delstat hålls festivalen Burning Man?",
+      "answers": ["Nevada"],
+      "region": "internationellt"
+    },
+    {
+      "id": "woodstock",
+      "category": "Musik",
+      "question": "Vilket år hölls den ursprungliga Woodstockfestivalen?",
+      "answers": ["1969"],
+      "region": "internationellt"
+    },
+    {
+      "id": "sziget",
+      "category": "Musik",
+      "question": "I vilket land hålls Szigetfestivalen?",
+      "answers": ["Ungern"],
+      "region": "internationellt"
+    },
+    {
+      "id": "phil-collins-genesis",
+      "category": "Musik",
+      "question": "Vilket instrument spelade Phil Collins i Genesis?",
+      "answers": ["Trummor", "Trumma"],
+      "region": "internationellt"
+    },
+    {
+      "id": "rocket-man",
+      "category": "Musik",
+      "question": "Vilken artist gjorde ”Rocket Man” och ”Your Song”?",
+      "answers": ["Elton John"],
+      "region": "internationellt"
+    },
+    {
+      "id": "eye-of-the-tiger",
+      "category": "Musik",
+      "question": "Vilket band hade hiten ”Eye of the Tiger”?",
+      "answers": ["Survivor"],
+      "region": "internationellt"
+    },
+    {
+      "id": "lovefool",
+      "category": "Musik",
+      "question": "Vilket svenskt band med Nina Persson hade hiten ”Lovefool”?",
+      "answers": ["The Cardigans", "Cardigans"],
+      "region": "sverige"
+    },
+    {
+      "id": "stairway-to-heaven",
+      "category": "Musik",
+      "question": "Vilket band gjorde ”Stairway to Heaven”?",
+      "answers": ["Led Zeppelin"],
+      "region": "internationellt"
+    },
+    {
+      "id": "mel-c",
+      "category": "Musik",
+      "question": "Vilket smeknamn hade Melanie Chisholm i Spice Girls?",
+      "answers": ["Sporty Spice", "Sporty"],
+      "region": "internationellt"
+    }
+  ]
+}

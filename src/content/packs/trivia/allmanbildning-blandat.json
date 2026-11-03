@@ -1,0 +1,620 @@
+{
+  "id": "allmanbildning-blandat",
+  "name": "Allmänbildning – blandat",
+  "roundType": "trivia",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Blandad allmänbildning: historia, geografi, vetenskap, kultur och samhälle.",
+  "items": [
+    {
+      "id": "eu-flaggan-stjarnor",
+      "category": "Samhälle",
+      "question": "Hur många stjärnor har EU-flaggan?",
+      "options": ["10", "12", "15", "27"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy",
+      "fact": "Antalet är fast och har inget med antalet medlemsländer att göra."
+    },
+    {
+      "id": "vallonska-sanskrit-romani",
+      "category": "Kultur",
+      "question": "Vad är vallonska, sanskrit och romani exempel på?",
+      "options": ["Språk", "Dansstilar", "Kryddor", "Tygsorter"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "vasa-och-linne-grav",
+      "category": "Historia",
+      "question": "I vilken kyrka ligger både Gustav Vasa och Carl von Linné begravda?",
+      "options": ["Storkyrkan i Stockholm", "Uppsala domkyrka", "Lunds domkyrka", "Riddarholmskyrkan"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "nast-storsta-landet",
+      "category": "Geografi",
+      "question": "Vilket är världens näst största land till ytan, efter Ryssland?",
+      "options": ["Kina", "USA", "Kanada", "Brasilien"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "forsta-hjarttransplantationen",
+      "category": "Vetenskap",
+      "question": "Vem utförde den första hjärttransplantationen mellan två människor, 1967?",
+      "options": ["Christiaan Barnard", "Alexander Fleming", "Louis Pasteur", "Jonas Salk"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "hard",
+      "fact": "Operationen gjordes i Kapstaden i Sydafrika."
+    },
+    {
+      "id": "pavevalet-rok",
+      "category": "Kultur",
+      "question": "Vilken färg har röken från Sixtinska kapellet när en ny påve har valts?",
+      "options": ["Svart", "Vit", "Röd", "Gul"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "romersk-krigsgud",
+      "category": "Kultur",
+      "question": "Vad heter den romerska krigsguden?",
+      "options": ["Jupiter", "Mars", "Merkurius", "Neptunus"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "karlekens-gudinna",
+      "category": "Kultur",
+      "question": "Vilken grekisk gudinna förknippas med kärlek och skönhet?",
+      "options": ["Athena", "Hera", "Afrodite", "Artemis"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "havsguden",
+      "category": "Kultur",
+      "question": "Vad heter havets gud i grekisk mytologi?",
+      "options": ["Zeus", "Hades", "Poseidon", "Apollon"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "kyssen-klimt",
+      "category": "Kultur",
+      "question": "Vem målade den berömda målningen ”Kyssen” i guld?",
+      "options": ["Gustav Klimt", "Egon Schiele", "Edvard Munch", "Claude Monet"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "skriet-munch",
+      "category": "Kultur",
+      "question": "Vem målade ”Skriet”?",
+      "options": ["Edvard Munch", "Vincent van Gogh", "Carl Larsson", "Anders Zorn"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "la-joconde",
+      "category": "Kultur",
+      "question": "Vilken berömd målning kallas på franska ”La Joconde”?",
+      "options": ["Mona Lisa", "Nattvarden", "Venus födelse", "Flickan med pärlörhänget"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "jfk-mellannamn",
+      "category": "Historia",
+      "question": "Vad står F:et för i John F. Kennedy?",
+      "options": ["Franklin", "Fitzgerald", "Frederick", "Francis"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "romerska-kalendern",
+      "category": "Historia",
+      "question": "I den tidiga romerska kalendern började året inte i januari. Vilken månad var först?",
+      "options": ["Februari", "Mars", "April", "December"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "solljusets-restid",
+      "category": "Vetenskap",
+      "question": "Ungefär hur lång tid tar det för solljuset att nå jorden?",
+      "options": ["8 sekunder", "8 minuter", "80 minuter", "8 timmar"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "japans-valuta",
+      "category": "Samhälle",
+      "question": "Vad heter Japans valuta?",
+      "options": ["Yuan", "Won", "Yen", "Ringgit"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "iraks-valuta",
+      "category": "Samhälle",
+      "question": "Vad heter valutan i Irak?",
+      "options": ["Rial", "Dinar", "Lira", "Dirham"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "vietnams-valuta",
+      "category": "Samhälle",
+      "question": "Vad heter valutan i Vietnam?",
+      "options": ["Baht", "Dong", "Riel", "Kip"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "stresshormonet",
+      "category": "Vetenskap",
+      "question": "Vilket hormon brukar kallas ”stresshormonet”?",
+      "options": ["Kortisol", "Insulin", "Melatonin", "Östrogen"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "nato-alfabetet-t",
+      "category": "Samhälle",
+      "question": "Vilket ord står för bokstaven T i Natos fonetiska alfabet?",
+      "options": ["Tango", "Tom", "Texas", "Tiger"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ja-visst-gor-det-ont",
+      "category": "Kultur",
+      "question": "Vilken svensk poet skrev dikten ”Ja visst gör det ont”?",
+      "options": ["Edith Södergran", "Karin Boye", "Kristina Lugn", "Sonja Åkesson"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hadrianus-mur",
+      "category": "Historia",
+      "question": "Vilken romersk kejsare lät bygga en mur tvärs över norra England?",
+      "options": ["Caligula", "Hadrianus", "Nero", "Augustus"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ljusets-grundfarger",
+      "category": "Vetenskap",
+      "question": "Vilka är ljusets tre grundfärger, de som tillsammans blir vitt?",
+      "options": ["Röd, gul och blå", "Röd, grön och blå", "Cyan, magenta och gul", "Grön, orange och lila"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "indiens-forsta-kvinnliga-pm",
+      "category": "Historia",
+      "question": "Vem blev 1966 Indiens första kvinnliga premiärminister?",
+      "options": ["Benazir Bhutto", "Indira Gandhi", "Sonia Gandhi", "Golda Meir"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "nobel-fysik-och-kemi",
+      "category": "Vetenskap",
+      "question": "Vilken polsk-fransk forskare fick Nobelpris i både fysik och kemi?",
+      "options": ["Lise Meitner", "Marie Curie", "Rosalind Franklin", "Ada Lovelace"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "samkonade-aktenskap",
+      "category": "Samhälle",
+      "question": "Vilket land blev 2001 först i världen med samkönade äktenskap?",
+      "options": ["Sverige", "Danmark", "Nederländerna", "Kanada"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "kungligt-brollop-1981",
+      "category": "Historia",
+      "question": "Vilka gifte sig i det kungliga bröllopet 1981 som sågs av runt 750 miljoner tv-tittare?",
+      "options": ["Charles och Diana", "William och Kate", "Carl Gustaf och Silvia", "Harry och Meghan"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "havens-andel",
+      "category": "Geografi",
+      "question": "Ungefär hur stor del av jordens yta täcks av hav?",
+      "options": ["50 %", "60 %", "70 %", "80 %"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sorgfarg-kina",
+      "category": "Kultur",
+      "question": "Vilken färg förknippas traditionellt med sorg och begravningar i Kina?",
+      "options": ["Svart", "Vit", "Röd", "Lila"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hogsta-smaltpunkt",
+      "category": "Vetenskap",
+      "question": "Vilken metall har högst smältpunkt?",
+      "options": ["Järn", "Titan", "Volfram", "Platina"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "hard",
+      "fact": "Volfram smälter vid drygt 3 400 °C."
+    },
+    {
+      "id": "olympus-mons",
+      "category": "Vetenskap",
+      "question": "På vilken planet ligger solsystemets högsta kända berg?",
+      "options": ["Venus", "Mars", "Jorden", "Merkurius"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium",
+      "fact": "Vulkanen Olympus Mons är ungefär tre gånger så hög som Mount Everest."
+    },
+    {
+      "id": "djupaste-sjon",
+      "category": "Geografi",
+      "question": "Vilken är världens djupaste sjö?",
+      "options": ["Tanganyikasjön", "Bajkalsjön", "Kaspiska havet", "Victoriasjön"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "andra-varldskriget-borjan",
+      "category": "Historia",
+      "question": "Vilket år började andra världskriget?",
+      "options": ["1914", "1936", "1939", "1941"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "fn-grundades",
+      "category": "Historia",
+      "question": "Vilket år grundades FN?",
+      "options": ["1919", "1939", "1945", "1950"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "moby-dick",
+      "category": "Kultur",
+      "question": "Vem skrev romanen ”Moby Dick”?",
+      "options": ["Mark Twain", "Herman Melville", "Jack London", "Ernest Hemingway"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gravitationslagen",
+      "category": "Vetenskap",
+      "question": "Vem formulerade gravitationslagen år 1687?",
+      "options": ["Galileo Galilei", "Isaac Newton", "Johannes Kepler", "Nikolaus Kopernikus"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cc-i-mejl",
+      "category": "Samhälle",
+      "question": "Vad står ”cc” för i e-post?",
+      "options": ["Carbon copy", "Common contact", "Copy center", "Closed circle"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "flest-modersmalstalare",
+      "category": "Kultur",
+      "question": "Vilket språk har flest modersmålstalare i världen?",
+      "options": ["Engelska", "Spanska", "Mandarin", "Hindi"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "grekiska-sista-bokstaven",
+      "category": "Kultur",
+      "question": "Vilken är den sista bokstaven i det grekiska alfabetet?",
+      "options": ["Zeta", "Omega", "Ypsilon", "Psi"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "spoke-i-logotypen",
+      "category": "Samhälle",
+      "question": "Vilken app för sociala medier har ett spöke i sin logotyp?",
+      "options": ["Snapchat", "Instagram", "TikTok", "Pinterest"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "fotosyntesen",
+      "category": "Vetenskap",
+      "question": "Vad kallas processen där växter med hjälp av solljus gör socker och syre av koldioxid och vatten?",
+      "options": ["Förbränning", "Fotosyntes", "Cellandning", "Jäsning"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "uppgaende-solens-land",
+      "category": "Geografi",
+      "question": "Vilket land kallas ”den uppgående solens land”?",
+      "options": ["Kina", "Japan", "Thailand", "Sydkorea"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "petra",
+      "category": "Geografi",
+      "question": "I vilket land ligger den uthuggna klippstaden Petra?",
+      "options": ["Egypten", "Jordanien", "Libanon", "Syrien"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "regnbagens-farger",
+      "category": "Vetenskap",
+      "question": "Hur många färger brukar man säga att regnbågen har?",
+      "options": ["5", "6", "7", "8"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "nasa-forkortning",
+      "category": "Vetenskap",
+      "question": "Vad står förkortningen NASA för?",
+      "options": ["National Aeronautics and Space Administration", "North American Space Agency", "National Astronomy and Science Association", "National Air and Space Authority"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "chichen-itza",
+      "category": "Geografi",
+      "question": "Vilket av världens sju nya underverk ligger i Mexiko?",
+      "options": ["Machu Picchu", "Chichén Itzá", "Petra", "Kristusstatyn"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "berlins-flod",
+      "category": "Geografi",
+      "question": "Vilken flod rinner genom Berlin?",
+      "options": ["Rhen", "Elbe", "Spree", "Donau"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "poker-basta-hand",
+      "category": "Sport",
+      "question": "Vilken är den bästa handen i poker?",
+      "options": ["Fyrtal", "Kåk", "Royal flush", "Färg"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hogsta-byggnaden",
+      "category": "Geografi",
+      "question": "Vilken är världens högsta byggnad?",
+      "options": ["Shanghai Tower", "Burj Khalifa", "One World Trade Center", "Petronas Towers"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy",
+      "fact": "Burj Khalifa i Dubai är 828 meter hög."
+    },
+    {
+      "id": "etna",
+      "category": "Geografi",
+      "question": "Vad heter den aktiva vulkanen på Sicilien, Europas högsta?",
+      "options": ["Vesuvius", "Etna", "Stromboli", "Hekla"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lcd-forkortning",
+      "category": "Vetenskap",
+      "question": "Vad står LCD för när man pratar om bildskärmar?",
+      "options": ["Liquid crystal display", "Light color diode", "Low current display", "Laser crystal device"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "schwarzenegger-guvernor",
+      "category": "Historia",
+      "question": "I vilken amerikansk delstat var Arnold Schwarzenegger guvernör 2003–2011?",
+      "options": ["Texas", "Kalifornien", "Florida", "Nevada"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "nostradamus",
+      "category": "Historia",
+      "question": "Vad hette 1500-talsprofeten som enligt sina anhängare förutspådde både världskrigen och Hitler?",
+      "options": ["Nostradamus", "Rasputin", "Paracelsus", "Merlin"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "universell-mottagare",
+      "category": "Vetenskap",
+      "question": "Vilken blodgrupp kan ta emot blod från alla blodgrupper?",
+      "options": ["0−", "A+", "AB+", "B−"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "romersk-siffra-c",
+      "category": "Kultur",
+      "question": "Vilket tal betyder den romerska siffran C?",
+      "options": ["50", "100", "500", "1000"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "thanksgiving",
+      "category": "Kultur",
+      "question": "Vilken amerikansk högtid firas den fjärde torsdagen i november?",
+      "options": ["Memorial Day", "Labor Day", "Thanksgiving", "Halloween"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sverige-eu-statsminister",
+      "category": "Historia",
+      "question": "Vem var Sveriges statsminister när landet gick med i EU 1995?",
+      "options": ["Göran Persson", "Carl Bildt", "Ingvar Carlsson", "Olof Palme"],
+      "correct": 2,
+      "region": "sverige",
+      "difficulty": "hard"
+    },
+    {
+      "id": "holi",
+      "category": "Kultur",
+      "question": "Vad heter den hinduiska högtiden där man kastar färgpulver på varandra?",
+      "options": ["Diwali", "Holi", "Ramadan", "Hanukka"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "robben-island",
+      "category": "Historia",
+      "question": "På vilken fängelseö satt Nelson Mandela fängslad längst?",
+      "options": ["Alcatraz", "Robben Island", "Djävulsön", "Spandau"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "telefonens-patent",
+      "category": "Vetenskap",
+      "question": "Vem fick 1876 patent på telefonen?",
+      "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Lars Magnus Ericsson"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "gudfadern-regissor",
+      "category": "Film",
+      "question": "Vem regisserade ”Gudfadern”-filmerna?",
+      "options": ["Martin Scorsese", "Francis Ford Coppola", "Steven Spielberg", "Brian De Palma"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "en-tum",
+      "category": "Vetenskap",
+      "question": "Hur många centimeter är en tum?",
+      "options": ["1,54", "2,54", "3,54", "2,45"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ouzo",
+      "category": "Mat",
+      "question": "Från vilket land kommer anisspriten ouzo?",
+      "options": ["Turkiet", "Grekland", "Italien", "Libanon"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "taj-mahal",
+      "category": "Geografi",
+      "question": "I vilken indisk stad ligger Taj Mahal?",
+      "options": ["Delhi", "Agra", "Mumbai", "Jaipur"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "kvicksilver-hg",
+      "category": "Vetenskap",
+      "question": "Vilken kemisk beteckning har kvicksilver?",
+      "options": ["Kv", "Hg", "Me", "Mg"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ymca",
+      "category": "Samhälle",
+      "question": "Vad står YMCA för?",
+      "options": ["Young Men’s Christian Association", "Youth Music and Culture Academy", "Young Members’ Club of America", "Youth Movement for Christian Aid"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "forsta-dollarmiljardaren",
+      "category": "Historia",
+      "question": "Vem brukar räknas som världens första dollarmiljardär?",
+      "options": ["Andrew Carnegie", "John D. Rockefeller", "Henry Ford", "J.P. Morgan"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard",
+      "verify": true
+    }
+  ]
+}

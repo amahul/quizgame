@@ -1,0 +1,486 @@
+{
+  "id": "musik-fragor",
+  "name": "Musik",
+  "roundType": "trivia",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Frågor om artister, låtar och album – från jazz till svensk pop.",
+  "items": [
+    {
+      "id": "sammy-davis-jr",
+      "category": "Musik",
+      "question": "Vilken sångare och dansare hörde till Frank Sinatras närmaste vänkrets, ”Rat Pack”?",
+      "options": ["Dean Martin Jr.", "Sammy Davis Jr.", "Gene Kelly", "Nat King Cole"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "julio-iglesias",
+      "category": "Musik",
+      "question": "Vilken spansk sångare var målvakt i Real Madrids ungdomslag innan han började sjunga?",
+      "options": ["Enrique Iglesias", "Julio Iglesias", "Plácido Domingo", "Alejandro Sanz"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "nine-million-bicycles",
+      "category": "Musik",
+      "question": "Vem sjöng ”There are nine million bicycles in Beijing”?",
+      "options": ["Norah Jones", "Katie Melua", "Dido", "Duffy"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "spotify-2025",
+      "category": "Musik",
+      "question": "Vilken artist var mest streamad i världen på Spotify under 2025?",
+      "options": ["Taylor Swift", "The Weeknd", "Bad Bunny", "Drake"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "hard",
+      "verify": true
+    },
+    {
+      "id": "the-boss",
+      "category": "Musik",
+      "question": "Vilken amerikansk rockstjärna kallas ”The Boss”?",
+      "options": ["Bruce Springsteen", "Bob Dylan", "Tom Petty", "Jon Bon Jovi"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "something-beautiful",
+      "category": "Musik",
+      "question": "Vilken artist släppte albumet ”Something Beautiful” 2025?",
+      "options": ["Miley Cyrus", "Lady Gaga", "Dua Lipa", "Selena Gomez"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "emma-bunton",
+      "category": "Musik",
+      "question": "Vilken Spice Girl var inte med från starten utan ersatte en tidigare medlem?",
+      "options": ["Geri Halliwell", "Victoria Beckham", "Emma Bunton", "Mel B"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "sol-vind-och-vatten",
+      "category": "Musik",
+      "question": "Vilken låt börjar med ”Ännu spelar syrsor till vindarnas sus”?",
+      "options": ["Sol, vind och vatten", "Jag vill ha en egen måne", "Sommaren är kort", "Flickorna i Småland"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "medium",
+      "fact": "Den sjöngs av Ted Gärdestad."
+    },
+    {
+      "id": "cowboy-carter",
+      "category": "Musik",
+      "question": "Vilken artist släppte countryalbumet ”Cowboy Carter” 2024?",
+      "options": ["Taylor Swift", "Beyoncé", "Rihanna", "Kacey Musgraves"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "beatles-sitar",
+      "category": "Musik",
+      "question": "Vilken Beatle förde in indisk musik i bandet och spelade sitar?",
+      "options": ["John Lennon", "Paul McCartney", "George Harrison", "Ringo Starr"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "flest-grammys",
+      "category": "Musik",
+      "question": "Vilken artist har vunnit flest Grammy-priser genom tiderna?",
+      "options": ["Taylor Swift", "Quincy Jones", "Beyoncé", "Stevie Wonder"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium",
+      "verify": true
+    },
+    {
+      "id": "cold-heart",
+      "category": "Musik",
+      "question": "Vem sjöng med Elton John på ”Cold Heart” 2021?",
+      "options": ["Dua Lipa", "Rita Ora", "Adele", "Lady Gaga"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "i-love-it",
+      "category": "Musik",
+      "question": "Vilken brittisk artist skrev och sjöng med Icona Pop på ”I Love It”?",
+      "options": ["Charli XCX", "Jessie J", "Rita Ora", "Ellie Goulding"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "u2-grammys",
+      "category": "Musik",
+      "question": "Vilket irländskt band har vunnit flest Grammy-priser av alla grupper?",
+      "options": ["The Cranberries", "U2", "Thin Lizzy", "The Corrs"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "release-me",
+      "category": "Musik",
+      "question": "Vilken svensk sångerska hade en internationell hit med ”Release Me”?",
+      "options": ["Agnes", "Robyn", "Loreen", "September"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "mest-salda-albumet",
+      "category": "Musik",
+      "question": "Vilket är världens mest sålda album genom tiderna?",
+      "options": ["Back in Black", "Thriller", "The Dark Side of the Moon", "Abbey Road"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ring-ring",
+      "category": "Musik",
+      "question": "Med vilken låt tävlade ABBA i Melodifestivalen 1973, året före ”Waterloo”?",
+      "options": ["Ring Ring", "Mamma Mia", "Honey, Honey", "SOS"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "medium",
+      "fact": "Den kom trea."
+    },
+    {
+      "id": "moonage-daydream",
+      "category": "Musik",
+      "question": "Vilken artist handlar dokumentären ”Moonage Daydream” om?",
+      "options": ["Freddie Mercury", "David Bowie", "Elton John", "Mick Jagger"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "the-look-roxette",
+      "category": "Musik",
+      "question": "Vem sjöng i Roxette tillsammans med Per Gessle?",
+      "options": ["Marie Fredriksson", "Carola", "Lisa Nilsson", "Pernilla Wahlgren"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amy-winehouse-duett",
+      "category": "Musik",
+      "question": "Med vilken Tony spelade Amy Winehouse in en duett?",
+      "options": ["Tony Bennett", "Tony Christie", "Tony Hadley", "Tony Iommi"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "snook",
+      "category": "Musik",
+      "question": "Vilken svensk artist gick solo efter att ha varit med i hiphopduon Snook?",
+      "options": ["Oskar Linnros", "Petter", "Timbuktu", "Daniel Adams-Ray"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "hard",
+      "fact": "Daniel Adams-Ray var den andra halvan av Snook."
+    },
+    {
+      "id": "dolly-parton-guddotter",
+      "category": "Musik",
+      "question": "Vilken sångerska är Dolly Partons guddotter?",
+      "options": ["Taylor Swift", "Miley Cyrus", "Kacey Musgraves", "Shania Twain"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "young-folks",
+      "category": "Musik",
+      "question": "Vilket svenskt band hade visslande hiten ”Young Folks” 2006?",
+      "options": ["The Cardigans", "Peter Bjorn and John", "Shout Out Louds", "Mando Diao"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "american-pie",
+      "category": "Musik",
+      "question": "Vilken låt börjar med ”A long, long time ago, I can still remember”?",
+      "options": ["Hotel California", "American Pie", "Bohemian Rhapsody", "Stairway to Heaven"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "innervisions",
+      "category": "Musik",
+      "question": "Vilken Motown-stjärna släppte albumet ”Innervisions” 1973?",
+      "options": ["Marvin Gaye", "Stevie Wonder", "Smokey Robinson", "Diana Ross"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "mr-dynamite",
+      "category": "Musik",
+      "question": "Vilken James kallades ”Mr. Dynamite”?",
+      "options": ["James Brown", "James Taylor", "James Blunt", "Etta James"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "timbuktu",
+      "category": "Musik",
+      "question": "Vad heter rapparen Timbuktu egentligen?",
+      "options": ["Jason Diakité", "Jason Timbuktu", "Petter Askergren", "Ken Ring"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "hard"
+    },
+    {
+      "id": "robert-smith",
+      "category": "Musik",
+      "question": "Vilket band är Robert Smith sångare i?",
+      "options": ["Depeche Mode", "The Cure", "The Smiths", "New Order"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "papa-emeritus",
+      "category": "Musik",
+      "question": "Vilket svenskt rockband har sångaren och figuren Papa Emeritus?",
+      "options": ["Ghost", "Sabaton", "In Flames", "Hammerfall"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pretty-fly",
+      "category": "Musik",
+      "question": "Vilket band gjorde ”Self Esteem” och ”Pretty Fly (for a White Guy)”?",
+      "options": ["Blink-182", "Green Day", "The Offspring", "Sum 41"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "money-and-time",
+      "category": "Musik",
+      "question": "Vilket Pink Floyd-album innehåller låtarna ”Money” och ”Time”?",
+      "options": ["The Wall", "Wish You Were Here", "The Dark Side of the Moon", "Animals"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "heroes-bowie",
+      "category": "Musik",
+      "question": "Från vilken låt kommer raden ”I, I wish you could swim, like the dolphins”?",
+      "options": ["Heroes", "Space Oddity", "Starman", "Changes"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "hard",
+      "fact": "Låten är David Bowies."
+    },
+    {
+      "id": "zara-larsson-uncover",
+      "category": "Musik",
+      "question": "Vilken svensk artist slog igenom med ”Uncover” som 15-åring?",
+      "options": ["Zara Larsson", "Tove Lo", "Molly Sandén", "Laleh"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "fifth-beatle",
+      "category": "Musik",
+      "question": "Vilken producent brukar kallas ”den femte Beatlen”?",
+      "options": ["Phil Spector", "George Martin", "Brian Epstein", "Quincy Jones"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "dancing-on-my-own",
+      "category": "Musik",
+      "question": "Vilken av Robyns låtar från 2010 blev en internationell ”sad banger”?",
+      "options": ["With Every Heartbeat", "Dancing on My Own", "Call Your Girlfriend", "Show Me Love"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "running-up-that-hill",
+      "category": "Musik",
+      "question": "Vilken Kate Bush-låt fick nytt liv 2022 tack vare ”Stranger Things”?",
+      "options": ["Wuthering Heights", "Running Up That Hill", "Babooshka", "Cloudbusting"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "adele-debut",
+      "category": "Musik",
+      "question": "Vad heter Adeles debutalbum från 2008?",
+      "options": ["19", "21", "25", "30"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lykke-li-debut",
+      "category": "Musik",
+      "question": "Vad heter Lykke Lis debutalbum från 2008 med hiten ”Little Bit”?",
+      "options": ["Wounded Rhymes", "Youth Novels", "I Never Learn", "So Sad So Sexy"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hello-darkness",
+      "category": "Musik",
+      "question": "Vilken låt börjar med ”Hello darkness, my old friend”?",
+      "options": ["The Sound of Silence", "Mrs. Robinson", "Bridge over Troubled Water", "Blowin’ in the Wind"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "charlie-watts",
+      "category": "Musik",
+      "question": "Vilken av Rolling Stones trummis dog 2021?",
+      "options": ["Bill Wyman", "Charlie Watts", "Ronnie Wood", "Ringo Starr"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "amazing-grace-gospel",
+      "category": "Musik",
+      "question": "Vem gjorde ”Amazing Grace”, det mest sålda gospelalbumet någonsin?",
+      "options": ["Whitney Houston", "Aretha Franklin", "Mahalia Jackson", "Diana Ross"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "ok-computer",
+      "category": "Musik",
+      "question": "Vilket band gjorde albumet ”OK Computer”?",
+      "options": ["Nirvana", "Radiohead", "Blur", "Oasis"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "queen-gitarrist",
+      "category": "Musik",
+      "question": "Vem var gitarrist i Queen?",
+      "options": ["Roger Taylor", "John Deacon", "Brian May", "Freddie Mercury"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ingrosso-debut",
+      "category": "Musik",
+      "question": "Vad heter Benjamin Ingrossos debutalbum från 2018?",
+      "options": ["Identification", "En gång i tiden", "Playlist", "Dance You Off"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "hard"
+    },
+    {
+      "id": "spice-girls-frimarken",
+      "category": "Musik",
+      "question": "Vilken popgrupp fick egna brittiska frimärken till sitt 30-årsjubileum 2024?",
+      "options": ["Take That", "Spice Girls", "Oasis", "Girls Aloud"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "kom-igen-lena",
+      "category": "Musik",
+      "question": "Vilken låt börjar med ”Sluta drömma om det ljuva livet”?",
+      "options": ["Känn ingen sorg för mig Göteborg", "Kom igen Lena!", "Det är så jag säger det", "Jag vet vilken dy jag har vuxit ur"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "medium",
+      "fact": "Låten är Håkan Hellströms."
+    },
+    {
+      "id": "nevermind-omslag",
+      "category": "Musik",
+      "question": "Vad syns på omslaget till Nirvanas album ”Nevermind”?",
+      "options": ["En brinnande gitarr", "En naken bebis som simmar efter en dollarsedel", "Ett rött kors", "En ängel med vingar"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "jagged-little-pill",
+      "category": "Musik",
+      "question": "Vilken kanadensisk sångerska slog igenom med albumet ”Jagged Little Pill” 1995?",
+      "options": ["Avril Lavigne", "Céline Dion", "Alanis Morissette", "Shania Twain"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "the-hives",
+      "category": "Musik",
+      "question": "Vilken låt blev The Hives stora genombrott?",
+      "options": ["Hate to Say I Told You So", "Tick Tick Boom", "Walk Idiot Walk", "Main Offender"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "hard"
+    },
+    {
+      "id": "rem-album",
+      "category": "Musik",
+      "question": "Vilket R.E.M.-album innehåller ”Everybody Hurts” och ”Nightswimming”?",
+      "options": ["Out of Time", "Automatic for the People", "Monster", "Green"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "into-the-wild",
+      "category": "Musik",
+      "question": "Vilken Eddie gjorde musiken till filmen ”Into the Wild”?",
+      "options": ["Eddie Vedder", "Eddie Van Halen", "Eddie Murphy", "Eddie Cochran"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "strovtag-i-hembygden",
+      "category": "Musik",
+      "question": "Vilket band låg länge på Svensktoppen med ”Strövtåg i hembygden”, en tonsatt Frödingdikt?",
+      "options": ["Kent", "Mando Diao", "Kaizers Orchestra", "Hellacopters"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "hard"
+    }
+  ]
+}

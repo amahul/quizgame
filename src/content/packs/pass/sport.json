@@ -1,0 +1,180 @@
+{
+  "id": "skicka-vidare-sport",
+  "name": "Skicka vidare – sport",
+  "roundType": "pass",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Sportfrågor med korta fritextsvar.",
+  "items": [
+    {
+      "id": "medley",
+      "category": "Sport",
+      "question": "Vad kallas det när man simmar fjäril, rygg, bröst och frisim i följd?",
+      "answers": ["Medley"],
+      "region": "internationellt"
+    },
+    {
+      "id": "love-noll",
+      "category": "Sport",
+      "question": "I vilken sport betyder ”love” noll poäng?",
+      "answers": ["Tennis"],
+      "region": "internationellt"
+    },
+    {
+      "id": "hattrick",
+      "category": "Sport",
+      "question": "Vad kallas det när en spelare gör tre mål i samma match?",
+      "answers": ["Hattrick", "Hat trick"],
+      "region": "internationellt"
+    },
+    {
+      "id": "shl",
+      "category": "Sport",
+      "question": "Vad heter den högsta serien i svensk ishockey?",
+      "answers": ["SHL", "Svenska hockeyligan"],
+      "region": "sverige"
+    },
+    {
+      "id": "handboll-spelare",
+      "category": "Sport",
+      "question": "Hur många spelare har ett handbollslag på planen samtidigt, målvakten inräknad?",
+      "answers": ["7", "sju"],
+      "region": "internationellt"
+    },
+    {
+      "id": "gunde-guld",
+      "category": "Sport",
+      "question": "Hur många olympiska guld vann längdskidåkaren Gunde Svan?",
+      "answers": ["4", "fyra"],
+      "region": "sverige"
+    },
+    {
+      "id": "vm-2018",
+      "category": "Sport",
+      "question": "Vilket land vann fotbolls-VM för herrar 2018?",
+      "answers": ["Frankrike"],
+      "region": "internationellt"
+    },
+    {
+      "id": "phelps-2008",
+      "category": "Sport",
+      "question": "Hur många guldmedaljer tog Michael Phelps vid OS i Peking 2008?",
+      "answers": ["8", "åtta"],
+      "region": "internationellt"
+    },
+    {
+      "id": "forsta-moderna-os",
+      "category": "Sport",
+      "question": "Vilket år hölls de första moderna olympiska spelen?",
+      "answers": ["1896"],
+      "region": "internationellt",
+      "fact": "De hölls i Aten."
+    },
+    {
+      "id": "americas-cup",
+      "category": "Sport",
+      "question": "I vilken sport tävlar man om America’s Cup?",
+      "answers": ["Segling"],
+      "region": "internationellt"
+    },
+    {
+      "id": "slam-dunk",
+      "category": "Sport",
+      "question": "I vilken sport gör man en ”slam dunk”?",
+      "answers": ["Basket", "Basketboll"],
+      "region": "internationellt"
+    },
+    {
+      "id": "biljard-bollar",
+      "category": "Sport",
+      "question": "Hur många bollar ligger på bordet när ett parti 8-ball börjar, köbollen inräknad?",
+      "answers": ["16", "sexton"],
+      "region": "internationellt"
+    },
+    {
+      "id": "curling-huset",
+      "category": "Sport",
+      "question": "I vilken sport siktar man mot ringarna som kallas ”huset”?",
+      "answers": ["Curling"],
+      "region": "internationellt"
+    },
+    {
+      "id": "deuce",
+      "category": "Sport",
+      "question": "Vad kallas ställningen 40–40 i tennis?",
+      "answers": ["Deuce", "Lika"],
+      "region": "internationellt"
+    },
+    {
+      "id": "schackrutor",
+      "category": "Sport",
+      "question": "Hur många rutor har ett schackbräde?",
+      "answers": ["64", "sextiofyra"],
+      "region": "internationellt"
+    },
+    {
+      "id": "djokovic-land",
+      "category": "Sport",
+      "question": "Vilket land kommer Novak Djokovic från?",
+      "answers": ["Serbien"],
+      "region": "internationellt"
+    },
+    {
+      "id": "indien-sport",
+      "category": "Sport",
+      "question": "Vilken sport är populärast i Indien?",
+      "answers": ["Kricket", "Cricket"],
+      "region": "internationellt"
+    },
+    {
+      "id": "tony-hawk",
+      "category": "Sport",
+      "question": "Vilken skateboardåkare har gett namn åt en spelserie som startade 1999?",
+      "answers": ["Tony Hawk", "Hawk"],
+      "region": "internationellt"
+    },
+    {
+      "id": "nba-speltid",
+      "category": "Sport",
+      "question": "Hur många minuter är den ordinarie speltiden i en NBA-match?",
+      "answers": ["48", "48 minuter"],
+      "region": "internationellt"
+    },
+    {
+      "id": "bordtennis-set",
+      "category": "Sport",
+      "question": "Till hur många poäng spelar man ett set i bordtennis?",
+      "answers": ["11", "elva"],
+      "region": "internationellt"
+    },
+    {
+      "id": "baseboll-innings",
+      "category": "Sport",
+      "question": "Hur många innings har en vanlig basebollmatch?",
+      "answers": ["9", "nio"],
+      "region": "internationellt"
+    },
+    {
+      "id": "bullseye",
+      "category": "Sport",
+      "question": "Hur många poäng ger mitten, bullseye, i dart?",
+      "answers": ["50", "femtio"],
+      "region": "internationellt"
+    },
+    {
+      "id": "albatross",
+      "category": "Sport",
+      "question": "Vad kallas det i golf att gå ett hål på tre slag under par?",
+      "answers": ["Albatross", "Albatros", "Double eagle"],
+      "region": "internationellt"
+    },
+    {
+      "id": "triathlon",
+      "category": "Sport",
+      "question": "Triathlon består av simning, löpning och vilken tredje gren?",
+      "answers": ["Cykling", "Cykel"],
+      "region": "internationellt"
+    }
+  ]
+}

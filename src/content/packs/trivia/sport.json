@@ -1,0 +1,435 @@
+{
+  "id": "sport-blandat",
+  "name": "Sport",
+  "roundType": "trivia",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Fotboll, tennis, vintersport, friidrott, OS och lite av varje.",
+  "items": [
+    {
+      "id": "cl-final-2026",
+      "category": "Fotboll",
+      "question": "I vilken stad spelades Champions League-finalen 2026?",
+      "options": ["Budapest", "München", "Wien", "Prag"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "hard",
+      "fact": "Finalen spelades på Puskás Aréna.",
+      "verify": true
+    },
+    {
+      "id": "flest-landskamper",
+      "category": "Fotboll",
+      "question": "Vilken svensk fotbollsspelare har flest landskamper genom tiderna?",
+      "options": ["Anders Svensson", "Caroline Seger", "Thomas Ravelli", "Lotta Schelin"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bronsmatchen-1994",
+      "category": "Fotboll",
+      "question": "Vem gjorde Sveriges första mål i bronsmatchen mot Bulgarien i VM 1994?",
+      "options": ["Martin Dahlin", "Kennet Andersson", "Tomas Brolin", "Henrik Larsson"],
+      "correct": 2,
+      "region": "sverige",
+      "difficulty": "hard",
+      "fact": "Sverige vann matchen med 4–0."
+    },
+    {
+      "id": "pelusa",
+      "category": "Fotboll",
+      "question": "Vilken legendarisk fotbollsspelare hade smeknamnet ”Pelusa”?",
+      "options": ["Pelé", "Diego Maradona", "Lionel Messi", "Ronaldinho"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "ronaldo-saudi",
+      "category": "Fotboll",
+      "question": "Vilken saudisk klubb skrev Cristiano Ronaldo kontrakt med på nyårsafton 2022?",
+      "options": ["Al-Hilal", "Al-Ittihad", "Al-Nassr", "Al-Ahli"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "mff-1979",
+      "category": "Fotboll",
+      "question": "Vilket svenskt lag spelade final i Europacupen (dagens Champions League) 1979?",
+      "options": ["IFK Göteborg", "Malmö FF", "AIK", "Djurgårdens IF"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ifk-uefacupen",
+      "category": "Fotboll",
+      "question": "Vilket svenskt lag vann UEFA-cupen både 1982 och 1987?",
+      "options": ["Malmö FF", "IFK Norrköping", "IFK Göteborg", "Hammarby"],
+      "correct": 2,
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "flest-allsvenska-guld",
+      "category": "Fotboll",
+      "question": "Vilket lag har vunnit flest SM-guld i Allsvenskan?",
+      "options": ["IFK Göteborg", "AIK", "Malmö FF", "IFK Norrköping"],
+      "correct": 2,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "dam-em-2025",
+      "category": "Fotboll",
+      "question": "I vilket land spelades fotbolls-EM för damer 2025?",
+      "options": ["England", "Schweiz", "Nederländerna", "Tyskland"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "chelsea-2021",
+      "category": "Fotboll",
+      "question": "Vilket lag vann Champions League 2021?",
+      "options": ["Manchester City", "Liverpool", "Chelsea", "Bayern München"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "brasilien-qatar",
+      "category": "Fotboll",
+      "question": "Vilket land slog ut Brasilien i kvartsfinalen i fotbolls-VM 2022 i Qatar?",
+      "options": ["Argentina", "Kroatien", "Marocko", "Frankrike"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "wilander-1988",
+      "category": "Tennis",
+      "question": "Vilken svensk tennisspelare vann tre av fyra Grand Slam-turneringar 1988?",
+      "options": ["Björn Borg", "Stefan Edberg", "Mats Wilander", "Robin Söderling"],
+      "correct": 2,
+      "region": "sverige",
+      "difficulty": "medium",
+      "fact": "Han vann Australian Open, French Open och US Open det året."
+    },
+    {
+      "id": "wimbledon-dam-2025",
+      "category": "Tennis",
+      "question": "Vem vann damsingeln i Wimbledon 2025?",
+      "options": ["Aryna Sabalenka", "Iga Świątek", "Coco Gauff", "Amanda Anisimova"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "wimbledon-herr-2025",
+      "category": "Tennis",
+      "question": "Vem vann herrsingeln i Wimbledon 2025?",
+      "options": ["Carlos Alcaraz", "Novak Djokovic", "Jannik Sinner", "Alexander Zverev"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium",
+      "fact": "Han slog Carlos Alcaraz i finalen."
+    },
+    {
+      "id": "queen-of-the-court",
+      "category": "Tennis",
+      "question": "Vilken tennisstjärna gav ut självbiografin ”My Life: Queen of the Court”?",
+      "options": ["Venus Williams", "Serena Williams", "Maria Sharapova", "Steffi Graf"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sundling-trondheim",
+      "category": "Vintersport",
+      "question": "Vilken svensk skidåkare vann VM-guld i sprint i Trondheim 2025?",
+      "options": ["Maja Dahlqvist", "Jonna Sundling", "Frida Karlsson", "Ebba Andersson"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "medium",
+      "verify": true
+    },
+    {
+      "id": "hockey-vm-1953",
+      "category": "Vintersport",
+      "question": "Vilket år tog Sverige sitt första VM-guld i ishockey?",
+      "options": ["1928", "1953", "1962", "1987"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "hard"
+    },
+    {
+      "id": "djurgarden-sm-guld",
+      "category": "Vintersport",
+      "question": "Vilket ishockeylag har flest SM-guld genom tiderna?",
+      "options": ["Färjestad", "Brynäs", "Djurgårdens IF", "Frölunda"],
+      "correct": 2,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lundqvist-nhl",
+      "category": "Vintersport",
+      "question": "Vilken svensk målvakt har spelat flest NHL-matcher?",
+      "options": ["Henrik Lundqvist", "Pelle Lindbergh", "Tommy Salo", "Jacob Markström"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "langsta-skridskodistansen",
+      "category": "Vintersport",
+      "question": "Vilken är den längsta OS-distansen i hastighetsåkning på skridskor för herrar?",
+      "options": ["3 000 m", "5 000 m", "10 000 m", "15 000 m"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "fakie-switch",
+      "category": "Vintersport",
+      "question": "I vilken vintersport gör man ofta en ”fakie” eller åker ”switch”?",
+      "options": ["Skidskytte", "Snowboard", "Konståkning", "Bob"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "langdhopp-forsok",
+      "category": "Friidrott",
+      "question": "Hur många hopp får de bästa längdhopparna i en final?",
+      "options": ["3", "4", "6", "8"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "christian-olsson",
+      "category": "Friidrott",
+      "question": "Vilken svensk vann OS-guld i tresteg i Aten 2004?",
+      "options": ["Stefan Holm", "Christian Olsson", "Kajsa Bergqvist", "Patrik Sjöberg"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "daniel-stahl",
+      "category": "Friidrott",
+      "question": "Vilken svensk vann OS-guld i diskus i Tokyo 2021?",
+      "options": ["Daniel Ståhl", "Simon Pettersson", "Armand Duplantis", "Ricky Bruch"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "jesse-owens",
+      "category": "Friidrott",
+      "question": "Vilken amerikansk friidrottare vann fyra guld vid OS i Berlin 1936?",
+      "options": ["Carl Lewis", "Jesse Owens", "Jim Thorpe", "Michael Johnson"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "breaking-os",
+      "category": "OS",
+      "question": "Vilken sport debuterade i de olympiska spelen i Paris 2024?",
+      "options": ["Surfing", "Breaking", "Skateboard", "Klättring"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium",
+      "fact": "Surfing, skateboard och klättring kom redan i Tokyo 2021."
+    },
+    {
+      "id": "dragkamp-os",
+      "category": "OS",
+      "question": "Vilken av de här sporterna har en gång varit en olympisk gren?",
+      "options": ["Dragkamp", "Bowling", "Darts", "Schack"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium",
+      "fact": "Dragkamp fanns med i OS 1900–1920."
+    },
+    {
+      "id": "phelps-medaljer",
+      "category": "OS",
+      "question": "Vilken simmare har tagit flest olympiska medaljer, 28 stycken?",
+      "options": ["Mark Spitz", "Ian Thorpe", "Michael Phelps", "Ryan Lochte"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sarah-sjostrom",
+      "category": "Simning",
+      "question": "Vem räknas som Sveriges mest framgångsrika simmare?",
+      "options": ["Therese Alshammar", "Sarah Sjöström", "Louise Hansson", "Anders Holmertz"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "konstsim",
+      "category": "Simning",
+      "question": "Vilken sport kallades förr synkroniserad simning och kallas ibland vattenbalett?",
+      "options": ["Konstsim", "Simhopp", "Vattenpolo", "Livräddning"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "vattenpolo-malvakt",
+      "category": "Simning",
+      "question": "Vilken färg har målvaktens mössa i vattenpolo?",
+      "options": ["Vit", "Blå", "Röd", "Gul"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "schumacher",
+      "category": "Motorsport",
+      "question": "Vilken tysk Formel 1-förare har vunnit sju världsmästartitlar?",
+      "options": ["Sebastian Vettel", "Michael Schumacher", "Nico Rosberg", "Ralf Schumacher"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "drs",
+      "category": "Motorsport",
+      "question": "Vad stod förkortningen DRS för i Formel 1?",
+      "options": ["Drag Reduction System", "Driver Response Signal", "Dynamic Racing Speed", "Downforce Release Switch"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "ingemar-johansson",
+      "category": "Sport",
+      "question": "Vilken svensk boxare blev världsmästare i tungvikt 1959 när han besegrade Floyd Patterson?",
+      "options": ["Ingemar Johansson", "Harry Persson", "Badou Jack", "Lennart Risberg"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "magnus-carlsen",
+      "category": "Sport",
+      "question": "Vilken norsk schackspelare blev stormästare redan som 13-åring?",
+      "options": ["Magnus Carlsen", "Simen Agdestein", "Johan Salomon", "Aryan Tari"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "tiger-woods-nike",
+      "category": "Sport",
+      "question": "Vilken golfstjärna lämnade sin sponsor Nike i början av 2024?",
+      "options": ["Rory McIlroy", "Tiger Woods", "Phil Mickelson", "Jon Rahm"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "fore",
+      "category": "Sport",
+      "question": "Vad ropar man i golf när bollen är på väg mot andra människor?",
+      "options": ["Fore!", "Duck!", "Ball!", "Watch!"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "libero",
+      "category": "Sport",
+      "question": "Vad kallas spelaren i volleyboll som bär en avvikande tröja och har egna regler?",
+      "options": ["Libero", "Setter", "Spiker", "Capitano"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "volleyboll-termer",
+      "category": "Sport",
+      "question": "I vilken sport pratar man om ”pancake”, ”side-out” och ”floater”?",
+      "options": ["Basket", "Volleyboll", "Handboll", "Badminton"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "straffhorna",
+      "category": "Sport",
+      "question": "I vilken sport finns en straffhörna?",
+      "options": ["Fotboll", "Landhockey", "Ishockey", "Handboll"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "volvo-ocean-race",
+      "category": "Sport",
+      "question": "Vad är Volvo Ocean Race för slags tävling?",
+      "options": ["Rally", "Segling", "Långdistanssimning", "Rodd"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "eat-race-win",
+      "category": "Sport",
+      "question": "Vilken tävling handlar dokumentärserien ”Eat. Race. Win.” om?",
+      "options": ["Vasaloppet", "Tour de France", "Dakarrallyt", "Giro d’Italia"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "tour-de-france-2025-start",
+      "category": "Sport",
+      "question": "I vilken fransk stad startade Tour de France 2025?",
+      "options": ["Lille", "Lyon", "Bordeaux", "Nice"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "palio",
+      "category": "Sport",
+      "question": "Vilken italiensk stad är känd för hästkapplöpningen Palio på stadens torg?",
+      "options": ["Florens", "Siena", "Verona", "Bologna"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "kanada-sommarsport",
+      "category": "Sport",
+      "question": "Vilken är Kanadas nationella sommarsport?",
+      "options": ["Baseboll", "Lacrosse", "Kanot", "Rugby"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard",
+      "fact": "Ishockey är landets nationella vintersport."
+    },
+    {
+      "id": "handboll-sm-guld",
+      "category": "Sport",
+      "question": "Vilket herrlag har vunnit flest SM-guld i handboll?",
+      "options": ["IK Sävehof", "Redbergslids IK", "Ystads IF", "HK Drott"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "hard",
+      "verify": true
+    }
+  ]
+}

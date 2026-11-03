@@ -1,0 +1,311 @@
+{
+  "id": "skicka-vidare-blandat",
+  "name": "Skicka vidare – blandat",
+  "roundType": "pass",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Åtta kategorier med korta fritextsvar.",
+  "items": [
+    {
+      "id": "gustav-vasa-kung",
+      "category": "Svensk historia",
+      "question": "Vilket år valdes Gustav Vasa till kung?",
+      "answers": ["1523"],
+      "region": "sverige",
+      "fact": "Han valdes i Strängnäs den 6 juni 1523 – därför är 6 juni Sveriges nationaldag."
+    },
+    {
+      "id": "goteborgs-grundare",
+      "category": "Svensk historia",
+      "question": "Vilken kung grundade Göteborg år 1621?",
+      "answers": ["Gustav II Adolf", "Gustav Adolf", "Gustav 2 Adolf", "Gustav den andre Adolf"],
+      "region": "sverige"
+    },
+    {
+      "id": "drottning-kristina",
+      "category": "Svensk historia",
+      "question": "Vilken svensk drottning abdikerade 1654 och flyttade till Rom?",
+      "answers": ["Kristina", "Drottning Kristina", "Christina"],
+      "region": "sverige"
+    },
+    {
+      "id": "aldsta-universitetet",
+      "category": "Svensk historia",
+      "question": "I vilken stad ligger Sveriges äldsta universitet, grundat 1477?",
+      "answers": ["Uppsala"],
+      "region": "sverige"
+    },
+    {
+      "id": "eu-medlem",
+      "category": "Svensk historia",
+      "question": "Vilket år gick Sverige med i EU?",
+      "answers": ["1995"],
+      "region": "sverige"
+    },
+    {
+      "id": "australiens-huvudstad",
+      "category": "Geografi",
+      "question": "Vad heter Australiens huvudstad?",
+      "answers": ["Canberra"],
+      "region": "internationellt",
+      "fact": "Canberra byggdes som en kompromiss mellan rivalerna Sydney och Melbourne."
+    },
+    {
+      "id": "sveriges-storsta-sjo",
+      "category": "Geografi",
+      "question": "Vilken är Sveriges största sjö?",
+      "answers": ["Vänern"],
+      "region": "sverige",
+      "fact": "Vänern är också den största sjön i hela EU."
+    },
+    {
+      "id": "flest-sjoar",
+      "category": "Geografi",
+      "question": "Vilket land har flest sjöar i världen?",
+      "answers": ["Kanada", "Canada"],
+      "region": "internationellt"
+    },
+    {
+      "id": "hogsta-berget-varlden",
+      "category": "Geografi",
+      "question": "Vad heter världens högsta berg?",
+      "answers": ["Mount Everest", "Everest", "Chomolungma"],
+      "region": "internationellt"
+    },
+    {
+      "id": "kairo-flod",
+      "category": "Geografi",
+      "question": "Vilken flod rinner genom Kairo?",
+      "answers": ["Nilen", "Nil", "Nile"],
+      "region": "internationellt"
+    },
+    {
+      "id": "vm-2022",
+      "category": "Sport",
+      "question": "Vilket land vann fotbolls-VM för herrar 2022?",
+      "answers": ["Argentina"],
+      "region": "internationellt",
+      "fact": "Finalen mot Frankrike i Qatar avgjordes på straffar."
+    },
+    {
+      "id": "puck",
+      "category": "Sport",
+      "question": "I vilken sport använder man en puck?",
+      "answers": ["Ishockey", "Hockey"],
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sorenstam",
+      "category": "Sport",
+      "question": "Vilken svensk golfspelare vann tio majortävlingar under sin karriär?",
+      "answers": ["Annika Sörenstam", "Sörenstam", "Annika"],
+      "region": "sverige"
+    },
+    {
+      "id": "olympiska-ringar",
+      "category": "Sport",
+      "question": "Hur många ringar finns i den olympiska symbolen?",
+      "answers": ["5", "fem"],
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "usain-bolt",
+      "category": "Sport",
+      "question": "Vilket land tävlade sprintern Usain Bolt för?",
+      "answers": ["Jamaica", "Jamaika"],
+      "region": "internationellt"
+    },
+    {
+      "id": "waterloo",
+      "category": "Musik",
+      "question": "Vilken svensk grupp vann Eurovision 1974 med ”Waterloo”?",
+      "answers": ["ABBA"],
+      "region": "sverige",
+      "difficulty": "easy",
+      "fact": "Tävlingen hölls det året i Brighton i England."
+    },
+    {
+      "id": "king-of-pop",
+      "category": "Musik",
+      "question": "Vilken artist kallades ”King of Pop”?",
+      "answers": ["Michael Jackson", "Jackson", "MJ"],
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "beethoven",
+      "category": "Musik",
+      "question": "Vilken kompositör var nästan helt döv när han skrev sin nionde symfoni?",
+      "answers": ["Beethoven", "Ludwig van Beethoven"],
+      "region": "internationellt"
+    },
+    {
+      "id": "max-martin",
+      "category": "Musik",
+      "question": "Vilken svensk låtskrivare och producent låg bakom Britney Spears ”…Baby One More Time”?",
+      "answers": ["Max Martin", "Martin"],
+      "region": "sverige",
+      "difficulty": "hard"
+    },
+    {
+      "id": "u2",
+      "category": "Musik",
+      "question": "Från vilket land kommer bandet U2?",
+      "answers": ["Irland", "Ireland"],
+      "region": "internationellt"
+    },
+    {
+      "id": "frodo",
+      "category": "Film & TV",
+      "question": "Vad heter hobbiten som bär ringen till Domedagsberget i ”Sagan om ringen”?",
+      "answers": ["Frodo", "Frodo Bagger", "Frodo Baggins"],
+      "region": "internationellt"
+    },
+    {
+      "id": "alicia-vikander",
+      "category": "Film & TV",
+      "question": "Vilken svensk skådespelerska vann en Oscar för ”The Danish Girl”?",
+      "answers": ["Alicia Vikander", "Vikander", "Alicia"],
+      "region": "sverige"
+    },
+    {
+      "id": "kalle-anka-julafton",
+      "category": "Film & TV",
+      "question": "Vilken tecknad figur visas i SVT klockan tre på julafton?",
+      "answers": ["Kalle Anka", "Kalle", "Donald Duck"],
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "titanic-regissor",
+      "category": "Film & TV",
+      "question": "Vem regisserade filmen ”Titanic” från 1997?",
+      "answers": ["James Cameron", "Cameron"],
+      "region": "internationellt"
+    },
+    {
+      "id": "ron-weasley",
+      "category": "Film & TV",
+      "question": "Vad heter Harry Potters rödhårige bästa vän?",
+      "answers": ["Ron Weasley", "Ron", "Weasley"],
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "paella",
+      "category": "Mat & dryck",
+      "question": "Från vilket land kommer risrätten paella?",
+      "answers": ["Spanien", "Spain"],
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sushi",
+      "category": "Mat & dryck",
+      "question": "Vad heter den japanska maten med rå fisk på små risbollar?",
+      "answers": ["Sushi", "Nigiri"],
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "borsjtj",
+      "category": "Mat & dryck",
+      "question": "Vilken rotfrukt ger soppan borsjtj dess röda färg?",
+      "answers": ["Rödbeta", "Rödbetor", "Beta"],
+      "region": "internationellt"
+    },
+    {
+      "id": "prinsesstarta",
+      "category": "Mat & dryck",
+      "question": "Vad heter den svenska tårtan med grönt marsipanlock?",
+      "answers": ["Prinsesstårta", "Prinsesstårtan"],
+      "region": "sverige"
+    },
+    {
+      "id": "parmesan",
+      "category": "Mat & dryck",
+      "question": "Från vilket land kommer osten parmesan?",
+      "answers": ["Italien", "Italy"],
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "jarn-fe",
+      "category": "Naturvetenskap",
+      "question": "Vilket grundämne har den kemiska beteckningen Fe?",
+      "answers": ["Järn", "Iron", "Ferrum"],
+      "region": "internationellt",
+      "fact": "Fe kommer från latinets ferrum."
+    },
+    {
+      "id": "fotosyntes",
+      "category": "Naturvetenskap",
+      "question": "Vilken gas tar växter upp ur luften vid fotosyntesen?",
+      "answers": ["Koldioxid", "CO2"],
+      "region": "internationellt"
+    },
+    {
+      "id": "narmast-solen",
+      "category": "Naturvetenskap",
+      "question": "Vilken planet ligger närmast solen?",
+      "answers": ["Merkurius", "Mercury"],
+      "region": "internationellt"
+    },
+    {
+      "id": "penicillin",
+      "category": "Naturvetenskap",
+      "question": "Vem upptäckte penicillinet 1928?",
+      "answers": ["Alexander Fleming", "Fleming"],
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "kromosompar",
+      "category": "Naturvetenskap",
+      "question": "Hur många kromosompar har en människa normalt?",
+      "answers": ["23", "tjugotre"],
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hastunge",
+      "category": "Djur & natur",
+      "question": "Vad kallas en hästunge?",
+      "answers": ["Föl", "Fölet"],
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "kanguru",
+      "category": "Djur & natur",
+      "question": "Vilket hoppande pungdjur förknippas mest med Australien?",
+      "answers": ["Känguru", "Kängurun", "Kangaroo"],
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "usa-nationalfagel",
+      "category": "Djur & natur",
+      "question": "Vilken fågel är USA:s nationalsymbol?",
+      "answers": ["Vithövdad havsörn", "Havsörn", "Örn", "Bald eagle"],
+      "region": "internationellt"
+    },
+    {
+      "id": "storsta-kattdjuret",
+      "category": "Djur & natur",
+      "question": "Vilket är världens största kattdjur?",
+      "answers": ["Tiger", "Tigern", "Sibirisk tiger", "Amurtiger"],
+      "region": "internationellt"
+    },
+    {
+      "id": "kanadas-flagga",
+      "category": "Djur & natur",
+      "question": "Bladet från vilket träd finns på Kanadas flagga?",
+      "answers": ["Lönn", "Sockerlönn", "Maple"],
+      "region": "internationellt"
+    }
+  ]
+}

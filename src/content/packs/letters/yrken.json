@@ -1,0 +1,181 @@
+{
+  "id": "tema-yrken",
+  "name": "Yrken",
+  "roundType": "letters",
+  "variant": "themes",
+  "theme": "Yrken",
+  "language": "sv",
+  "region": "sverige",
+  "difficulty": "easy",
+  "items": [
+    {
+      "id": "brandman",
+      "prompt": "Släcker bränder",
+      "answer": "brandman",
+      "aliases": [
+        "brandkvinna",
+        "brandsoldat"
+      ]
+    },
+    {
+      "id": "tandlakare",
+      "prompt": "Lagar tänder",
+      "answer": "tandläkare"
+    },
+    {
+      "id": "bagare",
+      "prompt": "Bakar bröd och bullar",
+      "answer": "bagare"
+    },
+    {
+      "id": "pilot",
+      "prompt": "Flyger flygplan",
+      "answer": "pilot",
+      "aliases": [
+        "flygkapten"
+      ]
+    },
+    {
+      "id": "larare",
+      "prompt": "Undervisar i skolan",
+      "answer": "lärare",
+      "aliases": [
+        "lärarinna"
+      ]
+    },
+    {
+      "id": "frisor",
+      "prompt": "Klipper hår",
+      "answer": "frisör",
+      "aliases": [
+        "frisörska"
+      ]
+    },
+    {
+      "id": "brevbarare",
+      "prompt": "Delar ut post",
+      "answer": "brevbärare"
+    },
+    {
+      "id": "kock",
+      "prompt": "Lagar mat på restaurang",
+      "answer": "kock"
+    },
+    {
+      "id": "arkitekt",
+      "prompt": "Ritar hus",
+      "answer": "arkitekt"
+    },
+    {
+      "id": "kirurg",
+      "prompt": "Opererar patienter",
+      "answer": "kirurg"
+    },
+    {
+      "id": "advokat",
+      "prompt": "Försvarar den åtalade i rätten",
+      "answer": "advokat",
+      "aliases": [
+        "försvarsadvokat"
+      ]
+    },
+    {
+      "id": "veterinar",
+      "prompt": "Tar hand om sjuka djur",
+      "answer": "veterinär"
+    },
+    {
+      "id": "snickare",
+      "prompt": "Bygger saker av trä",
+      "answer": "snickare"
+    },
+    {
+      "id": "elektriker",
+      "prompt": "Drar elledningar",
+      "answer": "elektriker"
+    },
+    {
+      "id": "bilmekaniker",
+      "prompt": "Reparerar bilar",
+      "answer": "bilmekaniker",
+      "aliases": [
+        "mekaniker"
+      ]
+    },
+    {
+      "id": "fiskare",
+      "prompt": "Fångar fisk till försäljning",
+      "answer": "fiskare"
+    },
+    {
+      "id": "florist",
+      "prompt": "Binder buketter",
+      "answer": "florist",
+      "aliases": [
+        "blomsterhandlare"
+      ]
+    },
+    {
+      "id": "busschauffor",
+      "prompt": "Kör kollektivtrafik på vägen",
+      "answer": "busschaufför",
+      "aliases": [
+        "bussförare"
+      ]
+    },
+    {
+      "id": "journalist",
+      "prompt": "Skriver nyheter",
+      "answer": "journalist",
+      "aliases": [
+        "reporter"
+      ]
+    },
+    {
+      "id": "skadespelare",
+      "prompt": "Spelar roller på film och teater",
+      "answer": "skådespelare",
+      "aliases": [
+        "skådespelerska"
+      ]
+    },
+    {
+      "id": "barnmorska",
+      "prompt": "Hjälper till vid förlossningar",
+      "answer": "barnmorska"
+    },
+    {
+      "id": "rormokare",
+      "prompt": "Lagar rör och avlopp",
+      "answer": "rörmokare",
+      "aliases": [
+        "vvs-montör"
+      ]
+    },
+    {
+      "id": "kassor",
+      "prompt": "Tar betalt i kassan",
+      "answer": "kassör",
+      "aliases": [
+        "kassörska",
+        "kassabiträde"
+      ]
+    },
+    {
+      "id": "herde",
+      "prompt": "Vallar får",
+      "answer": "herde",
+      "aliases": [
+        "fåraherde"
+      ]
+    },
+    {
+      "id": "kapten",
+      "prompt": "Styr ett fartyg",
+      "answer": "kapten",
+      "aliases": [
+        "sjökapten"
+      ]
+    }
+  ]
+}

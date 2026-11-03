@@ -1,0 +1,406 @@
+{
+  "id": "mat-och-dryck",
+  "name": "Mat & dryck",
+  "roundType": "trivia",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Rätter, kryddor och drinkar från hela världen, plus lite svensk husmanskost.",
+  "items": [
+    {
+      "id": "mojito",
+      "category": "Mat & dryck",
+      "question": "Vilken cocktail består av rom, lime, rörsocker, sodavatten och mynta med mycket is?",
+      "options": ["Mojito", "Daiquiri", "Caipirinha", "Piña colada"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "salvia",
+      "category": "Mat & dryck",
+      "question": "Vilken medelhavsört har silvriga blad, tål torka och används ofta till lamm?",
+      "options": ["Basilika", "Salvia", "Dill", "Persilja"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gulasch",
+      "category": "Mat & dryck",
+      "question": "Från vilket land kommer gulaschen?",
+      "options": ["Österrike", "Polen", "Ungern", "Tjeckien"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sambuca",
+      "category": "Mat & dryck",
+      "question": "Vilken smak dominerar i den italienska likören sambuca?",
+      "options": ["Anis", "Mandel", "Citron", "Kaffe"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ol-fjarde-ingrediens",
+      "category": "Mat & dryck",
+      "question": "Malt, jäst och vatten är tre av ölets huvudingredienser. Vilken är den fjärde?",
+      "options": ["Socker", "Humle", "Råg", "Enbär"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy",
+      "fact": "Humlen ger ölet dess beska."
+    },
+    {
+      "id": "paella-krydda",
+      "category": "Mat & dryck",
+      "question": "Vilken krydda färgar paella gul?",
+      "options": ["Gurkmeja", "Paprika", "Saffran", "Kanel"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "svartpeppar",
+      "category": "Mat & dryck",
+      "question": "Vilken krydda görs av de torkade, omogna bären från växten Piper nigrum?",
+      "options": ["Kardemumma", "Svartpeppar", "Kryddpeppar", "Enbär"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "long-island",
+      "category": "Mat & dryck",
+      "question": "Vilken sprit ingår i en Long Island Iced Tea tillsammans med vodka, ljus rom, triple sec och gin?",
+      "options": ["Whisky", "Tequila", "Konjak", "Brandy"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "farfalle",
+      "category": "Mat & dryck",
+      "question": "Vad heter den fjärilsformade pastan på italienska?",
+      "options": ["Fusilli", "Penne", "Farfalle", "Rigatoni"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "nestle",
+      "category": "Mat & dryck",
+      "question": "I vilket land har Nestlé sitt huvudkontor?",
+      "options": ["Frankrike", "Schweiz", "Belgien", "Nederländerna"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "olivolja",
+      "category": "Mat & dryck",
+      "question": "Vilket land är världens största producent av olivolja?",
+      "options": ["Italien", "Grekland", "Spanien", "Turkiet"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "kaffe-producent",
+      "category": "Mat & dryck",
+      "question": "Vilket land är världens största kaffeproducent?",
+      "options": ["Colombia", "Vietnam", "Etiopien", "Brasilien"],
+      "correct": 3,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "limoncello",
+      "category": "Mat & dryck",
+      "question": "Vilken italiensk likör görs på citronskal?",
+      "options": ["Amaretto", "Limoncello", "Frangelico", "Galliano"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sachertarta",
+      "category": "Mat & dryck",
+      "question": "Vad heter den wienska chokladtårtan med aprikosmarmelad och tjock chokladglasyr?",
+      "options": ["Schwarzwaldtårta", "Sachertårta", "Linzertårta", "Dobostårta"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "tagine",
+      "category": "Mat & dryck",
+      "question": "Vad heter den nordafrikanska grytan som har fått namn efter lerkrukan den lagas i?",
+      "options": ["Tagine", "Shakshuka", "Couscous", "Harira"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "caesarsallad",
+      "category": "Mat & dryck",
+      "question": "Vilken sallad har fått sitt namn efter en italiensk-amerikansk krögare?",
+      "options": ["Waldorfsallad", "Caesarsallad", "Cobbsallad", "Nicoisesallad"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium",
+      "fact": "Caesar Cardini skapade den i Tijuana på 1920-talet."
+    },
+    {
+      "id": "kaiserschmarrn",
+      "category": "Mat & dryck",
+      "question": "Från vilket land kommer den söta, sönderrivna pannkaksrätten Kaiserschmarrn?",
+      "options": ["Schweiz", "Tyskland", "Österrike", "Ungern"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "white-russian",
+      "category": "Mat & dryck",
+      "question": "Vilken drink består av vodka, kaffelikör och grädde?",
+      "options": ["Black Russian", "White Russian", "Espresso Martini", "Irish Coffee"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mole",
+      "category": "Mat & dryck",
+      "question": "I vilket land är den chokladkryddade såsen mole en klassiker?",
+      "options": ["Spanien", "Peru", "Mexiko", "Argentina"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "mcdonalds-1955",
+      "category": "Mat & dryck",
+      "question": "Vilket år öppnade Ray Kroc sin första McDonald’s-restaurang och lade grunden till kedjan?",
+      "options": ["1945", "1955", "1965", "1975"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard",
+      "fact": "Bröderna McDonald hade öppnat sin restaurang redan 1940."
+    },
+    {
+      "id": "dyraste-kryddan",
+      "category": "Mat & dryck",
+      "question": "Vilken är världens dyraste krydda?",
+      "options": ["Vanilj", "Kardemumma", "Saffran", "Muskot"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "coq-au-vin",
+      "category": "Mat & dryck",
+      "question": "Vad är huvudingrediensen i den franska rätten coq au vin?",
+      "options": ["Nötkött", "Kyckling", "Kanin", "Anka"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy",
+      "fact": "Coq betyder tupp."
+    },
+    {
+      "id": "banan-apple",
+      "category": "Mat & dryck",
+      "question": "Vilken frukt innehåller flest kalorier per 100 gram?",
+      "options": ["Äpple", "Banan", "Apelsin", "Vattenmelon"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium",
+      "fact": "En banan har ungefär 89 kcal per 100 gram, ett äpple ungefär 52."
+    },
+    {
+      "id": "bloody-mary",
+      "category": "Mat & dryck",
+      "question": "Vilken drink görs på vodka, tomatjuice, worcestershiresås och tabasco?",
+      "options": ["Bloody Mary", "Screwdriver", "Cosmopolitan", "Moscow Mule"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "kitchen-confidential",
+      "category": "Mat & dryck",
+      "question": "Vilken kock skrev boken Kitchen Confidential om livet i restaurangköken?",
+      "options": ["Gordon Ramsay", "Anthony Bourdain", "Jamie Oliver", "Marco Pierre White"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "marsala",
+      "category": "Mat & dryck",
+      "question": "Vad är marsala?",
+      "options": ["En likör", "Ett starkvin", "En brandy", "Ett öl"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium",
+      "fact": "Marsala är ett starkvin från Sicilien, och det används ofta i tiramisu."
+    },
+    {
+      "id": "cosmopolitan",
+      "category": "Mat & dryck",
+      "question": "Vilken drink görs på vodka, tranbärsjuice, limejuice och triple sec?",
+      "options": ["Margarita", "Cosmopolitan", "Sex on the Beach", "Kamikaze"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "eat-fresh",
+      "category": "Mat & dryck",
+      "question": "Vilken snabbmatskedja har sloganen ”Eat Fresh”?",
+      "options": ["Subway", "Burger King", "KFC", "Max"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "borsjtj",
+      "category": "Mat & dryck",
+      "question": "Vad heter den ukrainska rödbetssoppan?",
+      "options": ["Soljanka", "Borsjtj", "Pho", "Gazpacho"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cola-socker",
+      "category": "Mat & dryck",
+      "question": "Ungefär hur många sockerbitar motsvarar sockret i en burk cola på 33 cl?",
+      "options": ["3", "6", "10", "15"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "dos-hombres",
+      "category": "Mat & dryck",
+      "question": "Vilken sorts sprit säljer Breaking Bad-skådespelarna Bryan Cranston och Aaron Paul?",
+      "options": ["Tequila", "Mezcal", "Bourbon", "Gin"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard",
+      "fact": "Märket heter Dos Hombres."
+    },
+    {
+      "id": "bottura",
+      "category": "Mat & dryck",
+      "question": "Vilken italiensk kock driver Osteria Francescana i Modena, som har utsetts till världens bästa restaurang?",
+      "options": ["Massimo Bottura", "Carlo Cracco", "Gennaro Contaldo", "Antonio Carluccio"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "burrito",
+      "category": "Mat & dryck",
+      "question": "Vilken mexikansk rätt har ett namn som betyder ”liten åsna”?",
+      "options": ["Taco", "Burrito", "Quesadilla", "Enchilada"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gurkmeja",
+      "category": "Mat & dryck",
+      "question": "Vilken krydda ger curry dess gula färg?",
+      "options": ["Gurkmeja", "Ingefära", "Spiskummin", "Koriander"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "negroni",
+      "category": "Mat & dryck",
+      "question": "Vilken klassisk drink består av lika delar gin, röd vermouth och Campari?",
+      "options": ["Martini", "Americano", "Negroni", "Spritz"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "one-pan",
+      "category": "Mat & dryck",
+      "question": "Vilken kock gav ut kokboken ”One: Simple One-Pan Wonders”?",
+      "options": ["Nigella Lawson", "Jamie Oliver", "Yotam Ottolenghi", "Gordon Ramsay"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "jansson",
+      "category": "Mat & dryck",
+      "question": "Vilken fisk ingår i Janssons frestelse?",
+      "options": ["Sill", "Ansjovis", "Lax", "Makrill"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "easy",
+      "fact": "Svensk ansjovis är egentligen kryddinlagd skarpsill."
+    },
+    {
+      "id": "absolut-ahus",
+      "category": "Mat & dryck",
+      "question": "På vilken ort tillverkas Absolut Vodka?",
+      "options": ["Åhus", "Ystad", "Kalmar", "Lidköping"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "kalles-kaviar",
+      "category": "Mat & dryck",
+      "question": "Vilket företag lanserade Kalles Kaviar på 1950-talet?",
+      "options": ["Abba", "Findus", "Felix", "Procordia"],
+      "correct": 0,
+      "region": "sverige",
+      "difficulty": "medium"
+    },
+    {
+      "id": "falukorv",
+      "category": "Mat & dryck",
+      "question": "Efter vilken stad har falukorven fått sitt namn?",
+      "options": ["Falkenberg", "Falun", "Falköping", "Falsterbo"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "vasterbottensost",
+      "category": "Mat & dryck",
+      "question": "I vilken ort tillverkas Västerbottensost?",
+      "options": ["Skellefteå", "Burträsk", "Lycksele", "Vilhelmina"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "hard"
+    },
+    {
+      "id": "artsoppa-torsdag",
+      "category": "Mat & dryck",
+      "question": "Vilken veckodag äter man traditionellt ärtsoppa och pannkakor i Sverige?",
+      "options": ["Måndag", "Onsdag", "Torsdag", "Fredag"],
+      "correct": 2,
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "kraftskiva",
+      "category": "Mat & dryck",
+      "question": "Vilken månad har man traditionellt kräftskiva i Sverige?",
+      "options": ["Juni", "Juli", "Augusti", "Oktober"],
+      "correct": 2,
+      "region": "sverige",
+      "difficulty": "easy"
+    }
+  ]
+}

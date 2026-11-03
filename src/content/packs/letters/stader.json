@@ -1,0 +1,176 @@
+{
+  "id": "tema-stader",
+  "name": "Städer i världen",
+  "roundType": "letters",
+  "variant": "themes",
+  "theme": "Städer i världen",
+  "language": "sv",
+  "region": "internationellt",
+  "difficulty": "medium",
+  "items": [
+    {
+      "id": "paris",
+      "prompt": "Här står Eiffeltornet",
+      "answer": "Paris"
+    },
+    {
+      "id": "rom",
+      "prompt": "Här ligger Colosseum",
+      "answer": "Rom",
+      "aliases": [
+        "Rome",
+        "Roma"
+      ]
+    },
+    {
+      "id": "london",
+      "prompt": "Big Ben och Tower Bridge",
+      "answer": "London"
+    },
+    {
+      "id": "new-york",
+      "prompt": "Frihetsgudinnan välkomnar båtarna hit",
+      "answer": "New York",
+      "aliases": [
+        "New York City",
+        "NYC"
+      ]
+    },
+    {
+      "id": "sydney",
+      "prompt": "Operahuset vid hamnen",
+      "answer": "Sydney"
+    },
+    {
+      "id": "rio-de-janeiro",
+      "prompt": "Kristusstatyn på berget Corcovado",
+      "answer": "Rio de Janeiro",
+      "aliases": [
+        "Rio"
+      ]
+    },
+    {
+      "id": "berlin",
+      "prompt": "Brandenburger Tor",
+      "answer": "Berlin"
+    },
+    {
+      "id": "barcelona",
+      "prompt": "Gaudís kyrka Sagrada Família",
+      "answer": "Barcelona"
+    },
+    {
+      "id": "pisa",
+      "prompt": "Ett berömt lutande torn",
+      "answer": "Pisa"
+    },
+    {
+      "id": "venedig",
+      "prompt": "Kanaler och gondoler",
+      "answer": "Venedig",
+      "aliases": [
+        "Venice",
+        "Venezia"
+      ]
+    },
+    {
+      "id": "kopenhamn",
+      "prompt": "Lilla sjöjungfrun",
+      "answer": "Köpenhamn",
+      "aliases": [
+        "Copenhagen",
+        "København"
+      ]
+    },
+    {
+      "id": "moskva",
+      "prompt": "Röda torget och Kreml",
+      "answer": "Moskva",
+      "aliases": [
+        "Moscow"
+      ]
+    },
+    {
+      "id": "tokyo",
+      "prompt": "Japans huvudstad",
+      "answer": "Tokyo"
+    },
+    {
+      "id": "san-francisco",
+      "prompt": "Golden Gate-bron",
+      "answer": "San Francisco"
+    },
+    {
+      "id": "aten",
+      "prompt": "Akropolis",
+      "answer": "Aten",
+      "aliases": [
+        "Athens",
+        "Athen"
+      ]
+    },
+    {
+      "id": "dubai",
+      "prompt": "Burj Khalifa, världens högsta byggnad",
+      "answer": "Dubai"
+    },
+    {
+      "id": "los-angeles",
+      "prompt": "Hollywoodskylten",
+      "answer": "Los Angeles",
+      "aliases": [
+        "LA"
+      ]
+    },
+    {
+      "id": "istanbul",
+      "prompt": "Hagia Sofia vid Bosporen",
+      "answer": "Istanbul"
+    },
+    {
+      "id": "agra",
+      "prompt": "Taj Mahal",
+      "answer": "Agra"
+    },
+    {
+      "id": "kuala-lumpur",
+      "prompt": "Petronas Twin Towers",
+      "answer": "Kuala Lumpur"
+    },
+    {
+      "id": "kairo",
+      "prompt": "Pyramiderna i Giza ligger strax utanför",
+      "answer": "Kairo",
+      "aliases": [
+        "Cairo"
+      ]
+    },
+    {
+      "id": "bryssel",
+      "prompt": "Manneken Pis",
+      "answer": "Bryssel",
+      "aliases": [
+        "Brussels",
+        "Bruxelles"
+      ]
+    },
+    {
+      "id": "new-orleans",
+      "prompt": "Jazzens födelsestad vid Mississippi",
+      "answer": "New Orleans"
+    },
+    {
+      "id": "kapstaden",
+      "prompt": "Taffelberget tornar upp sig bakom staden",
+      "answer": "Kapstaden",
+      "aliases": [
+        "Cape Town"
+      ]
+    },
+    {
+      "id": "granada",
+      "prompt": "Palatset Alhambra",
+      "answer": "Granada"
+    }
+  ]
+}

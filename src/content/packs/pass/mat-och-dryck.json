@@ -1,0 +1,193 @@
+{
+  "id": "skicka-vidare-mat-och-dryck",
+  "name": "Skicka vidare – mat & dryck",
+  "roundType": "pass",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Mat- och dryckesfrågor med korta fritextsvar.",
+  "items": [
+    {
+      "id": "pepparmynta",
+      "category": "Mat & dryck",
+      "question": "Vilken ört är rik på mentol och används i både godis och halstabletter?",
+      "answers": ["Pepparmynta", "Mynta"],
+      "region": "internationellt"
+    },
+    {
+      "id": "marsipan-not",
+      "category": "Mat & dryck",
+      "question": "Vilken nöt gör man traditionell marsipan av?",
+      "answers": ["Mandel", "Mandlar"],
+      "region": "internationellt"
+    },
+    {
+      "id": "moscow-mule",
+      "category": "Mat & dryck",
+      "question": "Vilken drink med vodka, ingefärsöl och lime serveras i en kopparmugg?",
+      "answers": ["Moscow Mule"],
+      "region": "internationellt"
+    },
+    {
+      "id": "churros",
+      "category": "Mat & dryck",
+      "question": "Vad heter de friterade spanska degstängerna som ofta doppas i choklad?",
+      "answers": ["Churros", "Churro"],
+      "region": "internationellt"
+    },
+    {
+      "id": "pink-lady",
+      "category": "Mat & dryck",
+      "question": "Vilken sorts frukt är Pink Lady?",
+      "answers": ["Äpple", "Äpplen"],
+      "region": "internationellt"
+    },
+    {
+      "id": "blanchera",
+      "category": "Mat & dryck",
+      "question": "Vad kallas det att snabbt förvälla något i kokande vatten och sedan kyla det i isvatten?",
+      "answers": ["Blanchera", "Blanchering"],
+      "region": "internationellt"
+    },
+    {
+      "id": "ceviche",
+      "category": "Mat & dryck",
+      "question": "Vad heter den peruanska rätten med rå fisk som ”tillagas” i citrussaft?",
+      "answers": ["Ceviche", "Cebiche"],
+      "region": "internationellt"
+    },
+    {
+      "id": "kombucha",
+      "category": "Mat & dryck",
+      "question": "Vad heter den syrliga drycken som görs genom att jäsa sött te med en svampliknande kultur?",
+      "answers": ["Kombucha"],
+      "region": "internationellt"
+    },
+    {
+      "id": "aioli",
+      "category": "Mat & dryck",
+      "question": "Vad heter den vitlökssås från Medelhavet som liknar majonnäs?",
+      "answers": ["Aioli", "Allioli"],
+      "region": "internationellt"
+    },
+    {
+      "id": "orzo",
+      "category": "Mat & dryck",
+      "question": "Vad heter pastan som ser ut som stora riskorn?",
+      "answers": ["Orzo", "Risoni"],
+      "region": "internationellt"
+    },
+    {
+      "id": "kanel",
+      "category": "Mat & dryck",
+      "question": "Vilken krydda görs av torkad bark från ett träd?",
+      "answers": ["Kanel"],
+      "region": "internationellt"
+    },
+    {
+      "id": "raki",
+      "category": "Mat & dryck",
+      "question": "Vad heter den turkiska anissmaksatta spriten som blir mjölkvit med vatten?",
+      "answers": ["Raki", "Rakı"],
+      "region": "internationellt"
+    },
+    {
+      "id": "creme-brulee",
+      "category": "Mat & dryck",
+      "question": "Vad heter den franska vaniljkrämen med ett hårt lager av bränt socker?",
+      "answers": ["Crème brûlée", "Creme brulee"],
+      "region": "internationellt"
+    },
+    {
+      "id": "gazpacho",
+      "category": "Mat & dryck",
+      "question": "Vad heter den kalla spanska tomatsoppan?",
+      "answers": ["Gazpacho"],
+      "region": "internationellt"
+    },
+    {
+      "id": "espresso-martini",
+      "category": "Mat & dryck",
+      "question": "Vilken drink görs på vodka, kaffelikör och nybryggd espresso?",
+      "answers": ["Espresso Martini"],
+      "region": "internationellt"
+    },
+    {
+      "id": "naan",
+      "category": "Mat & dryck",
+      "question": "Från vilket lands kök kommer naanbrödet?",
+      "answers": ["Indien", "Indiska", "Indiska köket"],
+      "region": "internationellt"
+    },
+    {
+      "id": "screwdriver",
+      "category": "Mat & dryck",
+      "question": "Vad heter drinken med bara vodka och apelsinjuice?",
+      "answers": ["Screwdriver", "Skruvmejsel"],
+      "region": "internationellt"
+    },
+    {
+      "id": "durian",
+      "category": "Mat & dryck",
+      "question": "Vilken asiatisk frukt är så illaluktande att den är förbjuden på många hotell och tåg?",
+      "answers": ["Durian", "Durianfrukt"],
+      "region": "internationellt"
+    },
+    {
+      "id": "vermouth",
+      "category": "Mat & dryck",
+      "question": "Vad kallas starkvinet som smaksätts med örter och används i Martini?",
+      "answers": ["Vermouth", "Vermut"],
+      "region": "internationellt"
+    },
+    {
+      "id": "pesto-pinjenotter",
+      "category": "Mat & dryck",
+      "question": "Vilka nötter hör till en klassisk pesto?",
+      "answers": ["Pinjenötter", "Pinjenöt", "Pinjekärnor"],
+      "region": "internationellt"
+    },
+    {
+      "id": "crepes-suzette",
+      "category": "Mat & dryck",
+      "question": "Vad heter de franska flamberade pannkakorna med apelsinsmör och likör?",
+      "answers": ["Crêpes Suzette", "Crepes Suzette", "Crêpe Suzette"],
+      "region": "internationellt"
+    },
+    {
+      "id": "cannoli",
+      "category": "Mat & dryck",
+      "question": "Vad heter de sicilianska friterade rören fyllda med söt ricotta?",
+      "answers": ["Cannoli", "Cannolo"],
+      "region": "internationellt"
+    },
+    {
+      "id": "escargots",
+      "category": "Mat & dryck",
+      "question": "Vad får man om man beställer escargots på en fransk restaurang?",
+      "answers": ["Sniglar", "Snigel", "Vinbergssnäckor"],
+      "region": "internationellt"
+    },
+    {
+      "id": "helan-gar",
+      "category": "Mat & dryck",
+      "question": "Vad heter Sveriges mest kända snapsvisa?",
+      "answers": ["Helan går"],
+      "region": "sverige"
+    },
+    {
+      "id": "pizzasallad",
+      "category": "Mat & dryck",
+      "question": "Vilken kålsallad får man ofta gratis till pizzan på svenska pizzerior?",
+      "answers": ["Pizzasallad", "Vitkålssallad"],
+      "region": "sverige"
+    },
+    {
+      "id": "blodpudding",
+      "category": "Mat & dryck",
+      "question": "Vilken sylt äter man traditionellt till blodpudding?",
+      "answers": ["Lingonsylt", "Lingon"],
+      "region": "sverige"
+    }
+  ]
+}

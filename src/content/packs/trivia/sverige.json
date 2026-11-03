@@ -1,0 +1,266 @@
+{
+  "id": "allmanbildning-sverige",
+  "name": "Allmänbildning – Sverige",
+  "roundType": "trivia",
+  "language": "sv",
+  "region": "sverige",
+  "difficulty": "medium",
+  "description": "Historia, geografi, kultur, sport, mat, kungahuset och Melodifestivalen.",
+  "items": [
+    {
+      "id": "kvinnlig-rostratt",
+      "category": "Historia",
+      "question": "Vilket år röstade kvinnor för första gången i ett svenskt riksdagsval?",
+      "options": ["1909", "1921", "1932", "1945"],
+      "correct": 1,
+      "difficulty": "medium",
+      "fact": "Beslutet togs 1919 och valet hölls 1921."
+    },
+    {
+      "id": "unionsupplosningen",
+      "category": "Historia",
+      "question": "Vilket år upplöstes unionen mellan Sverige och Norge?",
+      "options": ["1814", "1866", "1905", "1918"],
+      "correct": 2,
+      "difficulty": "medium"
+    },
+    {
+      "id": "regalskeppet-vasa",
+      "category": "Historia",
+      "question": "Vad hette regalskeppet som sjönk i Stockholm på sin jungfruresa 1628?",
+      "options": ["Kronan", "Vasa", "Svärdet", "Mars"],
+      "correct": 1,
+      "difficulty": "easy",
+      "fact": "Vasa bärgades 1961 och är i dag ett av Sveriges mest besökta museer."
+    },
+    {
+      "id": "lutzen",
+      "category": "Historia",
+      "question": "Vilken svensk kung stupade i slaget vid Lützen 1632?",
+      "options": ["Karl XII", "Gustav II Adolf", "Gustav III", "Karl XI"],
+      "correct": 1,
+      "difficulty": "medium"
+    },
+    {
+      "id": "olof-palme",
+      "category": "Historia",
+      "question": "Vilken svensk statsminister mördades i Stockholm 1986?",
+      "options": ["Tage Erlander", "Olof Palme", "Ingvar Carlsson", "Thorbjörn Fälldin"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "hogsta-berget",
+      "category": "Geografi",
+      "question": "Vilket är Sveriges högsta berg?",
+      "options": ["Sarektjåkkå", "Helagsfjället", "Kebnekaise", "Åreskutan"],
+      "correct": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "storsta-landskapet",
+      "category": "Geografi",
+      "question": "Vilket är Sveriges största landskap till ytan?",
+      "options": ["Lappland", "Jämtland", "Norrbotten", "Dalarna"],
+      "correct": 0,
+      "difficulty": "medium",
+      "fact": "Norrbotten är ett län, inte ett landskap – Lappland är störst av landskapen."
+    },
+    {
+      "id": "storsta-on",
+      "category": "Geografi",
+      "question": "Vilken är Sveriges största ö?",
+      "options": ["Öland", "Gotland", "Orust", "Hisingen"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "antal-landskap",
+      "category": "Geografi",
+      "question": "Hur många landskap har Sverige?",
+      "options": ["21", "25", "29", "31"],
+      "correct": 1,
+      "difficulty": "medium"
+    },
+    {
+      "id": "oresundsbron-stad",
+      "category": "Geografi",
+      "question": "Vilken svensk stad är förbunden med Köpenhamn via Öresundsbron?",
+      "options": ["Helsingborg", "Landskrona", "Malmö", "Trelleborg"],
+      "correct": 2,
+      "difficulty": "easy",
+      "fact": "Bron invigdes år 2000."
+    },
+    {
+      "id": "nils-holgersson",
+      "category": "Kultur",
+      "question": "Vem skrev ”Nils Holgerssons underbara resa genom Sverige”?",
+      "options": ["Astrid Lindgren", "Selma Lagerlöf", "Elsa Beskow", "Viktor Rydberg"],
+      "correct": 1,
+      "difficulty": "easy",
+      "fact": "Selma Lagerlöf blev 1909 den första kvinnan att få Nobelpriset i litteratur."
+    },
+    {
+      "id": "midvinterblot",
+      "category": "Kultur",
+      "question": "Vem målade den monumentala målningen ”Midvinterblot”?",
+      "options": ["Anders Zorn", "Carl Larsson", "Bruno Liljefors", "Ernst Josephson"],
+      "correct": 1,
+      "difficulty": "hard"
+    },
+    {
+      "id": "froken-julie",
+      "category": "Kultur",
+      "question": "Vem skrev pjäsen ”Fröken Julie”?",
+      "options": ["Henrik Ibsen", "Hjalmar Bergman", "August Strindberg", "Vilhelm Moberg"],
+      "correct": 2,
+      "difficulty": "medium"
+    },
+    {
+      "id": "astrid-lindgrens-varld",
+      "category": "Kultur",
+      "question": "I vilken stad ligger nöjesparken Astrid Lindgrens Värld?",
+      "options": ["Vimmerby", "Västervik", "Kalmar", "Eksjö"],
+      "correct": 0,
+      "difficulty": "easy"
+    },
+    {
+      "id": "vm-1958",
+      "category": "Sport",
+      "question": "Vilket år arrangerade Sverige fotbolls-VM för herrar?",
+      "options": ["1950", "1958", "1966", "1974"],
+      "correct": 1,
+      "difficulty": "medium",
+      "fact": "Sverige tog silver efter finalförlust mot Brasilien med 2–5."
+    },
+    {
+      "id": "bjorn-borg",
+      "category": "Sport",
+      "question": "Vilken svensk tennisspelare vann Wimbledon fem år i rad, 1976–1980?",
+      "options": ["Mats Wilander", "Stefan Edberg", "Björn Borg", "Thomas Enqvist"],
+      "correct": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "salen-mora",
+      "category": "Sport",
+      "question": "Vad heter det klassiska skidloppet mellan Sälen och Mora?",
+      "options": ["Engelbrektsloppet", "Vasaloppet", "Birkebeinerrennet", "Finlandiahiihto"],
+      "correct": 1,
+      "difficulty": "easy",
+      "fact": "Loppet är 90 km och kördes första gången 1922."
+    },
+    {
+      "id": "zlatan-mal",
+      "category": "Sport",
+      "question": "Vem har gjort flest mål i Sveriges herrlandslag i fotboll?",
+      "options": ["Henrik Larsson", "Zlatan Ibrahimović", "Sven Rydell", "Gunnar Nordahl"],
+      "correct": 1,
+      "difficulty": "medium",
+      "fact": "Zlatan gjorde 62 landslagsmål."
+    },
+    {
+      "id": "semla-dag",
+      "category": "Mat",
+      "question": "Vad heter dagen då man traditionellt äter semlor?",
+      "options": ["Fettisdagen", "Våffeldagen", "Kanelbullens dag", "Askonsdagen"],
+      "correct": 0,
+      "difficulty": "easy"
+    },
+    {
+      "id": "kanelbullens-dag",
+      "category": "Mat",
+      "question": "Vilket datum firas Kanelbullens dag?",
+      "options": ["25 mars", "1 maj", "4 oktober", "13 december"],
+      "correct": 2,
+      "difficulty": "medium",
+      "fact": "25 mars är Våffeldagen."
+    },
+    {
+      "id": "surstromming-fisk",
+      "category": "Mat",
+      "question": "Vilken fisk görs surströmming av?",
+      "options": ["Strömming", "Makrill", "Lax", "Torsk"],
+      "correct": 0,
+      "difficulty": "easy",
+      "fact": "Strömming är sill som lever i Östersjön."
+    },
+    {
+      "id": "torsdag-mat",
+      "category": "Mat",
+      "question": "Vad äter man traditionellt på torsdagar i Sverige, gärna med pannkakor till efterrätt?",
+      "options": ["Kåldolmar", "Ärtsoppa", "Pölsa", "Raggmunk"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "kung-1973",
+      "category": "Kungahuset",
+      "question": "Vilket år blev Carl XVI Gustaf kung?",
+      "options": ["1965", "1973", "1980", "1992"],
+      "correct": 1,
+      "difficulty": "medium"
+    },
+    {
+      "id": "victorias-make",
+      "category": "Kungahuset",
+      "question": "Vad heter kronprinsessan Victorias make?",
+      "options": ["Prins Carl Philip", "Prins Daniel", "Prins Bertil", "Chris O'Neill"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "kungaparets-slott",
+      "category": "Kungahuset",
+      "question": "På vilket slott bor kungaparet?",
+      "options": ["Stockholms slott", "Haga slott", "Drottningholms slott", "Solliden"],
+      "correct": 2,
+      "difficulty": "medium",
+      "fact": "Kungaparet har bott på Drottningholm sedan 1981."
+    },
+    {
+      "id": "tronfoljd-1980",
+      "category": "Kungahuset",
+      "question": "Från vilket år ärver det förstfödda barnet tronen oavsett kön?",
+      "options": ["1974", "1980", "1990", "2000"],
+      "correct": 1,
+      "difficulty": "hard",
+      "fact": "Därför blev Victoria kronprinsessa i stället för sin lillebror Carl Philip."
+    },
+    {
+      "id": "fangad-av-en-stormvind",
+      "category": "Melodifestivalen",
+      "question": "Vem vann Eurovision för Sverige 1991 med ”Fångad av en stormvind”?",
+      "options": ["Carola", "Lena Philipsson", "Charlotte Perrelli", "Linda Bengtzing"],
+      "correct": 0,
+      "difficulty": "easy"
+    },
+    {
+      "id": "eurovision-vinster",
+      "category": "Melodifestivalen",
+      "question": "Hur många gånger hade Sverige vunnit Eurovision Song Contest till och med 2025?",
+      "options": ["5", "6", "7", "8"],
+      "correct": 2,
+      "difficulty": "hard",
+      "verify": true,
+      "fact": "1974, 1984, 1991, 1999, 2012, 2015 och 2023."
+    },
+    {
+      "id": "loreen-2023",
+      "category": "Melodifestivalen",
+      "question": "Med vilken låt vann Loreen Eurovision 2023?",
+      "options": ["Euphoria", "Tattoo", "Heroes", "Statements"],
+      "correct": 1,
+      "difficulty": "easy",
+      "fact": "Loreen blev den första kvinnan att vinna Eurovision två gånger."
+    },
+    {
+      "id": "eurovision-2024-stad",
+      "category": "Melodifestivalen",
+      "question": "I vilken svensk stad hölls Eurovision Song Contest 2024?",
+      "options": ["Stockholm", "Göteborg", "Malmö", "Uppsala"],
+      "correct": 2,
+      "difficulty": "easy"
+    }
+  ]
+}

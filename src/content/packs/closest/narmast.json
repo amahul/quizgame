@@ -1,0 +1,314 @@
+{
+  "id": "narmast-blandat",
+  "name": "Närmast vinner – blandat",
+  "roundType": "closest",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Årtal, antal och avstånd – gissa så nära du kan.",
+  "items": [
+    {
+      "id": "ben-i-kroppen",
+      "question": "Hur många ben har en vuxen människas kropp?",
+      "answer": 206,
+      "region": "internationellt",
+      "fact": "En nyfödd har runt 300 ben – många växer ihop med åren."
+    },
+    {
+      "id": "ishockey-spelare",
+      "question": "Hur många spelare per lag står på isen samtidigt i ishockey, målvakten inräknad?",
+      "answer": 6,
+      "region": "internationellt"
+    },
+    {
+      "id": "franska-revolutionen",
+      "question": "Vilket år startade franska revolutionen?",
+      "answer": 1789,
+      "region": "internationellt",
+      "year": true
+    },
+    {
+      "id": "planeter",
+      "question": "Hur många planeter finns det i vårt solsystem?",
+      "answer": 8,
+      "region": "internationellt",
+      "fact": "Pluto räknas sedan 2006 som en dvärgplanet."
+    },
+    {
+      "id": "forsta-iphone",
+      "question": "Vilket år lanserades den första iPhonen?",
+      "answer": 2007,
+      "region": "internationellt",
+      "year": true
+    },
+    {
+      "id": "berlinmuren",
+      "question": "Vilket år föll Berlinmuren?",
+      "answer": 1989,
+      "region": "internationellt",
+      "year": true
+    },
+    {
+      "id": "forsta-varldskriget",
+      "question": "Vilket år började första världskriget?",
+      "answer": 1914,
+      "region": "internationellt",
+      "year": true
+    },
+    {
+      "id": "ryggkotor",
+      "question": "Hur många kotor har människans ryggrad?",
+      "answer": 33,
+      "region": "internationellt",
+      "fact": "Beroende på hur man räknar svanskotorna blir det 33 eller 34."
+    },
+    {
+      "id": "tander",
+      "question": "Hur många tänder har en vuxen människa, visdomständerna inräknade?",
+      "answer": 32,
+      "region": "internationellt"
+    },
+    {
+      "id": "katt-tar",
+      "question": "Hur många tår har en katt totalt?",
+      "answer": 18,
+      "region": "internationellt",
+      "fact": "Fem på varje framtass och fyra på varje baktass."
+    },
+    {
+      "id": "gurka-vatten",
+      "question": "Hur många procent vatten består en gurka av?",
+      "answer": 96,
+      "region": "internationellt",
+      "unit": "%"
+    },
+    {
+      "id": "tyska-delstater",
+      "question": "Hur många delstater har Tyskland?",
+      "answer": 16,
+      "region": "internationellt"
+    },
+    {
+      "id": "blod-liter",
+      "question": "Ungefär hur många liter blod har en vuxen människa?",
+      "answer": 5,
+      "region": "internationellt",
+      "unit": "liter",
+      "fact": "En vuxen har ungefär 5–6 liter blod."
+    },
+    {
+      "id": "eiffeltornet-trappsteg",
+      "question": "Hur många trappsteg är det upp till toppen av Eiffeltornet?",
+      "answer": 1665,
+      "region": "internationellt"
+    },
+    {
+      "id": "friends-avsnitt",
+      "question": "Hur många avsnitt av tv-serien Friends gjordes?",
+      "answer": 236,
+      "region": "internationellt"
+    },
+    {
+      "id": "manen-avstand",
+      "question": "Hur många kilometer är det i genomsnitt från jorden till månen?",
+      "answer": 384400,
+      "region": "internationellt",
+      "unit": "km"
+    },
+    {
+      "id": "kortaste-kriget",
+      "question": "Hur många minuter varade världens kortaste krig, mellan Storbritannien och Zanzibar 1896?",
+      "answer": 38,
+      "region": "internationellt",
+      "unit": "minuter"
+    },
+    {
+      "id": "blackfisk-hjartan",
+      "question": "Hur många hjärtan har en bläckfisk?",
+      "answer": 3,
+      "region": "internationellt"
+    },
+    {
+      "id": "manlandningen",
+      "question": "Vilket år landade människan på månen för första gången?",
+      "answer": 1969,
+      "region": "internationellt",
+      "year": true
+    },
+    {
+      "id": "svensk-tv",
+      "question": "Vilket år startade de officiella tv-sändningarna i Sverige?",
+      "answer": 1956,
+      "region": "sverige",
+      "year": true
+    },
+    {
+      "id": "titanic",
+      "question": "Vilket år sjönk Titanic?",
+      "answer": 1912,
+      "region": "internationellt",
+      "year": true
+    },
+    {
+      "id": "eu-lander",
+      "question": "Hur många medlemsländer har EU?",
+      "answer": 27,
+      "region": "internationellt"
+    },
+    {
+      "id": "sveriges-kommuner",
+      "question": "Hur många kommuner har Sverige?",
+      "answer": 290,
+      "region": "sverige"
+    },
+    {
+      "id": "sveriges-lan",
+      "question": "Hur många län har Sverige?",
+      "answer": 21,
+      "region": "sverige"
+    },
+    {
+      "id": "oresundsbron",
+      "question": "Vilket år invigdes Öresundsbron?",
+      "answer": 2000,
+      "region": "sverige",
+      "year": true
+    },
+    {
+      "id": "gustav-vasa",
+      "question": "Vilket år valdes Gustav Vasa till kung?",
+      "answer": 1523,
+      "region": "sverige",
+      "year": true
+    },
+    {
+      "id": "ikea-grundat",
+      "question": "Vilket år grundade Ingvar Kamprad IKEA?",
+      "answer": 1943,
+      "region": "sverige",
+      "year": true
+    },
+    {
+      "id": "maraton",
+      "question": "Hur många kilometer är ett maratonlopp?",
+      "answer": 42.195,
+      "region": "internationellt",
+      "unit": "km"
+    },
+    {
+      "id": "sekunder-dygn",
+      "question": "Hur många sekunder har ett dygn?",
+      "answer": 86400,
+      "region": "internationellt"
+    },
+    {
+      "id": "pianotangenter",
+      "question": "Hur många tangenter har ett vanligt piano?",
+      "answer": 88,
+      "region": "internationellt"
+    },
+    {
+      "id": "ljusets-hastighet",
+      "question": "Hur många kilometer per sekund färdas ljuset i vakuum, ungefär?",
+      "answer": 299792,
+      "region": "internationellt",
+      "unit": "km/s"
+    },
+    {
+      "id": "globen",
+      "question": "Vilket år invigdes Globen i Stockholm?",
+      "answer": 1989,
+      "region": "sverige",
+      "year": true
+    },
+    {
+      "id": "mandela-fangelse",
+      "question": "Hur många år satt Nelson Mandela i fängelse?",
+      "answer": 27,
+      "region": "internationellt",
+      "unit": "år"
+    },
+    {
+      "id": "mcdonalds-sverige",
+      "question": "Vilket år öppnade den första McDonald’s-restaurangen i Sverige?",
+      "answer": 1973,
+      "region": "sverige",
+      "year": true
+    },
+    {
+      "id": "mount-everest",
+      "question": "Hur många meter över havet är Mount Everest?",
+      "answer": 8849,
+      "region": "internationellt",
+      "unit": "m"
+    },
+    {
+      "id": "astrid-lindgren",
+      "question": "Vilket år föddes Astrid Lindgren?",
+      "answer": 1907,
+      "region": "sverige",
+      "year": true
+    },
+    {
+      "id": "pippi-bok",
+      "question": "Vilket år kom den första boken om Pippi Långstrump?",
+      "answer": 1945,
+      "region": "sverige",
+      "year": true
+    },
+    {
+      "id": "sverige-nato",
+      "question": "Vilket år blev Sverige medlem i Nato?",
+      "answer": 2024,
+      "region": "sverige",
+      "year": true
+    },
+    {
+      "id": "tower-bridge",
+      "question": "Vilket år invigdes Tower Bridge i London?",
+      "answer": 1894,
+      "region": "internationellt",
+      "year": true
+    },
+    {
+      "id": "spotify",
+      "question": "Vilket år lanserades Spotify?",
+      "answer": 2008,
+      "region": "sverige",
+      "year": true
+    },
+    {
+      "id": "fn-medlemmar",
+      "question": "Hur många medlemsländer har FN?",
+      "answer": 193,
+      "region": "internationellt"
+    },
+    {
+      "id": "sverige-langd",
+      "question": "Hur många kilometer är Sverige från norr till söder?",
+      "answer": 1572,
+      "region": "sverige",
+      "unit": "km"
+    },
+    {
+      "id": "vatten-fahrenheit",
+      "question": "Vid hur många grader Fahrenheit kokar vatten vid havsytan?",
+      "answer": 212,
+      "region": "internationellt"
+    },
+    {
+      "id": "kamprad-alder",
+      "question": "Hur gammal blev IKEA-grundaren Ingvar Kamprad?",
+      "answer": 91,
+      "region": "sverige",
+      "unit": "år"
+    },
+    {
+      "id": "elizabeth-alder",
+      "question": "Hur gammal blev drottning Elizabeth II?",
+      "answer": 96,
+      "region": "internationellt",
+      "unit": "år"
+    }
+  ]
+}

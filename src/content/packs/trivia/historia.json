@@ -1,0 +1,230 @@
+{
+  "id": "historia-blandat",
+  "name": "Historia",
+  "roundType": "trivia",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Från antiken till 2000-talet, i Sverige och i världen.",
+  "items": [
+    {
+      "id": "amelia-earhart",
+      "category": "Historia",
+      "question": "Vem blev 1932 den första kvinnan att flyga ensam över Atlanten?",
+      "options": ["Amelia Earhart", "Amy Johnson", "Bessie Coleman", "Harriet Quimby"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "wilhelm-ii",
+      "category": "Historia",
+      "question": "Vilken tysk kejsare abdikerade i slutet av första världskriget?",
+      "options": ["Wilhelm I", "Wilhelm II", "Fredrik III", "Otto von Bismarck"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "trafalgar",
+      "category": "Historia",
+      "question": "Vilken brittisk amiral ledde britterna i slaget vid Trafalgar 1805?",
+      "options": ["Francis Drake", "Horatio Nelson", "James Cook", "Arthur Wellesley"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium",
+      "fact": "Nelson vann slaget men dödades själv under det."
+    },
+    {
+      "id": "new-deal",
+      "category": "Historia",
+      "question": "Vilken amerikansk president är känd för reformprogrammet New Deal?",
+      "options": ["Theodore Roosevelt", "Woodrow Wilson", "Franklin D. Roosevelt", "Harry S. Truman"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "vietnam-1945",
+      "category": "Historia",
+      "question": "Från vilket land utropade Vietnam sin självständighet 1945?",
+      "options": ["Storbritannien", "Frankrike", "Nederländerna", "Portugal"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "forsta-vaccinet",
+      "category": "Historia",
+      "question": "Mot vilken sjukdom skyddade Edward Jenners vaccin från 1796, världens första?",
+      "options": ["Polio", "Mässling", "Smittkoppor", "Rabies"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "luthers-teser",
+      "category": "Historia",
+      "question": "Under vilket århundrade spikade Martin Luther upp sina 95 teser?",
+      "options": ["1300-talet", "1400-talet", "1500-talet", "1600-talet"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium",
+      "fact": "Det skedde 1517 i Wittenberg."
+    },
+    {
+      "id": "nixon-vietnam",
+      "category": "Historia",
+      "question": "Vilken amerikansk president började dra tillbaka de amerikanska trupperna från Vietnam?",
+      "options": ["Lyndon B. Johnson", "Richard Nixon", "Gerald Ford", "Jimmy Carter"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "ich-bin-ein-berliner",
+      "category": "Historia",
+      "question": "Vilken amerikansk president sa ”Ich bin ein Berliner” i ett tal 1963?",
+      "options": ["Dwight D. Eisenhower", "John F. Kennedy", "Lyndon B. Johnson", "Ronald Reagan"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "tarningen-ar-kastad",
+      "category": "Historia",
+      "question": "Vem sägs ha sagt ”Tärningen är kastad” när han gick över floden Rubicon?",
+      "options": ["Julius Caesar", "Nero", "Hannibal", "Augustus"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "lilla-roda-boken",
+      "category": "Historia",
+      "question": "Vilken ledares citat samlades i ”Den lilla röda boken”?",
+      "options": ["Josef Stalin", "Mao Zedong", "Fidel Castro", "Ho Chi Minh"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mansa-musa",
+      "category": "Historia",
+      "question": "Vilken kung av Maliriket är känd för sin enorma rikedom och sin pilgrimsfärd till Mecka?",
+      "options": ["Mansa Musa", "Sundiata Keita", "Haile Selassie", "Shaka Zulu"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "vapenvilodagen",
+      "category": "Historia",
+      "question": "Vilket datum hedrar många länder minnet av första världskrigets offer?",
+      "options": ["1 september", "6 juni", "11 november", "8 maj"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium",
+      "fact": "Vapenstilleståndet trädde i kraft klockan 11 den 11 november 1918."
+    },
+    {
+      "id": "tage-erlander",
+      "category": "Historia",
+      "question": "Vem var Sveriges statsminister i hela 23 år, 1946–1969?",
+      "options": ["Per Albin Hansson", "Tage Erlander", "Olof Palme", "Hjalmar Branting"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "easy"
+    },
+    {
+      "id": "james-watt",
+      "category": "Historia",
+      "question": "Vilken skotsk uppfinnare förbättrade ångmaskinen så att den fick sitt stora genombrott?",
+      "options": ["James Watt", "George Stephenson", "Isambard Kingdom Brunel", "Thomas Newcomen"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hastings-1066",
+      "category": "Historia",
+      "question": "Vem var Englands kung när han stupade i slaget vid Hastings 1066?",
+      "options": ["Vilhelm Erövraren", "Harald II", "Rikard Lejonhjärta", "Alfred den store"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "titanic-destination",
+      "category": "Historia",
+      "question": "Vart var Titanic på väg under sin jungfruresa 1912?",
+      "options": ["Boston", "New York", "Halifax", "Southampton"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hirohito",
+      "category": "Historia",
+      "question": "Vem var Japans kejsare under andra världskriget?",
+      "options": ["Meiji", "Taishō", "Hirohito", "Akihito"],
+      "correct": 2,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "napoleon-1804",
+      "category": "Historia",
+      "question": "Vem krönte sig själv till kejsare i Notre-Dame i Paris 1804?",
+      "options": ["Ludvig XVI", "Napoleon Bonaparte", "Karl den store", "Napoleon III"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pax-romana-augustus",
+      "category": "Historia",
+      "question": "Vilken romersk kejsare inledde den långa fredsperioden Pax Romana?",
+      "options": ["Julius Caesar", "Augustus", "Nero", "Hadrianus"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "brodera-wright",
+      "category": "Historia",
+      "question": "Vilka bröder gjorde den första motordrivna flygningen 1903?",
+      "options": ["Bröderna Grimm", "Bröderna Wright", "Bröderna Lumière", "Bröderna Montgolfier"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "easy"
+    },
+    {
+      "id": "via-appia",
+      "category": "Historia",
+      "question": "Vad heter den berömda antika romerska vägen från Rom till Brindisi?",
+      "options": ["Via Appia", "Via Roma", "Via Augusta", "Via Sacra"],
+      "correct": 0,
+      "region": "internationellt",
+      "difficulty": "medium"
+    },
+    {
+      "id": "milano-ediktet",
+      "category": "Historia",
+      "question": "Vilken romersk kejsare gav de kristna religionsfrihet genom Milanoediktet år 313?",
+      "options": ["Diocletianus", "Konstantin den store", "Marcus Aurelius", "Caligula"],
+      "correct": 1,
+      "region": "internationellt",
+      "difficulty": "hard"
+    },
+    {
+      "id": "dynamit",
+      "category": "Historia",
+      "question": "Vilken svensk uppfann dynamiten?",
+      "options": ["Anders Celsius", "Alfred Nobel", "John Ericsson", "Gustaf de Laval"],
+      "correct": 1,
+      "region": "sverige",
+      "difficulty": "easy"
+    }
+  ]
+}

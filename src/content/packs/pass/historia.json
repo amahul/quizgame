@@ -1,0 +1,179 @@
+{
+  "id": "skicka-vidare-historia",
+  "name": "Skicka vidare – historia",
+  "roundType": "pass",
+  "language": "sv",
+  "region": "blandat",
+  "difficulty": "medium",
+  "description": "Historiefrågor med korta fritextsvar.",
+  "items": [
+    {
+      "id": "sanna-marin",
+      "category": "Historia",
+      "question": "Vem blev 2019, bara 34 år gammal, Finlands statsminister?",
+      "answers": ["Sanna Marin", "Marin"],
+      "region": "internationellt"
+    },
+    {
+      "id": "hangande-tradgardarna",
+      "category": "Historia",
+      "question": "I vilken antik stad ska de hängande trädgårdarna ha funnits?",
+      "answers": ["Babylon"],
+      "region": "internationellt"
+    },
+    {
+      "id": "pax-romana",
+      "category": "Historia",
+      "question": "Vad kallas den långa fredsperioden i Romarriket som började under Augustus?",
+      "answers": ["Pax Romana"],
+      "region": "internationellt"
+    },
+    {
+      "id": "darwins-skepp",
+      "category": "Historia",
+      "question": "Vad hette skeppet som Charles Darwin reste jorden runt med?",
+      "answers": ["Beagle", "HMS Beagle"],
+      "region": "internationellt"
+    },
+    {
+      "id": "sidenvagen",
+      "category": "Historia",
+      "question": "Vad kallas den gamla handelsvägen mellan Kina och Europa?",
+      "answers": ["Sidenvägen"],
+      "region": "internationellt"
+    },
+    {
+      "id": "pompeji",
+      "category": "Historia",
+      "question": "Vilken vulkan begravde Pompeji år 79?",
+      "answers": ["Vesuvius", "Vesuvio"],
+      "region": "internationellt"
+    },
+    {
+      "id": "apollo-11-collins",
+      "category": "Historia",
+      "question": "Vem var den tredje astronauten i Apollo 11, han som stannade kvar i kommandomodulen?",
+      "answers": ["Michael Collins", "Collins"],
+      "region": "internationellt"
+    },
+    {
+      "id": "barbarossa",
+      "category": "Historia",
+      "question": "Vad var kodnamnet för Tysklands anfall mot Sovjetunionen 1941?",
+      "answers": ["Barbarossa", "Operation Barbarossa"],
+      "region": "internationellt"
+    },
+    {
+      "id": "franska-revolutionen",
+      "category": "Historia",
+      "question": "Vilket år började den franska revolutionen?",
+      "answers": ["1789"],
+      "region": "internationellt"
+    },
+    {
+      "id": "magna-carta",
+      "category": "Historia",
+      "question": "Vad heter dokumentet från 1215 som begränsade den engelske kungens makt?",
+      "answers": ["Magna Carta"],
+      "region": "internationellt"
+    },
+    {
+      "id": "lutetia",
+      "category": "Historia",
+      "question": "Vilken stad hette Lutetia under romartiden?",
+      "answers": ["Paris"],
+      "region": "internationellt"
+    },
+    {
+      "id": "rasputin",
+      "category": "Historia",
+      "question": "Vilken rysk mystiker och munk sjöng Boney M om?",
+      "answers": ["Rasputin"],
+      "region": "internationellt"
+    },
+    {
+      "id": "anne-frank-kitty",
+      "category": "Historia",
+      "question": "Vad kallade Anne Frank den som hon skrev till i sin dagbok?",
+      "answers": ["Kitty"],
+      "region": "internationellt"
+    },
+    {
+      "id": "hindenburg",
+      "category": "Historia",
+      "question": "Vad hette luftskeppet som fattade eld och störtade i USA 1937?",
+      "answers": ["Hindenburg"],
+      "region": "internationellt"
+    },
+    {
+      "id": "konstantinopel",
+      "category": "Historia",
+      "question": "Vad heter staden Konstantinopel i dag?",
+      "answers": ["Istanbul"],
+      "region": "internationellt"
+    },
+    {
+      "id": "hitler-fodelseland",
+      "category": "Historia",
+      "question": "I vilket land föddes Adolf Hitler?",
+      "answers": ["Österrike"],
+      "region": "internationellt"
+    },
+    {
+      "id": "pearl-harbor",
+      "category": "Historia",
+      "question": "Vilken amerikansk flottbas anfölls av Japan den 7 december 1941?",
+      "answers": ["Pearl Harbor"],
+      "region": "internationellt"
+    },
+    {
+      "id": "sixtinska-kapellet",
+      "category": "Historia",
+      "question": "Vem målade taket i Sixtinska kapellet?",
+      "answers": ["Michelangelo", "Michelangelo Buonarroti"],
+      "region": "internationellt"
+    },
+    {
+      "id": "falklandskriget",
+      "category": "Historia",
+      "question": "Om vilka öar krigade Argentina och Storbritannien 1982?",
+      "answers": ["Falklandsöarna", "Falklands", "Malvinerna"],
+      "region": "internationellt"
+    },
+    {
+      "id": "world-trade-center",
+      "category": "Historia",
+      "question": "Vilket år förstördes tvillingtornen i New York i en terrorattack?",
+      "answers": ["2001"],
+      "region": "internationellt"
+    },
+    {
+      "id": "stockholms-blodbad",
+      "category": "Svensk historia",
+      "question": "Vilket år skedde Stockholms blodbad?",
+      "answers": ["1520"],
+      "region": "sverige"
+    },
+    {
+      "id": "sundsvallsbranden",
+      "category": "Svensk historia",
+      "question": "Vilken norrländsk stad brann nästan helt ner 1888 och byggdes upp i sten?",
+      "answers": ["Sundsvall"],
+      "region": "sverige"
+    },
+    {
+      "id": "linne",
+      "category": "Svensk historia",
+      "question": "Vilken svensk naturforskare skapade systemet för att namnge växter och djur?",
+      "answers": ["Carl von Linné", "Linné", "Carl Linnaeus"],
+      "region": "sverige"
+    },
+    {
+      "id": "gustav-iii-maskerad",
+      "category": "Svensk historia",
+      "question": "Vilken svensk kung sköts på en maskeradbal 1792?",
+      "answers": ["Gustav III", "Gustav 3", "Gustav den tredje"],
+      "region": "sverige"
+    }
+  ]
+}

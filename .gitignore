@@ -1,0 +1,22 @@
+node_modules
+dist
+coverage
+*.local
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Local music must never be committed ("Lokal musik" reads files in the browser only)
+*.mp3
+*.m4a
+*.aac
+*.ogg
+*.opus
+*.flac
+*.wav
+/music/
