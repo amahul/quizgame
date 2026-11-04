@@ -1,8 +1,8 @@
 // Background music ("hissmusik") for the lobby and while players are answering.
-// Two original, looping tunes, synthesized like everything else: a laid-back one
-// for the lobby and a driving one for questions. A small lookahead scheduler plays
-// them through their own gain bus, so switching tunes cross-fades and stopping
-// fades out (e.g. right before the drumroll).
+// Two original, looping dance-pop tunes, synthesized like everything else: a
+// bouncy one for the lobby and a faster, driving one for questions. A small
+// lookahead scheduler plays them through their own gain bus, so switching tunes
+// cross-fades and stopping fades out (e.g. right before the drumroll).
 import { getAudioContext, getOutput, noteHz } from '.'
 
 export type BackgroundTrack = 'lobby' | 'question'
@@ -22,99 +22,115 @@ export interface Song {
   hats: number[]
   accents: number[]
   kicks: number[]
+  claps: number[]
 }
 
 /** Repeats a one-bar pattern of steps over `bars` bars of 16 steps. */
 const everyBar = (steps: number[], bars: number) => Array.from({ length: bars }, (_, b) => steps.map((s) => b * 16 + s)).flat()
 
-/** Bass for four bars: root, fifth and a pickup per bar. */
-function bassLine(roots: [root: string, fifth: string][], pattern: [offset: number, which: 0 | 1, length: number][]): NoteEvent[] {
-  return roots.flatMap(([root, fifth], bar) => pattern.map(([s, which, len]): NoteEvent => [bar * 16 + s, which ? fifth : root, len]))
-}
-
-// F – Dm – Gm – C, swinging along at an easy pace.
-const LOBBY_CHORDS = [
-  ['F4', 'A4', 'C5'],
-  ['D4', 'F4', 'A4'],
-  ['D4', 'G4', 'Bb4'],
-  ['E4', 'G4', 'C5'],
-]
-
-export const LOBBY_SONG: Song = {
-  bpm: 112,
-  steps: 64,
-  bass: bassLine(
-    [
-      ['F2', 'C3'],
-      ['D2', 'A2'],
-      ['G2', 'D3'],
-      ['C2', 'G2'],
-    ],
-    [
-      [0, 0, 3],
-      [6, 1, 2],
-      [8, 0, 3],
-      [14, 1, 2],
-    ],
-  ),
-  chords: LOBBY_CHORDS.flatMap((notes, bar) => [2, 6, 10, 14].map((s): [number, string[], number] => [bar * 16 + s, notes, 2])),
-  melody: [
-    [0, 'A5', 2],
-    [4, 'C6', 2],
-    [6, 'A5', 2],
-    [8, 'F5', 4],
-    [14, 'G5', 2],
-    [16, 'A5', 4],
-    [22, 'F5', 2],
-    [24, 'D5', 6],
-    [32, 'Bb5', 2],
-    [34, 'A5', 2],
-    [36, 'G5', 4],
-    [40, 'D5', 2],
-    [42, 'F5', 2],
-    [44, 'G5', 4],
-    [48, 'E5', 2],
-    [50, 'G5', 2],
-    [52, 'C6', 4],
-    [56, 'Bb5', 2],
-    [58, 'A5', 2],
-    [60, 'G5', 4],
-  ],
-  hats: everyBar([2, 6, 10, 14], 4),
-  accents: [],
-  kicks: everyBar([0, 8], 4),
-}
-
-// Am – F – C – G, ticking along like a countdown.
-const QUESTION_CHORDS = [
-  ['A4', 'C5', 'E5'],
-  ['F4', 'A4', 'C5'],
-  ['E4', 'G4', 'C5'],
-  ['D4', 'G4', 'B4'],
-]
-/** Chord tones arpeggiated in 8ths, an octave up: 1-3-5-3-1-3-5-8. */
-const ARPEGGIO = [0, 1, 2, 1, 0, 1, 2, 3]
 const octaveUp = (note: string) => note.replace(/\d$/, (d) => String(Number(d) + 1))
 
-export const QUESTION_SONG: Song = {
-  bpm: 128,
+/** Disco bass: 8th notes bouncing between the root and its octave, one bar per root. */
+const bounceBass = (roots: string[]): NoteEvent[] =>
+  roots.flatMap((root, bar) => [0, 2, 4, 6, 8, 10, 12, 14].map((s, i): NoteEvent => [bar * 16 + s, i % 2 ? octaveUp(root) : root, 1]))
+
+/** The same chord stab rhythm in every bar. */
+const stabs = (chords: string[][], steps: [step: number, length: number][]) =>
+  chords.flatMap((notes, bar) => steps.map(([s, len]): [number, string[], number] => [bar * 16 + s, notes, len]))
+
+const FOUR_ON_THE_FLOOR = everyBar([0, 4, 8, 12], 4)
+const BACKBEAT = everyBar([4, 12], 4)
+const ALL_SIXTEENTHS = Array.from({ length: 64 }, (_, i) => i)
+const OFFBEAT_EIGHTHS = everyBar([2, 6, 10, 14], 4)
+
+// C – G – Am – F with a sing-along hook.
+export const LOBBY_SONG: Song = {
+  bpm: 124,
   steps: 64,
-  bass: bassLine(
+  bass: bounceBass(['C2', 'G2', 'A2', 'F2']),
+  chords: stabs(
     [
-      ['A2', 'A3'],
-      ['F2', 'F3'],
-      ['C3', 'C4'],
-      ['G2', 'G3'],
+      ['C4', 'E4', 'G4'],
+      ['B3', 'D4', 'G4'],
+      ['C4', 'E4', 'A4'],
+      ['C4', 'F4', 'A4'],
     ],
-    [0, 2, 4, 6, 8, 10, 12, 14].map((s): [number, 0 | 1, number] => [s, s === 6 || s === 14 ? 1 : 0, 1]),
+    [
+      [0, 2],
+      [3, 1],
+      [6, 2],
+      [10, 1],
+      [12, 2],
+    ],
   ),
-  chords: QUESTION_CHORDS.flatMap((notes, bar) => [0, 3, 6, 10].map((s): [number, string[], number] => [bar * 16 + s, notes, 1])),
+  melody: [
+    [0, 'E5', 1],
+    [2, 'G5', 1],
+    [3, 'A5', 1],
+    [4, 'G5', 2],
+    [7, 'E5', 1],
+    [8, 'C6', 2],
+    [10, 'A5', 1],
+    [12, 'G5', 3],
+    [16, 'D5', 1],
+    [18, 'G5', 1],
+    [19, 'A5', 1],
+    [20, 'B5', 2],
+    [23, 'A5', 1],
+    [24, 'G5', 2],
+    [26, 'D5', 1],
+    [28, 'B4', 3],
+    [32, 'E5', 1],
+    [34, 'A5', 1],
+    [35, 'B5', 1],
+    [36, 'C6', 2],
+    [39, 'B5', 1],
+    [40, 'A5', 2],
+    [42, 'E5', 1],
+    [44, 'C5', 3],
+    [48, 'F5', 1],
+    [50, 'A5', 1],
+    [51, 'C6', 1],
+    [52, 'D6', 2],
+    [54, 'C6', 1],
+    [56, 'A5', 2],
+    [58, 'G5', 2],
+    [60, 'E5', 1],
+    [62, 'G5', 1],
+  ],
+  hats: ALL_SIXTEENTHS,
+  accents: OFFBEAT_EIGHTHS,
+  kicks: FOUR_ON_THE_FLOOR,
+  claps: BACKBEAT,
+}
+
+// Em – C – G – D, racing along with a 16th-note arpeggio like a countdown.
+const QUESTION_CHORDS = [
+  ['E4', 'G4', 'B4'],
+  ['E4', 'G4', 'C5'],
+  ['D4', 'G4', 'B4'],
+  ['D4', 'F#4', 'A4'],
+]
+/** Chord tone per 16th: 0–2 are the chord (an octave up), 3 the top note another octave up. */
+const ARPEGGIO = [0, 1, 2, 3, 2, 1, 0, 1, 2, 3, 2, 1, 0, 1, 2, 1]
+
+export const QUESTION_SONG: Song = {
+  bpm: 140,
+  steps: 64,
+  bass: bounceBass(['E2', 'C2', 'G2', 'D2']),
+  chords: stabs(QUESTION_CHORDS, [
+    [2, 1],
+    [6, 1],
+    [10, 1],
+    [14, 1],
+  ]),
   melody: QUESTION_CHORDS.flatMap((notes, bar) =>
-    ARPEGGIO.map((i, n): NoteEvent => [bar * 16 + n * 2, i === 3 ? octaveUp(octaveUp(notes[0])) : octaveUp(notes[i]), 1]),
+    ARPEGGIO.map((i, n): NoteEvent => [bar * 16 + n, i === 3 ? octaveUp(octaveUp(notes[0])) : octaveUp(notes[i]), 1]),
   ),
-  hats: Array.from({ length: 64 }, (_, i) => i),
-  accents: everyBar([2, 6, 10, 14], 4),
-  kicks: everyBar([0, 4, 8, 12], 4),
+  hats: ALL_SIXTEENTHS,
+  accents: OFFBEAT_EIGHTHS,
+  kicks: FOUR_ON_THE_FLOOR,
+  claps: BACKBEAT,
 }
 
 export const SONGS: Record<BackgroundTrack, Song> = { lobby: LOBBY_SONG, question: QUESTION_SONG }
@@ -230,13 +246,14 @@ function schedule(p: Playing) {
 }
 
 function playStep(audio: AudioContext, out: AudioNode, song: Song, step: number, t: number, stepS: number) {
-  for (const [s, note, len] of song.bass) if (s === step) pluck(audio, out, noteHz(note), t, len * stepS, 'triangle', 0.32, 900)
+  for (const [s, note, len] of song.bass) if (s === step) pluck(audio, out, noteHz(note), t, len * stepS, 'sawtooth', 0.2, 750)
   for (const [s, notes, len] of song.chords) {
-    if (s === step) for (const note of notes) pluck(audio, out, noteHz(note), t, len * stepS, 'sine', 0.07, 3000)
+    if (s === step) for (const note of notes) pluck(audio, out, noteHz(note), t, len * stepS, 'square', 0.035, 2200)
   }
   for (const [s, note, len] of song.melody) if (s === step) bell(audio, out, noteHz(note), t, len * stepS)
-  if (song.hats.includes(step)) hat(audio, out, t, song.accents.includes(step) ? 0.05 : 0.025)
+  if (song.hats.includes(step)) hat(audio, out, t, song.accents.includes(step) ? 0.06 : 0.025)
   if (song.kicks.includes(step)) kick(audio, out, t)
+  if (song.claps.includes(step)) clap(audio, out, t)
 }
 
 /** A short plucked note that decays quickly (bass, marimba-like stabs). */
@@ -259,20 +276,47 @@ function pluck(audio: AudioContext, out: AudioNode, freq: number, t: number, len
 
 /** A soft vibraphone-ish bell: a sine plus a quiet octave overtone. */
 function bell(audio: AudioContext, out: AudioNode, freq: number, t: number, length: number) {
-  pluck(audio, out, freq, t, Math.max(length, 0.25), 'sine', 0.09, 6000)
-  pluck(audio, out, freq * 2, t, Math.max(length * 0.5, 0.12), 'sine', 0.02, 8000)
+  pluck(audio, out, freq, t, Math.max(length, 0.15), 'triangle', 0.08, 5000)
+  pluck(audio, out, freq * 2, t, Math.max(length * 0.5, 0.1), 'sine', 0.025, 8000)
 }
 
-let hatNoise: AudioBuffer | null = null
+let noiseBuffer: AudioBuffer | null = null
 
-function hat(audio: AudioContext, out: AudioNode, t: number, volume: number) {
-  if (!hatNoise) {
-    hatNoise = audio.createBuffer(1, Math.floor(audio.sampleRate * 0.1), audio.sampleRate)
-    const data = hatNoise.getChannelData(0)
+function noise(audio: AudioContext): AudioBuffer {
+  if (!noiseBuffer) {
+    noiseBuffer = audio.createBuffer(1, Math.floor(audio.sampleRate * 0.25), audio.sampleRate)
+    const data = noiseBuffer.getChannelData(0)
     for (let i = 0; i < data.length; i++) data[i] = Math.random() * 2 - 1
   }
+  return noiseBuffer
+}
+
+/** A handclap: three quick noise bursts and a short tail. */
+function clap(audio: AudioContext, out: AudioNode, t: number) {
+  const filter = audio.createBiquadFilter()
+  filter.type = 'bandpass'
+  filter.frequency.value = 1500
+  filter.Q.value = 0.8
+  filter.connect(out)
+  for (const [offset, volume, decay] of [
+    [0, 0.14, 0.02],
+    [0.011, 0.12, 0.02],
+    [0.022, 0.16, 0.13],
+  ]) {
+    const src = audio.createBufferSource()
+    src.buffer = noise(audio)
+    const gain = audio.createGain()
+    gain.gain.setValueAtTime(volume, t + offset)
+    gain.gain.exponentialRampToValueAtTime(0.0001, t + offset + decay)
+    src.connect(gain).connect(filter)
+    src.start(t + offset, Math.random() * 0.1)
+    src.stop(t + offset + decay + 0.02)
+  }
+}
+
+function hat(audio: AudioContext, out: AudioNode, t: number, volume: number) {
   const src = audio.createBufferSource()
-  src.buffer = hatNoise
+  src.buffer = noise(audio)
   const filter = audio.createBiquadFilter()
   filter.type = 'highpass'
   filter.frequency.value = 7000

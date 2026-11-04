@@ -71,7 +71,7 @@ describe('background songs', () => {
       const notes = [...song.bass.map(([, n]) => n), ...song.melody.map(([, n]) => n), ...song.chords.flatMap(([, ns]) => ns)]
       for (const n of notes) expect(noteHz(n)).toBeGreaterThan(30)
       const steps = [...song.bass, ...song.melody, ...song.chords].map(([s]) => s)
-      for (const s of [...steps, ...song.hats, ...song.kicks]) {
+      for (const s of [...steps, ...song.hats, ...song.kicks, ...song.claps]) {
         expect(s).toBeGreaterThanOrEqual(0)
         expect(s).toBeLessThan(song.steps)
       }
