@@ -10,8 +10,8 @@ import { HostButton } from '../../ui/HostButton'
 import { useNow } from '../../ui/useNow'
 import { TrackCard } from '../music-race/MusicRaceHost'
 import { MusicDeck, type DeckMode } from '../music/MusicDeck'
-import { CLIP_MS, clipElapsed } from '../music/track'
-import { ANSWER_MS, attemptPoints, type MusicBuzzerState } from './logic'
+import { clipElapsed } from '../music/track'
+import { ANSWER_MS, attemptPoints, BUZZER_CLIP_MS, type MusicBuzzerState } from './logic'
 
 const deckMode: Record<MusicBuzzerState['stage'], DeckMode> = {
   loading: 'loading',
@@ -65,7 +65,7 @@ export function BuzzerHost({ state, players }: { state: MusicBuzzerState; player
               <p className="text-4xl font-bold">
                 {strings.music.buzzNow} ·{' '}
                 <span className="text-yellow-300 tabular-nums">
-                  {strings.music.secondsLeft(Math.max(0, Math.ceil((CLIP_MS - clipElapsed(state.clip, now)) / 1000)))}
+                  {strings.music.secondsLeft(Math.max(0, Math.ceil((BUZZER_CLIP_MS - clipElapsed(state.clip, now)) / 1000)))}
                 </span>
               </p>
             )}

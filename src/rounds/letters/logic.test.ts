@@ -3,6 +3,7 @@ import type { Player } from '../../game/lobby'
 import type { RoundContext } from '../../game/round'
 import {
   FLIP_INTERVAL_MS,
+  flipAt,
   flipIntervalFor,
   letterPositions,
   letters,
@@ -57,7 +58,7 @@ describe('letters round', () => {
     expect([...s.flipOrder].sort((a, b) => a - b)).toEqual(letterPositions('hemma bäst'))
   })
 
-  it('flips one tile every interval, regardless of tick jitter', () => {
+  it('flips the first tile after one interval, regardless of tick jitter', () => {
     const s = start()
     expect(letters.onTick(s, ctx(T0 + FLIP_INTERVAL_MS - 1)).state.revealedCount).toBe(0)
     expect(letters.onTick(s, ctx(T0 + FLIP_INTERVAL_MS)).state.revealedCount).toBe(1)
@@ -66,22 +67,32 @@ describe('letters round', () => {
     expect(revealedPositions(later)).toEqual(new Set(s.flipOrder.slice(0, 3)))
   })
 
+  it('slows down as more tiles show: the last gap is twice the first', () => {
+    const s = start() // 9 tiles, 2 s between the first two
+    expect(flipAt(s, 1)).toBe(2_000)
+    expect(flipAt(s, 2) - flipAt(s, 1)).toBe(2_250)
+    expect(flipAt(s, 9) - flipAt(s, 8)).toBe(4_000)
+    expect(letters.onTick(s, ctx(T0 + 4_249)).state.revealedCount).toBe(1)
+    expect(letters.onTick(s, ctx(T0 + 4_250)).state.revealedCount).toBe(2)
+  })
+
   it('ends when every tile is revealed', () => {
     const s = start()
-    const end = letters.onTick(s, ctx(T0 + 9 * FLIP_INTERVAL_MS)).state
+    expect(letters.onTick(s, ctx(T0 + flipAt(s, 9) - 1)).state.stage).toBe('playing')
+    const end = letters.onTick(s, ctx(T0 + flipAt(s, 9))).state
     expect(end).toMatchObject({ stage: 'reveal', revealedCount: 9 })
   })
 
   it('scores 1000 at the start, falling linearly to 100 with one tile left', () => {
     const s = start() // 9 tiles: 100 points once 8 have flipped
     expect(pointsAt(s, T0)).toBe(MAX_POINTS)
-    expect(pointsAt(s, T0 + 4 * FLIP_INTERVAL_MS)).toBe(550)
-    expect(pointsAt(s, T0 + 8 * FLIP_INTERVAL_MS)).toBe(MIN_POINTS)
+    expect(pointsAt(s, T0 + flipAt(s, 8) / 2)).toBe(550)
+    expect(pointsAt(s, T0 + flipAt(s, 8))).toBe(MIN_POINTS)
     expect(pointsAt(s, T0 + 100 * FLIP_INTERVAL_MS)).toBe(MIN_POINTS)
   })
 
   it('awards points immediately for a correct guess, accepting aliases', () => {
-    const update = guess(start(), 'anna', 'Hemma är bäst', T0 + 2 * FLIP_INTERVAL_MS)
+    const update = guess(start(), 'anna', 'Hemma är bäst', T0 + flipAt(start(), 8) / 4)
     expect(update.scoreDeltas).toEqual({ anna: 775 })
     expect(statusOf(update.state, 'anna')).toBe('correct')
     expect(update.state.stage).toBe('playing')
@@ -110,7 +121,7 @@ describe('letters round', () => {
   })
 
   it('rejects guesses after the last tile has flipped, even before a tick', () => {
-    const update = guess(start(), 'anna', 'hemma bäst', T0 + 9 * FLIP_INTERVAL_MS)
+    const update = guess(start(), 'anna', 'hemma bäst', T0 + flipAt(start(), 9))
     expect(update.scoreDeltas).toBeUndefined()
     expect(update.state.stage).toBe('reveal')
   })
@@ -133,7 +144,7 @@ describe('letters round', () => {
     expect(letters.isFinished(s)).toBe(true)
   })
 
-  it('flips long answers faster so a whole proverb takes at most ~36 s', () => {
+  it('starts long answers faster', () => {
     expect(flipIntervalFor(9)).toBe(FLIP_INTERVAL_MS)
     expect(flipIntervalFor(30)).toBe(1200)
     expect(flipIntervalFor(80)).toBe(1000)
@@ -141,8 +152,9 @@ describe('letters round', () => {
     const proverb = { prompt: 'Stora saker tar tid', answer: 'Rom byggdes inte på en dag', theme: 'Svenska ordspråk' }
     const s = letters.start({ items: [proverb] }, ctx())
     expect(s.flipIntervalMs).toBe(flipIntervalFor(letterPositions(proverb.answer).length))
-    expect(letters.onTick(s, ctx(T0 + 2 * s.flipIntervalMs)).state.revealedCount).toBe(2)
-    expect(pointsAt(s, T0 + (s.flipOrder.length - 1) * s.flipIntervalMs)).toBe(MIN_POINTS)
+    expect(letters.onTick(s, ctx(T0 + s.flipIntervalMs)).state.revealedCount).toBe(1)
+    expect(letters.onTick(s, ctx(T0 + flipAt(s, 2))).state.revealedCount).toBe(2)
+    expect(pointsAt(s, T0 + flipAt(s, s.flipOrder.length - 1))).toBe(MIN_POINTS)
   })
 
   it('never shows the answer on phones before the reveal', () => {

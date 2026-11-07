@@ -10,6 +10,8 @@ export const FLIP_INTERVAL_MS = 2_000
 export const MAX_REVEAL_MS = 36_000
 /** …and never faster than one tile a second. */
 export const MIN_FLIP_INTERVAL_MS = 1_000
+/** The gaps grow as more tiles show: the last one is this much longer than the first. */
+export const SLOWDOWN = 1
 export const MAX_POINTS = 1000
 export const MIN_POINTS = 100
 export const MAX_GUESS_LENGTH = 80
@@ -94,6 +96,22 @@ export function flipIntervalFor(tiles: number): number {
 /** States saved before the interval was per item don't have it. */
 const intervalOf = (state: LettersState) => state.flipIntervalMs ?? FLIP_INTERVAL_MS
 
+/**
+ * Ms after the start when tile `n` (1-based) flips. The first gap is the item's
+ * interval and each later one is a bit longer, so the end slows down.
+ */
+export function flipAt(state: LettersState, n: number): number {
+  const steps = Math.max(1, state.flipOrder.length - 1)
+  return Math.round(intervalOf(state) * (n + (SLOWDOWN * n * (n - 1)) / (2 * steps)))
+}
+
+function flipsDue(state: LettersState, now: number): number {
+  const tiles = state.flipOrder.length
+  let n = state.revealedCount
+  while (n < tiles && flipAt(state, n + 1) <= now - state.startedAt) n++
+  return n
+}
+
 export function revealedPositions(state: LettersState): Set<number> {
   return new Set(state.flipOrder.slice(0, state.revealedCount))
 }
@@ -110,7 +128,7 @@ export const statusOf = (state: LettersState, playerId: string): LetterStatus =>
 export function pointsAt(state: LettersState, now: number): number {
   const tiles = state.flipOrder.length
   if (tiles <= 1) return MAX_POINTS
-  const progress = Math.min(1, Math.max(0, (now - state.startedAt) / ((tiles - 1) * intervalOf(state))))
+  const progress = Math.min(1, Math.max(0, (now - state.startedAt) / flipAt(state, tiles - 1)))
   return Math.round(MAX_POINTS - (MAX_POINTS - MIN_POINTS) * progress)
 }
 
@@ -140,7 +158,7 @@ function everyoneDone(state: LettersState, ctx: RoundContext): boolean {
 function settle(state: LettersState, ctx: RoundContext): RoundUpdate<LettersState> {
   if (state.stage !== 'playing') return { state }
   const tiles = state.flipOrder.length
-  const due = Math.min(tiles, Math.floor((ctx.now - state.startedAt) / intervalOf(state)))
+  const due = flipsDue(state, ctx.now)
   const flipped = due > state.revealedCount ? { ...state, revealedCount: due } : state
   return { state: due >= tiles || everyoneDone(flipped, ctx) ? reveal(flipped) : flipped }
 }

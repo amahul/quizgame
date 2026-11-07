@@ -17,6 +17,8 @@ function audio(): HTMLAudioElement {
   if (!element) {
     element = new Audio()
     element.preload = 'auto'
+    // The buzzer plays longer than a 30 s preview, so it starts over.
+    element.loop = true
     const ctx = getAudioContext()
     analyser = ctx.createAnalyser()
     analyser.fftSize = 128
@@ -44,7 +46,16 @@ async function ensureRunning(): Promise<void> {
 export async function playClip(url: string, offsetSeconds: number): Promise<void> {
   const el = audio()
   await ensureRunning()
-  if (el.src !== url) el.src = url
+  if (el.src !== url) {
+    el.src = url
+    await new Promise((resolve) => {
+      if (el.readyState >= HTMLMediaElement.HAVE_METADATA) return resolve(null)
+      el.addEventListener('loadedmetadata', resolve, { once: true })
+      el.addEventListener('error', resolve, { once: true })
+    })
+  }
+  // Past the end of a short file, wrap around like the looping playback does.
+  if (Number.isFinite(el.duration) && el.duration > 0 && offsetSeconds >= el.duration) offsetSeconds %= el.duration
   // Only seek if we've drifted, so a resume doesn't stutter.
   if (Math.abs(el.currentTime - offsetSeconds) > 0.5) el.currentTime = offsetSeconds
   try {

@@ -6,7 +6,6 @@
 // shown once both parts are solved, the clip runs out or the host reveals it.
 import type { RoundContext, RoundDefinition, RoundUpdate } from '../../game/round'
 import {
-  CLIP_MS,
   clipElapsed,
   idleClip,
   matchesArtist,
@@ -25,6 +24,8 @@ export const BUZZ_PART_POINTS = 250
 /** A buzz where nothing new was right. */
 export const BUZZ_WRONG_POINTS = -250
 export const ANSWER_MS = 15_000
+/** How long a song plays before nobody gets it. Longer than the 30 s preview, which loops. */
+export const BUZZER_CLIP_MS = 60_000
 export const MAX_ANSWER_LENGTH = 80
 
 export interface MusicBuzzerSetup {
@@ -143,7 +144,7 @@ function settle(state: MusicBuzzerState, ctx: RoundContext): RoundUpdate<MusicBu
   if (state.stage === 'buzzed' && state.buzzedAt !== null && ctx.now - state.buzzedAt >= ANSWER_MS) {
     return judge(state, { artist: null, title: null }, { artist: false, title: false }, ctx)
   }
-  if (state.stage === 'playing' && clipElapsed(state.clip, ctx.now) >= CLIP_MS) {
+  if (state.stage === 'playing' && clipElapsed(state.clip, ctx.now) >= BUZZER_CLIP_MS) {
     return { state: { ...state, stage: 'reveal' } }
   }
   return { state }

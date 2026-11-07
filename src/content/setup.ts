@@ -24,10 +24,10 @@ export const ROUND_INFO: Record<RoundKey, RoundInfo> = {
   trivia: { packType: 'trivia', defaultCount: 12, minCount: 3, maxCount: 30, secondsPerItem: 30 },
   closest: { packType: 'closest', defaultCount: 8, minCount: 3, maxCount: 20, secondsPerItem: 35 },
   pass: { packType: 'pass', defaultCount: 2, minCount: 1, maxCount: 4, perPlayer: true, secondsPerItem: 40 },
-  proverbs: { packType: 'letters', variant: 'proverbs', defaultCount: 8, minCount: 3, maxCount: 20, secondsPerItem: 40 },
-  themes: { packType: 'letters', variant: 'themes', defaultCount: 10, minCount: 3, maxCount: 20, secondsPerItem: 25 },
+  proverbs: { packType: 'letters', variant: 'proverbs', defaultCount: 8, minCount: 3, maxCount: 20, secondsPerItem: 50 },
+  themes: { packType: 'letters', variant: 'themes', defaultCount: 10, minCount: 3, maxCount: 20, secondsPerItem: 30 },
   musicRace: { packType: 'music', defaultCount: 8, minCount: 3, maxCount: 15, secondsPerItem: 35 },
-  musicBuzzer: { packType: 'music', defaultCount: 8, minCount: 3, maxCount: 15, secondsPerItem: 40 },
+  musicBuzzer: { packType: 'music', defaultCount: 8, minCount: 3, maxCount: 15, secondsPerItem: 50 },
 }
 
 /** Every round in its default order. */
