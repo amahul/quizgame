@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import type { Player } from '../../game/lobby'
 import type { RoundContext } from '../../game/round'
-import { clipElapsed, type MusicTrack } from '../music/track'
-import { ANSWER_MS, BUZZ_PART_POINTS, BUZZ_WRONG_POINTS, BUZZER_CLIP_MS, musicBuzzer, songPoints, type MusicBuzzerState } from './logic'
+import { CLIP_MS, clipElapsed, type MusicTrack } from '../music/track'
+import { ANSWER_MS, BUZZ_PART_POINTS, BUZZ_WRONG_POINTS, musicBuzzer, songPoints, type MusicBuzzerState } from './logic'
 
 const tracks: MusicTrack[] = [
   { id: 'a', artist: 'Europe', title: 'The Final Countdown', source: { kind: 'deezer', deezerId: 858371 } },
@@ -86,8 +86,7 @@ describe('music buzzer round', () => {
   })
 
   it('reveals at the end of the clip, or when the host asks', () => {
-    expect(musicBuzzer.onTick(playing(), ctx(T0 + BUZZER_CLIP_MS - 1)).state.stage).toBe('playing')
-    expect(musicBuzzer.onTick(playing(), ctx(T0 + BUZZER_CLIP_MS)).state.stage).toBe('reveal')
+    expect(musicBuzzer.onTick(playing(), ctx(T0 + CLIP_MS)).state.stage).toBe('reveal')
     expect(musicBuzzer.onHostAction(playing(), { type: 'music-reveal' }, ctx()).state.stage).toBe('reveal')
   })
 

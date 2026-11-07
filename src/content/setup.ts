@@ -27,7 +27,7 @@ export const ROUND_INFO: Record<RoundKey, RoundInfo> = {
   proverbs: { packType: 'letters', variant: 'proverbs', defaultCount: 8, minCount: 3, maxCount: 20, secondsPerItem: 50 },
   themes: { packType: 'letters', variant: 'themes', defaultCount: 10, minCount: 3, maxCount: 20, secondsPerItem: 30 },
   musicRace: { packType: 'music', defaultCount: 8, minCount: 3, maxCount: 15, secondsPerItem: 35 },
-  musicBuzzer: { packType: 'music', defaultCount: 8, minCount: 3, maxCount: 15, secondsPerItem: 50 },
+  musicBuzzer: { packType: 'music', defaultCount: 8, minCount: 3, maxCount: 15, secondsPerItem: 40 },
 }
 
 /** Every round in its default order. */

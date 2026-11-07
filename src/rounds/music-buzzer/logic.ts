@@ -1,11 +1,12 @@
 // "Musik – buzzer": the first buzz (in host arrival order) pauses the music. That
-// player has 15 s to type the artist and the song title. Each part they get right
+// player has 20 s to type the artist and the song title. Each part they get right
 // scores and is solved for good; whatever is still unsolved stays hidden and the
 // song plays on, up for grabs by the next player to buzz. Everyone buzzes at most
 // once per song, and a buzz with nothing right costs points. The answer is only
 // shown once both parts are solved, the clip runs out or the host reveals it.
 import type { RoundContext, RoundDefinition, RoundUpdate } from '../../game/round'
 import {
+  CLIP_MS,
   clipElapsed,
   idleClip,
   matchesArtist,
@@ -23,9 +24,7 @@ import {
 export const BUZZ_PART_POINTS = 250
 /** A buzz where nothing new was right. */
 export const BUZZ_WRONG_POINTS = -250
-export const ANSWER_MS = 15_000
-/** How long a song plays before nobody gets it. Longer than the 30 s preview, which loops. */
-export const BUZZER_CLIP_MS = 60_000
+export const ANSWER_MS = 20_000
 export const MAX_ANSWER_LENGTH = 80
 
 export interface MusicBuzzerSetup {
@@ -144,7 +143,7 @@ function settle(state: MusicBuzzerState, ctx: RoundContext): RoundUpdate<MusicBu
   if (state.stage === 'buzzed' && state.buzzedAt !== null && ctx.now - state.buzzedAt >= ANSWER_MS) {
     return judge(state, { artist: null, title: null }, { artist: false, title: false }, ctx)
   }
-  if (state.stage === 'playing' && clipElapsed(state.clip, ctx.now) >= BUZZER_CLIP_MS) {
+  if (state.stage === 'playing' && clipElapsed(state.clip, ctx.now) >= CLIP_MS) {
     return { state: { ...state, stage: 'reveal' } }
   }
   return { state }

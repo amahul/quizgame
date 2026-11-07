@@ -165,7 +165,7 @@ export const sv = {
     musicBuzzer: {
       title: 'Musik – buzzer',
       rules:
-        'Tryck BUZZ när du känner igen låten! Musiken pausas och du har 15 sekunder på dig att skriva artist och låt. Varje rätt del ger 250 poäng. Det som ingen har klarat än kan nästa person buzza in på. Alla buzzar en gång per låt – helt fel kostar 250 poäng.',
+        'Tryck BUZZ när du känner igen låten! Musiken pausas och du har 20 sekunder på dig att skriva artist och låt. Varje rätt del ger 250 poäng. Det som ingen har klarat än kan nästa person buzza in på. Alla buzzar en gång per låt – helt fel kostar 250 poäng.',
     },
   },
   music: {
